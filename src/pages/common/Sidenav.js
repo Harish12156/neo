@@ -1,17 +1,133 @@
 import React, { useContext } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from '../../assets/images/Logo_rempic_swan.png';
+import Logoicon from '../../assets/images/Logo_rempic_icon.png';
+import Dashboard from '../../assets/images/side-nav/dashboard.png';
+import Dashboardw from '../../assets/images/side-nav/dashboard-w.png';
+import Account from '../../assets/images/side-nav/account.png';
+import Accountw from '../../assets/images/side-nav/account-w.png';
+import Card from '../../assets/images/side-nav/card.png';
+import Cardw from '../../assets/images/side-nav/card-w.png';
+import Transactions from '../../assets/images/side-nav/transactions.png';
+import Transactionsw from '../../assets/images/side-nav/transactions-w.png';
+import Crypto from '../../assets/images/side-nav/crypto.png';
+import Cryptow from '../../assets/images/side-nav/crypto-w.png';
+import Portfolio from '../../assets/images/side-nav/portfolio.png';
+import Portfoliow from '../../assets/images/side-nav/portfolio-w.png';
+import Setting from '../../assets/images/side-nav/setting.png';
+import Settingw from '../../assets/images/side-nav/setting-w.png';
+import Signout from '../../assets/images/side-nav/sign-out.png';
 import DataContext from '../../context/DataContext';
+import { RxCross1 } from "react-icons/rx";
 
 function Sidenav() {
-  const { isOpen } = useContext(DataContext);
+  const { isOpen, setIsOpen } = useContext(DataContext);
+  const location = useLocation();
+
+  const toggleClick = () => {
+    setIsOpen(false);
+  };
+
+  const getLinkClass = (path) => {
+    return location.pathname === path ? 'list-item-side active-page-root-css' : 'list-item-side';
+  };
+
+  const getIcon = (defaultIcon, activeIcon, path) => {
+    return location.pathname === path ? activeIcon : defaultIcon;
+  };
 
   return (
     <div className={`top-left-side-nav-banner ${isOpen ? 'side-open-width' : 'side-close-width'}`}>
-      <Link to="/">
-        <LazyLoadImage alt="Logo" src={Logo} className='img-fluid' />
-      </Link>
+      <div className='pt-3 d-flex flex-column h-100'>
+        <div>
+          <div className='text-end d-md-none mb-2'>
+            <button className='mobile-sidenav-close' onClick={toggleClick}><RxCross1 /></button>
+          </div>
+          <div className='text-center'>
+            <Link to="/" className=''>
+              <LazyLoadImage alt="Logo" src={isOpen ? Logo : Logoicon} className='side-nav-logo' />
+            </Link>
+          </div>
+
+          <ul className='mt-4 d-flex flex-column list-item-top-sec'>
+            <Link to="/" className={getLinkClass('/')}>
+              <LazyLoadImage
+                alt="Dashboard"
+                src={getIcon(Dashboard, Dashboardw, '/')}
+                className='side-text-1'
+              />
+              <span className='hides-when-close'>Dashboard</span>
+            </Link>
+
+            <Link to="/account" className={getLinkClass('/account')}>
+              <LazyLoadImage
+                alt="Account"
+                src={getIcon(Account, Accountw, '/account')}
+                className='side-text-1'
+              />
+              <span className='hides-when-close'>Account</span>
+            </Link>
+
+            <Link to="/card" className={getLinkClass('/card')}>
+              <LazyLoadImage
+                alt="Card"
+                src={getIcon(Card, Cardw, '/card')}
+                className='side-text-1'
+              />
+              <span className='hides-when-close'>Card</span>
+            </Link>
+
+            <Link to="/transactions" className={getLinkClass('/transactions')}>
+              <LazyLoadImage
+                alt="Transactions"
+                src={getIcon(Transactions, Transactionsw, '/transactions')}
+                className='side-text-1'
+              />
+              <span className='hides-when-close'>Transactions</span>
+            </Link>
+
+            <Link to="/crypto" className={getLinkClass('/crypto')}>
+              <LazyLoadImage
+                alt="Crypto"
+                src={getIcon(Crypto, Cryptow, '/crypto')}
+                className='side-text-1'
+              />
+              <span className='hides-when-close'>Crypto</span>
+            </Link>
+
+            <Link to="/portfolio" className={getLinkClass('/portfolio')}>
+              <LazyLoadImage
+                alt="Portfolio"
+                src={getIcon(Portfolio, Portfoliow, '/portfolio')}
+                className='side-text-1'
+              />
+              <span className='hides-when-close'>My Portfolio</span>
+            </Link>
+
+            <Link to="/setting" className={getLinkClass('/setting')}>
+              <LazyLoadImage
+                alt="Setting"
+                src={getIcon(Setting, Settingw, '/setting')}
+                className='side-text-1'
+              />
+              <span className='hides-when-close'>Setting</span>
+            </Link>
+          </ul>
+        </div>
+        <div className='mt-auto'>
+          <button className="list-item-side justify-content-center list-item-side-logout mb-1">
+            <LazyLoadImage
+              alt="Dashboard"
+              src={Signout}
+              className='side-text-1'
+            />
+            <span className='hides-when-close'>Logout</span>
+          </button>
+
+          <p className='side-logout-text-1'>© 2023 All Rights Reserved</p>
+        </div>
+      </div>
     </div>
   );
 }

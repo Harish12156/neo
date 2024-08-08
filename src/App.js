@@ -1,5 +1,6 @@
 import './App.css';
 import './assets/css/style.css';
+import './assets/css/demo.css';
 import Sidenav from './pages/common/Sidenav';
 import Home from './pages/Home';
 import ScrollToTop from './ScrollToTop';
@@ -7,6 +8,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React, { useContext, useEffect } from 'react';
 import DataContext from './context/DataContext';
 import NavbarOne from './pages/common/NavbarOne';
+import Account from './pages/Account';
+import Card from './pages/Card';
+import Transactions from './pages/Transactions';
+import Crypto from './pages/Crypto';
+import Portfolio from './pages/Portfolio';
+import Setting from './pages/Setting';
+import Profile from './pages/Profile';
+
 
 function App() {
   const { isOpen, setIsOpen } = useContext(DataContext);
@@ -36,6 +45,15 @@ function App() {
           <ScrollToTop />
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/account" element={<Account />} />
+            <Route exact path="/card" element={<Card />} />
+            <Route exact path="/transactions" element={<Transactions />} />
+            <Route exact path="/crypto" element={<Crypto />} />
+            <Route exact path="/portfolio" element={<Portfolio />} />
+            <Route exact path="/setting" element={<Setting />} />
+            <Route exact path="/profile" element={<Profile/>} />
+
+            <Route exact path="*" element={<p>ERROR 404</p>} />
           </Routes>
 
         </div>

@@ -1,0 +1,121 @@
+/* ==========Karthick ============= */
+/* =====Desktop ======== */
+@media (min-width: 992px) {
+    .profile-section-one .password-container {
+        position: relative;
+        width: 75%;
+    }
+    .profile-section-one .done-css{
+        background: linear-gradient(90.9deg, #B5379F 3.03%, #4E49B9 94.33%);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        width: 75%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+/* =====Desktop ======== */
+/* =====Mobile ======= */
+@media (max-width: 991px) {
+    .profile-section-one .password-container {
+        position: relative;
+        width: 100%;
+    }  
+    .profile-section-one .done-css{
+        background: linear-gradient(90.9deg, #B5379F 3.03%, #4E49B9 94.33%);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+/* =====Mobile ======= */
+.profile-section .profile-section-one .profile-col {
+    background: #FEFEFE;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.profile-section-one .pro-pic {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-section-one .user-name {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #8950DA;
+}
+
+.profile-section-one .user-id {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.06px;
+    color: #00000099;
+}
+
+.profile-section-one .edit-profile {
+    border: 1px solid #84818a33;
+    color: #84818A;
+    width: auto;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.profile-section-one .pro-left {
+    border-right: 1px solid rgba(128, 128, 128, 0.253);
+}
+
+.profile-section-one .nav-pills .nav-link.active,
+.profile-section-one .nav-pills .show>.nav-link {
+    color: #8950DA;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    background-color: transparent;
+}
+
+.profile-section-one .nav-link {
+    font-weight: 700;
+    color: #202020;
+    padding: 10px 0px;
+}
+
+.profile-section-one .form-label {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.profile-section-one .password-input {
+    width: 100%;
+    padding-right: 40px; /* Space for the icon */
+}
+
+.profile-section-one .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.profile-section-one .form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    outline: 0;
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.342);
+}
+.profile-section-one input::placeholder {
+    font-size: 13px;
+    color: grey;
+}
+.profile-section-one .nav-link:hover {
+    color: #8950DA;
+}
+/* ==========Karthick ============= */

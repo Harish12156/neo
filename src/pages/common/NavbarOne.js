@@ -5,15 +5,26 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import DataContext from '../../context/DataContext';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import Menu from "../../assets/images/menu.png"
-import { Button } from 'bootstrap';
+import Menu from "../../assets/images/icons/menu.png"
+import Search from "../../assets/images/icons/Search.png"
+import Notification from "../../assets/images/icons/Notification.png"
+import Avatar from "../../assets/images/icons/Avatar.jpg"
+import { FaSortDown } from "react-icons/fa";
+import { IoCaretDown } from 'react-icons/io5';
+import { Link, useLocation } from 'react-router-dom';
+
+
 function NavbarOne() {
     const { isOpen, setIsOpen } = useContext(DataContext);
+    const location = useLocation();
 
     const toggleClick = () => {
         setIsOpen(!isOpen);
     };
-
+    const getLinkClass = (path) => {
+        return location.pathname === path ? 'top-navbar-pro-drop-btn active-page-root-css' : 'top-navbar-pro-drop-btn';
+      };
+    
     return (
         <div className='top-navbar-banner'>
             <Navbar key="xl" expand="xl">
@@ -31,10 +42,43 @@ function NavbarOne() {
                     >
                         <Offcanvas.Header closeButton></Offcanvas.Header>
                         <Offcanvas.Body>
-                            <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link href="#action1">Home</Nav.Link>
-                                <Nav.Link href="#action2">Link</Nav.Link>
+                            <Nav className='w-100'>
+                                <Nav className="mx-auto top-navbar-search-sec">
+                                    <div class="input-group my-auto">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <LazyLoadImage src={Search} alt="Search" />
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Search type of keywords" />
+                                    </div>
+                                </Nav>
+                                <Nav className="align-items-center">
+                                    <Nav.Link className=''>
+                                        <div className='position-relative notify-active'></div>
+                                        <LazyLoadImage className='top-navbar-notify-1' src={Notification} alt="Notification" />
+                                    </Nav.Link>
+                                    <Nav.Link className='top-navbar-pro-drop-sec'>
+                                        <div class="dropdown">
+                                            <Link to="/profile">
+                                            <button className={getLinkClass('/profile')} type="button" 
+                                            // data-bs-toggle="dropdown" aria-expanded="false"
+                                            >
+                                                <div className='d-flex align-items-center gap-2'>
+                                                    <LazyLoadImage className='pro-drop-img-1' src={Avatar} alt="Avatar" />
+                                                    <span>Eleanor Pena</span>
+                                                    <IoCaretDown className='pro-drop-icon-1' />
+                                                </div>
+                                            </button>
+                                            </Link>
+                                            {/* <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul> */}
+                                        </div>
+                                    </Nav.Link>
+                                </Nav>
                             </Nav>
+
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
                 </Container>

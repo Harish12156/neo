@@ -5,12 +5,13 @@
     top: 0px;
     left: 0px;
     z-index: 999;
-    transition: width 0.3s ease;
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .top-navbar-banner .navbar {
     background-color: #FFF;
-    padding: 14px 20px;
+    padding: 6px 20px;
 }
 
 .top-navbar-banner .toggle-button-1 {
@@ -19,14 +20,166 @@
 }
 
 .top-nav-text-1 {
-    font-size: 24px;
-    font-weight: 900;
+    font-size: 26px;
+    font-weight: 700;
     margin-bottom: 0px;
     margin-left: 30px;
 }
 
+.top-navbar-search-sec .input-group {
+    border: 1px solid #EBEBEB;
+    background: #F5F5F5;
+    border-radius: 12px;
+    position: relative;
+    /* left: -4vw; */
+    height: fit-content;
+}
+
+.top-navbar-search-sec .form-control, .top-navbar-search-sec .form-control:focus {
+    background: transparent;
+    border: none;
+    padding: 11px;
+    box-shadow: none;
+    font-size: 14px;
+    width: 20vw !important;
+}
+
+.top-navbar-search-sec ::placeholder {
+    color: #9E9E9E !important;
+}
+
+.top-navbar-search-sec .input-group-text {
+    background: transparent;
+    border: none;
+}
+
+.top-navbar-search-sec .input-group-text img {
+    width: 18px;
+    height: 18px;
+}
+
+.top-navbar-notify-1 {
+    width: 18.5px;
+    height: auto;
+    margin-right: 6vw;
+    position: relative;
+}
+
+.notify-active::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 12px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-1);;
+    border: 1px solid var(--border-color-1);
+    border-radius: 50%;
+    z-index: 9;
+}
+
+
+.pro-drop-img-1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.top-navbar-pro-drop-btn {
+    padding: 6px 14px;
+    border: 0px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.pro-drop-icon-1 {
+    color: var(--color-1);
+    font-size: 24px;
+}
+
+.active-page-root-css {
+    background: var(--background-color-1) !important;
+    color: #FFF !important;
+}
+
+.active-page-root-css .pro-drop-icon-1 {
+    color: #FFF;
+}
+
+.top-navbar-banner .navbar-toggler {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.mobile-sidenav-close {
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: 1px solid #63636382;
+    border-radius: 8px;
+    position: relative;
+    left: -10px;
+}
+
+.side-nav-logo {
+    width: 200px;
+    height: 80px !important;
+}
+
+.list-item-side-logout {
+    width: 100%;
+    border: 0px;
+    color: #F8450B !important;
+}
+
+.list-item-side {
+    list-style: none;
+    background: transparent;
+    color: #9E9E9E;
+    margin-bottom: 10px;
+    text-decoration: none;
+    padding: 14px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.list-item-top-sec {
+    padding: 10px;
+}
+
+.side-logout-text-1 {
+    color: #717579;
+    font-size: 14px;
+    text-align: center;
+}
+
+.side-close-width .side-logout-text-1 {
+    display: none;
+}
+
+.side-text-1 {
+    width: 24px;
+    height: auto;
+    margin-right: 14px;
+}
+
+.side-close-width .side-text-1 {
+    margin: 0px;
+}
+
+
 /* Desktop styles */
 @media (min-width: 1025px) {
+    .side-close-width .hides-when-close {
+        display: none;
+    }
+
     .side-open-padleft {
         padding-left: 250px !important;
         transition: padding 0.3s ease;
@@ -69,6 +222,29 @@
 
 /* Mobile styles */
 @media (max-width: 767px) {
+    .top-navbar-search-sec .form-control, .top-navbar-search-sec .form-control:focus {
+        width: 80% !important;
+    }
+
+    .top-nav-text-1 {
+        font-size: 16px;
+        margin-left: 0px;
+    }
+
+    .top-navbar-banner .navbar-toggler {
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    .top-navbar-banner .toggle-button-1 {
+        width: 22px;
+        height: 22px;
+    }
+
+    .top-navbar-banner .navbar {
+        background-color: #FFF;
+        padding: 12px 0px;
+    }
 
     .side-open-padleft {
         padding-left: 0px !important;
@@ -82,9 +258,11 @@
 
     .side-open-width {
         width: 250px !important;
+        left: 0px;
     }
 
     .side-close-width {
-        width: 0px !important;
+        width: 250px !important;
+        left: -250px;
     }
 }

@@ -1,0 +1,124 @@
+/* <============pandi============> */
+
+.epic-ctn-12 {
+    height: 200px !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.epic-ctn-14 {
+    border-top: 1px solid rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.epic-ctn-20 {
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.epic-ctn-25 {
+    color: rgba(137, 80, 218, 1) !important;
+    border: 1px solid rgba(137, 80, 218, 1) !important;
+}
+
+.epic-ctn-09 {
+    height: 210px;
+}
+
+.epic-ctn-28 {
+    font-size: 16px;
+    color: rgba(137, 80, 218, 1);
+}
+
+.epic-ctn-29 {
+    font-size: 40px;
+    color: rgba(137, 80, 218, 1);
+}
+
+.epic-ctn-30 {
+    font-size: 13px;
+}
+
+.epic-ctn-31 {
+    height: 100px;
+}
+
+.epic-ctn-32 {
+    width: 100%;
+}
+
+.epic-ctn-32 {
+    font-size: 12px;
+    background: rgba(137, 80, 218, 1);
+    border: 1px solid rgba(137, 80, 218, 1);
+    color: white;
+    border-radius: 8px;
+}
+
+.epic-ctn-33 {
+    width: 100%;
+    color: rgba(137, 80, 218, 1) !important;
+    border: 1px solid rgba(137, 80, 218, 1) !important;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.secon-col-epic-01 {
+    height: 300px;
+}
+
+.help-support-01 {
+    color: rgba(137, 80, 218, 1);
+    font-size: 15px;
+}
+
+.rempic-office-img-01 {
+    width: 115px;
+}
+
+.rempic-img-background {
+    background: white;
+    border-radius: 10px;
+}
+
+.card-rempic-office-ctn {
+    font-size: 12px;
+}
+
+.help-support-01 {
+    font-size: 16px;
+}
+
+.rempic-united-states-01 {
+    font-size: 16px;
+    color: rgba(137, 80, 218, 1);
+}
+
+.epic-ctn-06 {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.rempic-selector-01 {
+    width: 95px !important;
+}
+
+.epic-monthly-001 {
+    font-size: 12px !important;
+}
+
+/* .rempic-img-background{
+background-image: url("../images/rempic-img-bacground.png");
+} */
+
+/* color:rgba(137, 80, 218, 1) */
+
+/* <============================> */
+
+/* Desktop styles */
+@media (min-width: 1025px) {}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* Mobile styles */
+@media (max-width: 767px) {}

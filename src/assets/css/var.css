@@ -106,19 +106,688 @@
     font-size: 12px !important;
 }
 
-/* .rempic-img-background{
-background-image: url("../images/rempic-img-bacground.png");
-} */
 
-/* color:rgba(137, 80, 218, 1) */
 
 /* <============================> */
 
 /* Desktop styles */
-@media (min-width: 1025px) {}
+@media (min-width: 1025px) 
+{
+    .epic-chart-sec-00{
+        height:310px;
+        background:white!important;
+        border-radius: 10px;
+    }
+   .epic-chart-sec-01{
+    /* background:white; */
+    border-radius:8px;
+    
+   }
+   .epic-rounds-up{
+    color:rgba(137, 80, 218, 1);
+    font-size: 18px;
+   }
+   .epic-rounds-help{
+    color:rgba(137, 80, 218, 1);
+    font-size: 18px;
+   }
+   .rnds-up-money{
+    color:black;
+    font-size: 14px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   }
+   .rnds-up-money .css-wmy1p7-ReactDropdownSelect{
+   border:1px solid grey!important;
+   border-radius:6px;
+   }
+   .rnds-up-money-box{
+    background:#eae3e3bd;
+   }
+   .add-to-spend-01{
+    border-top:1px solid #eae3e3bd;
+    border-bottom:1px solid #eae3e3bd;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size:15px;
+   }
+  .new-epic-cash-btn{
+    background: transparent;
+    border:1px solid rgba(137, 80, 218, 1);
+    color:rgba(137, 80, 218, 1);
+    border-radius:8px;
+    padding:18px;
+  }
+  .epic-ref-ctn{
+    color:rgba(137, 80, 218, 1);
+  }
+  .epic-total-referral-box{
+    background: white;
+    border-radius:8px;
+  }
+  .epic-ref-ctn-num{
+    font-size:50px;
+    color:rgba(137, 80, 218, 1);
+  }
+  .epic-share-full-ctn{
+    font-size: 12px;
+    color:#786767bd;
+    text-align: center;
+    padding:10px;
+  }
+  .epic-invite-frd-02{
+    background: var(--background-color-1) !important;
+    padding:12px;
+    border:0;
+    border-radius:6px;
+    color:white;
+    font-size:14px;
+  }
+  .epic-invite-frd-03{
+    /* background: var(--background-color-1) !important; */
+    padding:12px;
+    border:0;
+    border-radius:6px;
+    color:rgba(137, 80, 218, 1);
+    font-size:14px;
+    background: transparent;
+    border:1px solid rgba(137, 80, 218, 1);
+  }
+  .epic-tot-rempic-office{
+    background: #eae3e3bd;
+    border-radius:6px;
+  }
+  .united-state-ctn-01{
+    color:rgba(137, 80, 218, 1);
+    font-size:15px;
+  }
+  .epic-tkn-num-01{
+    width:60px;
+    height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .epic-tkn-num-02{
+    width:60px;
+    height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .epic-fraud-01{
+    color:#554848bd;
+    font-size:14px;
+  }
+  .epic-fraud-new-child{
+    color:black;
+  }
+  .epic-customer-care-01{
+    font-size:12px;
+    color:#554848bd;
+  }
+  .full-mail-ctn-01{
+    border-top:1px solid #eae3e3bd;
+   
+  }
+  .new-logo-rempic-01{
+    width:100px;
+    height:70px;
+    object-fit: contain;
+  }
+  .new{
+    position: absolute;
+    top:65px;
+  }
+  .epic-usa-office{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .epic-tkn-num-01{
+    font-size:13px;
+  }
+  .epic-tkn-full-num-01{
+    font-size:13px;
+  }
+  .epic-fraud-01 {
+    font-size:13px;
+  }
+  .new-remic-nav{
+    display: flex!important;
+    justify-content: space-around!important;
+  }
+  .epic-tab-mail-01{
+    font-size: 13px;
+  }
+ 
+  .new-united-ss{
+    display: flex;
+    align-items: center!important;
+  }
+  .epic-tab-mail-num-00{
+    width:50px;
+    height:50px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:2px;
+    /* border-top:1px solid grey; */
+  }
+  .epic-united-sec-01{
+    border-top:1px solid #eae3e3bd;
+  }
+  .epic-helps-support{
+    color:
+    rgba(137, 80, 218, 1);
+    font-size: 18px;
+  }
+  .epic-united-states-whl-001{
+    background: white;
+    border-radius:10px;
+  }
+  .new-epic-usa-off,.new-epic-uk-off{
+    font-size: 12px;
+    text-align: center;
+  }
+  .rempic-box-office{
+    background:#f6f2f2;
+    border-radius:8px;
+  }
+  .united-office{
+    color:
+    rgba(137, 80, 218, 1);
+    font-size: 13px;
+  }
+  .epic-united-states-whl-001 .nav-pills .nav-link.active{
+    border:1px solid  rgba(137, 80, 218, 1);
+    background: none!important;
+  }
+  .epic-fraud-ctn{
+    color:grey;
+  }
+  .epic-united-states-whl-001 .nav-link{
+    border:1px solid #d6d4d4;
+  }
+  .epic-chart-sec-01 .form-check-input:checked {
+    background-color:  rgba(137, 80, 218, 1)!important;
+    padding:9px;
+    box-shadow: none!important;
+    border:none!important;
+  }
+  .epic-chart-sec-01 .form-check-input:checked {
+    
+    padding:9px;
+    box-shadow: none!important;
+    border:none!important;
+  }
+  .multiply-drop-btn{
+    width:100px;
+    font-size:10px!important;
+  }
+  .new-multiply-btn{
+    width:100px!important;
+    background: transparent!important;
+    border:1px solid grey!important;
+  }
+  .epic-chart-rounded-01{
+    background:#f2ebeb!important;
+  }
+  .rnds-up-money-box{
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
+  }
+  .epic-chart-rounded-01{
+    border-bottom-left-radius:7px;
+    border-bottom-right-radius:7px;
+  }
+}
 
 /* Tablet styles */
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) 
+{
+    .epic-chart-sec-00{
+        height:300px;
+        background:white!important;
+        border-radius: 10px;
+    }
+   .epic-chart-sec-01{
+    /* background:white; */
+    border-radius:8px;
+    
+   }
+   .epic-rounds-up{
+    color:rgba(137, 80, 218, 1);
+    font-size: 18px;
+   }
+   .epic-rounds-help{
+    color:rgba(137, 80, 218, 1);
+    font-size: 18px;
+   }
+   .rnds-up-money{
+    color:black;
+    font-size: 14px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   }
+   .rnds-up-money .css-wmy1p7-ReactDropdownSelect{
+   border:1px solid grey!important;
+   border-radius:6px;
+   }
+   .rnds-up-money-box{
+    background:#eae3e3bd;
+   }
+   .add-to-spend-01{
+    border-top:1px solid #eae3e3bd;
+    border-bottom:1px solid #eae3e3bd;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size:15px;
+   }
+  .new-epic-cash-btn{
+    background: transparent;
+    border:1px solid rgba(137, 80, 218, 1);
+    color:rgba(137, 80, 218, 1);
+    border-radius:8px;
+    padding:18px;
+  }
+  .epic-ref-ctn{
+    color:rgba(137, 80, 218, 1);
+  }
+  .epic-total-referral-box{
+    background: white;
+    border-radius:8px;
+  }
+  .epic-ref-ctn-num{
+    font-size:50px;
+    color:rgba(137, 80, 218, 1);
+  }
+  .epic-share-full-ctn{
+    font-size: 12px;
+    color:#786767bd;
+    text-align: center;
+    padding:10px;
+  }
+  .epic-invite-frd-02{
+    background: var(--background-color-1) !important;
+    padding:12px;
+    border:0;
+    border-radius:6px;
+    color:white;
+    font-size:14px;
+  }
+  .epic-invite-frd-03{
+    /* background: var(--background-color-1) !important; */
+    padding:12px;
+    border:0;
+    border-radius:6px;
+    color:rgba(137, 80, 218, 1);
+    font-size:14px;
+    background: transparent;
+    border:1px solid rgba(137, 80, 218, 1);
+  }
+  .epic-tot-rempic-office{
+    background: #eae3e3bd;
+    border-radius:6px;
+  }
+  .united-state-ctn-01{
+    color:rgba(137, 80, 218, 1);
+    font-size:15px;
+  }
+  .epic-tkn-num-01{
+    width:60px;
+    height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .epic-tkn-num-02{
+    width:60px;
+    height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .epic-fraud-01{
+    color:#554848bd;
+    font-size:14px;
+  }
+  .epic-fraud-new-child{
+    color:black;
+  }
+  .epic-customer-care-01{
+    font-size:12px;
+    color:#554848bd;
+  }
+  .full-mail-ctn-01{
+    border-top:1px solid #eae3e3bd;
+   
+  }
+  .new-logo-rempic-01{
+    width:100px;
+    height:70px;
+    object-fit: contain;
+  }
+  .new{
+    position: absolute;
+    top:65px;
+  }
+  .epic-usa-office{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .epic-tkn-num-01{
+    font-size:13px;
+  }
+  .epic-tkn-full-num-01{
+    font-size:13px;
+  }
+  .epic-fraud-01 {
+    font-size:13px;
+  }
+  .new-remic-nav{
+    display: flex!important;
+    justify-content: space-around!important;
+  }
+  .epic-tab-mail-01{
+    font-size: 13px;
+  }
+ 
+  .new-united-ss{
+    display: flex;
+    align-items: center!important;
+  }
+  .epic-tab-mail-num-00{
+    width:50px;
+    height:50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:2px;
+    /* border-top:1px solid grey; */
+  }
+  .epic-united-sec-01{
+    border-top:1px solid #eae3e3bd;
+  }
+  .epic-helps-support{
+    color:
+    rgba(137, 80, 218, 1);
+    font-size: 18px;
+  }
+  .epic-united-states-whl-001{
+    background: white;
+    border-radius:10px;
+  }
+  .new-epic-usa-off,.new-epic-uk-off{
+    font-size: 12px;
+    text-align: center;
+  }
+  .rempic-box-office{
+    background:#f6f2f2;
+    border-radius:8px;
+  }
+  .united-office{
+    color:
+    rgba(137, 80, 218, 1);
+    font-size: 13px;
+  }
+  .epic-fraud-ctn{
+    color:grey;
+  }
+  .epic-united-states-whl-001 .nav-pills .nav-link.active{
+    border:1px solid  rgba(137, 80, 218, 1);
+    background: none!important;
+  }
+  .epic-chart-sec-01 .form-check-input:checked {
+    padding:9px;
+    box-shadow: none!important;
+    border:none!important;
+  }
+  .new-multiply-btn{
+    width:100px!important;
+    background: transparent!important;
+    border:1px solid grey!important;
+  }
+  .epic-chart-rounded-01{
+    background:#f2ebeb!important;
+  }
+  .epic-chart-rounded-01{
+    border-bottom-left-radius:7px;
+    border-bottom-right-radius:7px;
+  }
+  .epic-representation-box{
+    height:80px;
+    background-color:white;
+  }
+}
 
 /* Mobile styles */
-@media (max-width: 767px) {}
+@media (max-width: 767px) 
+{
+    /* .epic-chart-sec-00{
+        height:300px;
+        background:white!important;
+        border-radius: 10px;
+    } */
+   .epic-chart-sec-01{
+    /* background:white; */
+    border-radius:8px;
+    
+   }
+   .epic-rounds-up{
+    color:rgba(137, 80, 218, 1);
+    font-size: 18px;
+   }
+   .epic-rounds-help{
+    color:rgba(137, 80, 218, 1);
+    font-size: 18px;
+   }
+   .rnds-up-money{
+    color:black;
+    font-size: 14px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   }
+   .rnds-up-money .css-wmy1p7-ReactDropdownSelect{
+   border:1px solid grey!important;
+   border-radius:6px;
+   }
+   .rnds-up-money-box{
+    background:#eae3e3bd;
+   }
+   .add-to-spend-01{
+    border-top:1px solid #eae3e3bd;
+    border-bottom:1px solid #eae3e3bd;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size:15px;
+   }
+  .new-epic-cash-btn{
+    background: transparent;
+    border:1px solid rgba(137, 80, 218, 1);
+    color:rgba(137, 80, 218, 1);
+    border-radius:8px;
+    padding:18px;
+  }
+  .epic-ref-ctn{
+    color:rgba(137, 80, 218, 1);
+  }
+  .epic-total-referral-box{
+    background: white;
+    border-radius:8px;
+  }
+  .epic-ref-ctn-num{
+    font-size:50px;
+    color:rgba(137, 80, 218, 1);
+  }
+  .epic-share-full-ctn{
+    font-size: 12px;
+    color:#786767bd;
+    text-align: center;
+    padding:10px;
+  }
+  .epic-invite-frd-02{
+    background: var(--background-color-1) !important;
+    padding:12px;
+    border:0;
+    border-radius:6px;
+    color:white;
+    font-size:14px;
+  }
+  .epic-invite-frd-03{
+    /* background: var(--background-color-1) !important; */
+    padding:12px;
+    border:0;
+    border-radius:6px;
+    color:rgba(137, 80, 218, 1);
+    font-size:14px;
+    background: transparent;
+    border:1px solid rgba(137, 80, 218, 1);
+  }
+  .epic-tot-rempic-office{
+    background: #eae3e3bd;
+    border-radius:6px;
+  }
+  .united-state-ctn-01{
+    color:rgba(137, 80, 218, 1);
+    font-size:15px;
+  }
+  .epic-tkn-num-01{
+    width:60px;
+    height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .epic-tkn-num-02{
+    width:60px;
+    height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .epic-fraud-01{
+    color:#554848bd;
+    font-size:14px;
+  }
+  .epic-fraud-new-child{
+    color:black;
+  }
+  .epic-customer-care-01{
+    font-size:12px;
+    color:#554848bd;
+  }
+  .full-mail-ctn-01{
+    border-top:1px solid #eae3e3bd;
+   
+  }
+  .new-logo-rempic-01{
+    width:100px;
+    height:70px;
+    object-fit: contain;
+  }
+  .new{
+    position: absolute;
+    top:65px;
+  }
+  .epic-usa-office{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .epic-tkn-num-01{
+    font-size:13px;
+  }
+  .epic-tkn-full-num-01{
+    font-size:13px;
+  }
+  .epic-fraud-01 {
+    font-size:13px;
+  }
+  .new-remic-nav{
+    display: flex!important;
+    justify-content: space-around!important;
+  }
+  .epic-tab-mail-01{
+    font-size: 13px;
+  }
+  
+  .new-united-ss{
+    display: flex;
+    align-items: center!important;
+  }
+  .epic-tab-mail-num-00{
+    width:50px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:2px;
+  }
+  .epic-united-sec-01{
+    border-top:1px solid #eae3e3bd;
+  }
+  .epic-helps-support{
+    color:
+    rgba(137, 80, 218, 1);
+    font-size: 18px;
+  }
+  .epic-united-states-whl-001{
+    background: white;
+    border-radius:10px;
+  }
+  .new-epic-usa-off,.new-epic-uk-off{
+    font-size: 12px;
+    text-align: center;
+  }
+  .rempic-box-office{
+    background:#f6f2f2;
+    border-radius:8px;
+  }
+  .united-office{
+    color:
+    rgba(137, 80, 218, 1);
+    font-size: 13px;
+  }
+  .epic-fraud-ctn{
+    color:grey;
+  }
+  .epic-united-states-whl-001 .nav-pills .nav-link.active{
+    border:1px solid  rgba(137, 80, 218, 1);
+    background: none!important;
+  }
+ 
+  .new-multiply-btn{
+    width:100px!important;
+    background: transparent!important;
+    border:1px solid grey!important;
+  }
+  .epic-chart-sec-01 .form-check-input:checked {
+    background-color:  rgba(137, 80, 218, 1)!important;
+    padding:9px;
+    box-shadow: none!important;
+    border:none!important;
+  }
+  .epic-chart-rounded-01{
+    background:#f2ebeb!important;
+  }
+  .epic-chart-rounded-01{
+    border-bottom-left-radius:7px;
+    border-bottom-right-radius:7px;
+  }
+  .epic-representation-box{
+    height:80px;
+    background-color:white;
+  }
+}
+/* #f2ebeb */
+/* #f6f2f2 */

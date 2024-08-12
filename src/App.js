@@ -1,6 +1,7 @@
 import './App.css';
 import './assets/css/style.css';
 import './assets/css/demo.css';
+
 import Sidenav from './pages/common/Sidenav';
 import Home from './pages/Home';
 import ScrollToTop from './ScrollToTop';

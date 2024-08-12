@@ -433,15 +433,27 @@
     position:absolute;
     top:0px!important;
   }
-  .epic-total-points-540 {
+  /* .epic-total-points-540 {
     position: absolute;
     text-align: center;
     font-size: 10px;
     left: calc(50% - 50px);
     top: calc(50% - 20px); 
     transform: translate(-50%, -50%);
-  }
-  
+  } */
+  /* <======================> */
+  .epic-total-points-54 {
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    font-size: 10px;
+    text-align: center;
+    color: grey;
+}
+.epic-total-points-5{
+  margin-top:-30px;
+}
+  /* <========================> */
 }
 
 /* Tablet styles */
@@ -739,6 +751,16 @@
     top: calc(50% - 20px);
     font-size: 12px;
   }
+  /* <=====================> */
+  .epic-total-points-54 {
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    font-size: 10px;
+    text-align: center;
+    color: grey;
+}
+/* <=======================> */
 }
 
 /* Mobile styles */
@@ -1056,6 +1078,15 @@
     color: black !important;
     box-shadow: none !important;
   }
-
+  /* <====================> */
+  .epic-total-points-54 {
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    font-size: 10px;
+    text-align: center;
+    color: grey;
+}
+/* <========================> */
 }
 

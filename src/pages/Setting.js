@@ -42,7 +42,7 @@ function Settings() {
               <div className='row mb-3 epic-chart-sec-00 pb-3'>
                 <p className='mb-auto  py-3  dash-head-1'>Rounds Up</p>
                 {/* dash-head-1 */}
-                <div className='col-lg-6 col-12'>
+                <div className='col-lg-6 col-12 position-relative'>
                   <div className='rnds-up-money-box p-2'>
 
                     <p className='mb-auto rnds-up-money'>Rounds Up Money
@@ -65,16 +65,23 @@ function Settings() {
                       </span>
                     </p>
                   </div>
-                  {/* <div className='epic-chart-rounded-01 position-relative'>
+              
+{/* <div className=' '>
+<div className='epic-chart-rounded-01'>
 
-<Chart options={options} series={series} className="  py-2" type="donut" width="100%" height="200px" />
-<p className='epic-total-points-540'>Total<br /><span className='epic-total-number  mt-3 fw-bold'>$54,520</span></p>
-</div>  */}
+<Chart options={options} series={series} className="clr-rounded-sec-01 py-2" type="donut" width="100%" height="200px" />
+</div>
+
+</div> */}
+{/* <p className='epic-total-points-5'>Total<br /><span className='epic-total-number mt-3 fw-bold'>$54,520</span></p> */}
+
+
                   <div className='epic-chart-rounded-01 position-relative'>
 
                     <Chart options={options} series={series} className="clr-rounded-sec-01 py-2" type="donut" width="100%" height="200px" />
                     <p className='epic-total-points-54'>Total<br /><span className='epic-total-number mt-3 fw-bold'>$54,520</span></p>
                   </div>
+
                   {/* <=============> */}
 
                   <div>

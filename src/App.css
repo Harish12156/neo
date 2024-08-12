@@ -3,7 +3,7 @@
 :root {
   --color-1: #8950DA;
   --border-color-1: #BB9EE5;
-  --background-color-1: linear-gradient(90.9deg, #B5379F 3.03%, #4E49B9 94.33%) ;
+  --background-color-1: linear-gradient(90.9deg, #B5379F 3.03%, #4E49B9 94.33%);
 
   --default-color-1: #000;
   --default-background-color-1: #F6F6F6;
@@ -25,4 +25,25 @@ body {
   font-family: "Poppins", sans-serif !important;
   color: var(--default-color-1) !important;
   background-color: var(--default-background-color-1) !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-1);
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none !important;
 }

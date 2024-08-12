@@ -24,6 +24,7 @@ import { RxCross1 } from "react-icons/rx";
 function Sidenav() {
   const { isOpen, setIsOpen } = useContext(DataContext);
   const location = useLocation();
+  const currentYear = new Date().getFullYear();
 
   const toggleClick = () => {
     setIsOpen(false);
@@ -125,7 +126,7 @@ function Sidenav() {
             <span className='hides-when-close'>Logout</span>
           </button>
 
-          <p className='side-logout-text-1'>© 2023 All Rights Reserved</p>
+          <p className='side-logout-text-1'>© {currentYear} All Rights Reserved</p>
         </div>
       </div>
     </div>

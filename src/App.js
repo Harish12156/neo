@@ -1,8 +1,9 @@
 import './App.css';
 import './assets/css/style.css';
 import './assets/css/demo.css';
+import './assets/css/var.css';
 import Sidenav from './pages/common/Sidenav';
-import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
 import ScrollToTop from './ScrollToTop';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React, { useContext, useEffect } from 'react';
@@ -44,7 +45,7 @@ function App() {
           <NavbarOne />
           <ScrollToTop />
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/" element={<Dashboard />} />
             <Route exact path="/account" element={<Account />} />
             <Route exact path="/card" element={<Card />} />
             <Route exact path="/transactions" element={<Transactions />} />

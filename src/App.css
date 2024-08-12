@@ -47,3 +47,15 @@ body {
 a {
   text-decoration: none !important;
 }
+
+.fc-g{
+  color: #1FCB4F;
+}
+
+.fc-r{
+  color: #F46D22;
+}
+
+.top-web-sec{
+  padding-top: 100px;
+}

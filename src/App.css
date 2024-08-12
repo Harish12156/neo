@@ -44,18 +44,19 @@ body {
   border-radius: 10px;
 }
 
+
 a {
   text-decoration: none !important;
 }
 
-.fc-g{
+.fc-g {
   color: #1FCB4F;
 }
 
-.fc-r{
+.fc-r {
   color: #F46D22;
 }
 
-.top-web-sec{
+.top-web-sec {
   padding-top: 100px;
 }

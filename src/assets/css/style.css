@@ -6,7 +6,7 @@
     left: 0px;
     z-index: 999;
     transition: all 0.3s ease;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .top-navbar-banner .navbar {
@@ -72,7 +72,8 @@
     left: 12px;
     width: 10px;
     height: 10px;
-    background-color: var(--color-1);;
+    background-color: var(--color-1);
+    ;
     border: 1px solid var(--border-color-1);
     border-radius: 50%;
     z-index: 9;
@@ -160,7 +161,9 @@
 }
 
 .side-close-width .side-logout-text-1 {
-    display: none;
+    visibility: hidden;
+    white-space: nowrap;
+
 }
 
 .side-text-1 {
@@ -173,12 +176,178 @@
     margin: 0px;
 }
 
+.top-dash-overrall-sec {
+    padding: 20px 0px;
+}
+
+.dash-card-1 {
+    background-color: #FEFEFE !important;
+    box-shadow: 0px 0px 34px 0px #00000012;
+    border: none !important;
+}
+
+.dash-head-1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-1);
+}
+
+.dash-trans-arrow-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.dash-trans-arrow-btn-2 {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.dash-trans-btn-1 {
+    background-color: #F5F5F5;
+    border: 0px;
+    Width: 48px;
+    height: 44px;
+    color: #afafaf;
+    font-size: 24px;
+    border-radius: 12px;
+}
+
+.dash-trans-img-1 {
+    width: 38px;
+    height: 38px;
+}
+
+
+.dash-trans-img-2 {
+    width: 28px;
+    height: 28px;
+    margin-top: -4px;
+}
+
+.dash-trans-img-2-2 {
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
+.dash-trans-txt-1 {
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+.dash-trans-txt-1.fw-bold {
+    font-weight: 600 !important;
+}
+
+.dash-trans-txt-1 .fw-bold {
+    font-weight: 600 !important;
+}
+
+.dash-trans-txt-2 {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.dash-actions-btn-1 {
+    border: 1px solid #DDD0EF;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 13px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.dash-actions-action-1 {
+    font-size: 1.8rem;
+    color: var(--color-1);
+    margin-bottom: 10px;
+}
+
+.dash-actions-action-2 {
+    font-size: 1.2rem;
+    color: var(--color-1);
+    margin-right: 6px;
+}
+
+.side-close-width .hides-when-close {
+    display: none;
+}
+
+.dash-swipe-card-sec .swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    border-radius: 40px !important;
+    background-color: transparent;
+}
+
+.dash-swipe-card-1 {
+    color: #FFF !important;
+    border: none !important;
+    box-shadow: 0px 0px 34px 0px #00000012;
+    background-size: cover;
+    background-position: top right;
+    background-color: transparent !important;
+    border-radius: 40px !important;
+    padding: 12px;
+}
+
+.dash-swipe-card-sec .swiper-pagination-bullet-active {
+    background: linear-gradient(180deg, #8950DA 0%, #AF50A7 100%) !important;
+}
+
+.dash-swipe-card-sec .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #0006;
+}
+
+.dash-swipe-card-sec .swiper-pagination {
+    margin-bottom: -14px;
+}
+
+.dash-card-img-1 {
+    width: 42px;
+    height: 42px;
+}
+
+.dash-card-txt-1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.dash-card-img-2 {
+    height: 24px;
+    width: auto;
+}
+
+.dash-card-txt-2{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
 
 /* Desktop styles */
 @media (min-width: 1025px) {
-    .side-close-width .hides-when-close {
-        display: none;
+    .dash-actions-txt-1 {
+        font-size: 0.9vw;
+        font-weight: 600;
     }
+
+    .desk-h-100 {
+        height: 100%;
+    }
+
+
 
     .side-open-padleft {
         padding-left: 250px !important;
@@ -222,6 +391,7 @@
 
 /* Mobile styles */
 @media (max-width: 767px) {
+
     .top-navbar-search-sec .form-control, .top-navbar-search-sec .form-control:focus {
         width: 80% !important;
     }
@@ -264,5 +434,12 @@
     .side-close-width {
         width: 250px !important;
         left: -250px;
+    }
+}
+
+/* Mobile Tablet styles */
+@media (max-width: 1024px) {
+    .dash-actions-txt-1 {
+        margin-top: 10px;
     }
 }

@@ -17,6 +17,7 @@ import Crypto from './pages/Crypto';
 import Portfolio from './pages/Portfolio';
 import Setting from './pages/Setting';
 import Profile from './pages/Profile';
+import Receive from './pages/dashboard-pages/Receive';
 
 
 function App() {
@@ -48,6 +49,8 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Dashboard />} />
             <Route exact path="/send" element={<Dashboard />} />
+            <Route exact path="/receive" element={<Dashboard />} />
+            <Route exact path="/accounts" element={<Dashboard />} />
             <Route exact path="/account" element={<Account />} />
             <Route exact path="/card" element={<Card />} />
             <Route exact path="/transactions" element={<Transactions />} />

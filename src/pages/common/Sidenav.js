@@ -31,7 +31,7 @@ function Sidenav() {
   };
 
   const isDashboardActive = () => {
-    const dashboardRoutes = ['/', '/send', '/receive', '/account'];
+    const dashboardRoutes = ['/', '/send', '/receive', '/accounts'];
     return dashboardRoutes.includes(location.pathname);
   };
 

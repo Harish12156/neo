@@ -36,7 +36,7 @@ function Settings() {
     <div className=''>
       <div className='container-fluid p-4'>
         <div className='row '>
-          <div className='col-md-8 epic-chart-sec-01 pb-2 col-12'>
+          <div className='col-lg-8 col-md-12 epic-chart-sec-01 pb-2 col-12'>
 
             <div className='new-epic-whole-top '>
               <div className='row mb-3 epic-chart-sec-00 pb-3'>
@@ -66,21 +66,18 @@ function Settings() {
                     </p>
                   </div>
               
-{/* <div className=' '>
-<div className='epic-chart-rounded-01'>
 
-<Chart options={options} series={series} className="clr-rounded-sec-01 py-2" type="donut" width="100%" height="200px" />
-</div>
-
-</div> */}
-{/* <p className='epic-total-points-5'>Total<br /><span className='epic-total-number mt-3 fw-bold'>$54,520</span></p> */}
 
 
                   <div className='epic-chart-rounded-01 position-relative'>
 
-                    <Chart options={options} series={series} className="clr-rounded-sec-01 py-2" type="donut" width="100%" height="200px" />
-                    <p className='epic-total-points-54'>Total<br /><span className='epic-total-number mt-3 fw-bold'>$54,520</span></p>
+                    <Chart options={options} series={series} className="clr-rounded-sec-01 py-lg-0 py-2" type="donut" width="100%" height="200px" />
+                    <p className='epic-total-points-54 text-center'>Total<br /><span className='epic-total-number mt-3 fw-bold'>$54,520</span></p>
+
                   </div>
+
+
+
 
                   {/* <=============> */}
 
@@ -239,12 +236,12 @@ function Settings() {
               {/* <============================> */}
             </div>
           </div>
-          <div className='col-md-4 '>
+          <div className='col-lg-4 col-md-12 col-12'>
             <div className='epic-total-referral-box py-4 px-2'>
               <p className='epic-ref-ctn py-2 text-center mb-auto'>Referral</p>
               <p className='epic-ref-ctn-num fw-bold text-center mb-auto'>$59</p>
               <p className='text-center fw-bold mb-auto'>120 Contacts,$2 per activation</p>
-              <p className='text-center mb-auto mt-5'><LazyLoadImage alt="Profile-picture" src={Rempichart} className='pro-pic mb-lg-3 mb-3' /></p>
+              <p className='text-center mb-auto mt-5'><LazyLoadImage alt="Profile-picture" src={Rempichart} className='pro-pic img-fluid mb-lg-3 mb-3' /></p>
               <p className='epic-share-full-ctn mb-4'>Share your unique referral code which is your Rempic ID, or share
                 links with as many people as you’d like and start earning your lifetime
                 commissions from their transactions.</p>

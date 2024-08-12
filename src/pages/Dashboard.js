@@ -1,8 +1,9 @@
-import React from 'react'
-import Transactions from './dashboard-pages/inner/Transactions'
-import Actions from './dashboard-pages/inner/Actions'
-import Dashboardmain from './dashboard-pages/Dashboardmain'
+import React from 'react';
+import Transactions from './dashboard-pages/inner/Transactions';
+import Actions from './dashboard-pages/inner/Actions';
+import Dashboardmain from './dashboard-pages/Dashboardmain';
 import { useLocation } from 'react-router-dom';
+import Send from './dashboard-pages/Send';
 
 function Dashboard() {
   const location = useLocation();
@@ -14,8 +15,7 @@ function Dashboard() {
           <div className='col-lg-8'>
             <Actions />
             {location.pathname === '/' && <Dashboardmain />}
-            {location.pathname === '/send' && <p >send</p>}
-
+            {location.pathname === '/send' && <Send />}
           </div>
           <div className='col-lg-4'>
             <Transactions />
@@ -23,7 +23,7 @@ function Dashboard() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Dashboard
+export default Dashboard;

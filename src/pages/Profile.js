@@ -6,6 +6,14 @@ import { FaRegEdit } from "react-icons/fa";
 import { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
+
+
+
+
+
+
 
 
 function Profile() {
@@ -30,6 +38,18 @@ function Profile() {
         setShowConfirmPassword(!showConfirmPassword);
     };
 
+
+    const [phone, setPhone] = useState('');
+    const [country, setCountry] = useState('us');
+    const placeholders = {
+        us: '(201) 555-0123',
+        gb: '07400 123456',
+        fr: '06 12 34 56 78',
+        de: '0151 23456789',
+        in: '091234 56789',
+    };
+
+
     return (
         <div className='profile-section'>
             <div className='profile-section-one'>
@@ -37,7 +57,7 @@ function Profile() {
                     <div className='row'>
                         <div className='col-lg-8 profile-col'>
                             <div className='row py-4'>
-                                <div className='col-lg-4 text-center p-2 pro-left'>
+                                <div className='col-md-4 text-center p-2 pro-left'>
                                     <div className='m-2'>
                                         <div className=''><LazyLoadImage alt="Profile-picture" src={profile} className='pro-pic mb-lg-5 mb-3' /></div>
                                         <div className='user-name mb-3'>Maietry Prajapati</div>
@@ -47,7 +67,7 @@ function Profile() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='col-lg-7 py-2 ps-4'>
+                                <div className='col-md-7 py-2 ps-4'>
                                     <ul class="nav nav-pills mb-3 align-items-center gap-5" id="pills-tab" role="tablist">
 
                                         <li class="nav-item" role="presentation">
@@ -69,13 +89,26 @@ function Profile() {
                                                     <label for="Last" class="form-label">Last Name</label>
                                                     <input type="text" class="form-control" id="Last" placeholder="Last Name" />
                                                 </div>
-                                                <div class="mb-3">
-                                                    <label for="Last" class="form-label">Phone Number</label>
-                                                    <input type="text" class="form-control" id="Last" placeholder="Phone Number" />
+                                                <div className="mb-3">
+                                                    <label htmlFor="phone" className="form-label">Phone Number</label>
+                                                    <PhoneInput
+                                                        country={country}
+                                                        value={phone}
+                                                        onChange={(value, countryData) => {
+                                                            setPhone(value);
+                                                            setCountry(countryData.countryCode);
+                                                        }}
+                                                        placeholder={placeholders[country] || 'Enter phone number'} // Set the placeholder based on the country
+                                                        inputProps={{
+                                                            name: 'phone',
+                                                            id: 'phone',
+                                                            className: 'form-control',
+                                                        }}
+                                                    />
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="email" class="form-label">Email</label>
-                                                    <input type="text" class="form-control" id="email" placeholder="john@gmail.com" />
+                                                    <input type="email" class="form-control" id="email" placeholder="john@gmail.com" />
                                                 </div>
                                             </div>
                                             <div className='mt-4 mb-3'>
@@ -93,6 +126,7 @@ function Profile() {
                                                     id="formGroupExampleInput"
                                                     value={oldPassword}
                                                     onChange={(e) => setOldPassword(e.target.value)}
+                                                    placeholder="**********"
                                                 />
                                                 <span
                                                     className="password-toggle-icon"
@@ -110,6 +144,7 @@ function Profile() {
                                                     id="formGroupExampleInput2"
                                                     value={password}
                                                     onChange={(e) => setPassword(e.target.value)}
+                                                    placeholder="**********"
                                                 />
                                                 <span
                                                     className="password-toggle-icon"
@@ -127,6 +162,7 @@ function Profile() {
                                                     id="formGroupExampleInput3"
                                                     value={confirmPassword}
                                                     onChange={(e) => setConfirmPassword(e.target.value)}
+                                                    placeholder="**********"
                                                 />
                                                 <span
                                                     className="password-toggle-icon"

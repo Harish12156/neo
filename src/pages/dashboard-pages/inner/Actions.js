@@ -1,6 +1,6 @@
 import React from 'react'
 import { PiCaretUpFill, PiNumberCircleZeroBold, PiPaperPlaneTilt } from 'react-icons/pi'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { BsPersonBoundingBox } from "react-icons/bs";
 import { BsBank } from "react-icons/bs";
 import { IoRocket } from "react-icons/io5";
@@ -23,6 +23,11 @@ import { PiCaretDownFill } from "react-icons/pi";
 
 
 function Actions() {
+    const location = useLocation();
+
+    const getActiveClass = (path) => {
+        return location.pathname === path ? 'dash-actions-active' : '';
+    };
     return (
         <div>
             <div className='row dash-swipe-card-sec'>
@@ -32,7 +37,8 @@ function Actions() {
                         modules={[Pagination]}
                         pagination={{ clickable: true }}
                         className="mySwiper"
-                    >                        <SwiperSlide>
+                    >
+                        <SwiperSlide>
                             <div className='card h-100 dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe1})` }}>
                                 <div className='card-body'>
                                     <div className='d-flex flex-column justify-content-between h-100'>
@@ -105,25 +111,25 @@ function Actions() {
                             <h5 class="dash-head-1 mb-4">Quick Actions</h5>
                             <div className='row g-3 row-cols-lg-4 row-cols-md-4 row-cols-2'>
                                 <div className='col'>
-                                    <Link to="/send" className='dash-actions-btn-1'>
+                                    <Link to="/send" className={`dash-actions-btn-1 ${getActiveClass('/send')}`}>
                                         <PiPaperPlaneTilt className='dash-actions-action-1' />
                                         Send
                                     </Link>
                                 </div>
                                 <div className='col'>
-                                    <Link to="/send" className='dash-actions-btn-1'>
+                                    <Link to="/receive" className={`dash-actions-btn-1 ${getActiveClass('/receive')}`}>
                                         <BsPersonBoundingBox className='dash-actions-action-1' />
                                         Receive
                                     </Link>
                                 </div>
                                 <div className='col'>
-                                    <Link to="/send" className='dash-actions-btn-1'>
+                                    <Link to="/account" className={`dash-actions-btn-1 ${getActiveClass('/account')}`}>
                                         <BsBank className='dash-actions-action-1' />
                                         Account
                                     </Link>
                                 </div>
                                 <div className='col'>
-                                    <Link to="/send" className='dash-actions-btn-1'>
+                                    <Link to="/goals" className={`dash-actions-btn-1 ${getActiveClass('/goals')}`}>
                                         <IoRocket className='dash-actions-action-1' />
                                         Goals
                                     </Link>
@@ -131,25 +137,25 @@ function Actions() {
                             </div>
                             <div className='row g-3 mt-1'>
                                 <div className='col'>
-                                    <Link to="/send" className='dash-actions-btn-1'>
+                                    <Link to="/data" className={`dash-actions-btn-1 ${getActiveClass('/data')}`}>
                                         <PiChartPieBold className='dash-actions-action-1' />
                                         Data
                                     </Link>
                                 </div>
                                 <div className='col-lg-9 bg'>
                                     <div className='row desk-h-100 g-3'>
-                                        <div className='col-lg-6 desk-h-100'>
+                                        <div className='col-6 desk-h-100'>
                                             <div className='dash-actions-btn-1'>
-                                                <div className='d-flex flex-row align-items-center'>
+                                                <div className='d-flex flex-row align-items-center dash-actions-data-1'>
                                                     <PiNumberCircleZeroBold className='dash-actions-action-2' />
                                                     <span className='text-muted'>Spend</span>
                                                 </div>
                                                 <h6 className='dash-actions-txt-1 mb-0'>$ -4950.00</h6>
                                             </div>
                                         </div>
-                                        <div className='col-lg-6 desk-h-100'>
+                                        <div className='col-6 desk-h-100'>
                                             <div className='dash-actions-btn-1'>
-                                                <div className='d-flex flex-row align-items-center'>
+                                                <div className='d-flex flex-row align-items-center dash-actions-data-1'>
                                                     <MdDiamond className='dash-actions-action-2' />
                                                     <span className='text-muted'>Saved</span>
                                                 </div>

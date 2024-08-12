@@ -12,6 +12,7 @@ import Trans21 from '../../../assets/images/dashboard/transaction/1.png';
 import Trans22 from '../../../assets/images/dashboard/transaction/2.png';
 import Trans23 from '../../../assets/images/dashboard/transaction/3.png';
 import Trans24 from '../../../assets/images/dashboard/transaction/4.png';
+import { CiCalendar } from 'react-icons/ci';
 
 function Transactions() {
     const [transactions] = useState([
@@ -44,8 +45,7 @@ function Transactions() {
     };
 
     return (
-        <div className='dash-trans-sec'>
-            <div className="card dash-card-1">
+            <div className="dash-trans-sec card dash-card-1 h-100">
                 <div className="card-body">
                     <div className='d-flex align-items-center justify-content-between mb-2'>
                         <h5 className='dash-head-1'>Transaction</h5>
@@ -57,7 +57,7 @@ function Transactions() {
                         </button>
                         <h6 className='mb-0 ms-3'>07 Apr, 2021</h6>
                         <div className='ms-auto'><button type="button" className='dash-trans-btn-1'><IoSearchOutline /></button></div>
-                        <div><button type="button" className='dash-trans-btn-1'><IoSearchOutline /></button></div>
+                        <div><button type="button" className='dash-trans-btn-1'><CiCalendar /></button></div>
                     </div>
                     <div className="collapse show" id="collapsetrans1">
                         <div className='dash-trans-table'>
@@ -65,12 +65,12 @@ function Transactions() {
                                 <div className='d-flex flex-row gap-3 mb-4' key={transaction.id}>
                                     {transaction.image2 ? (
                                         <div className='d-flex'>
-                                            <LazyLoadImage alt={`${transaction.name} logo`} src={transaction.image} className='dash-trans-img-2' />
-                                            <LazyLoadImage alt={`${transaction.name} logo`} src={transaction.image2} className='dash-trans-img-2 dash-trans-img-2-2' />
+                                            <LazyLoadImage alt={`${transaction.name}`} src={transaction.image} className='dash-trans-img-2' />
+                                            <LazyLoadImage alt={`${transaction.name}`} src={transaction.image2} className='dash-trans-img-2 dash-trans-img-2-2' />
                                         </div>
                                     ) : (
                                         <div>
-                                            <LazyLoadImage alt={`${transaction.name} logo`} src={transaction.image} className='dash-trans-img-1' />
+                                            <LazyLoadImage alt={`${transaction.name}`} src={transaction.image} className='dash-trans-img-1' />
                                         </div>
                                     )}
                                     <div>
@@ -95,7 +95,7 @@ function Transactions() {
                             {transactions2.map((transaction) => (
                                 <div className='d-flex flex-row gap-3 mb-4' key={transaction.id}>
                                     <div>
-                                        <LazyLoadImage alt={`${transaction.name} logo`} src={transaction.image} className='dash-trans-img-1' />
+                                        <LazyLoadImage alt={`${transaction.name}`} src={transaction.image} className='dash-trans-img-1' />
                                     </div>
                                     <div>
                                         <h6 className='mb-0 dash-trans-txt-1 fw-bold'>{transaction.name}</h6>
@@ -111,7 +111,6 @@ function Transactions() {
                     </div>
                 </div>
             </div>
-        </div>
     );
 }
 

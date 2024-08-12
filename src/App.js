@@ -1,6 +1,7 @@
 import './App.css';
 import './assets/css/style.css';
 import './assets/css/demo.css';
+
 import './assets/css/var.css';
 import Sidenav from './pages/common/Sidenav';
 import Dashboard from './pages/Dashboard';
@@ -41,18 +42,19 @@ function App() {
       <Router>
         <Sidenav />
 
-        <div className={` ${isOpen ? 'side-open-padleft' : 'side-close-padleft'}`}>
+        <div className={`top-web-sec ${isOpen ? 'side-open-padleft' : 'side-close-padleft'}`}>
           <NavbarOne />
           <ScrollToTop />
           <Routes>
             <Route exact path="/" element={<Dashboard />} />
+            <Route exact path="/send" element={<Dashboard />} />
             <Route exact path="/account" element={<Account />} />
             <Route exact path="/card" element={<Card />} />
             <Route exact path="/transactions" element={<Transactions />} />
             <Route exact path="/crypto" element={<Crypto />} />
             <Route exact path="/portfolio" element={<Portfolio />} />
             <Route exact path="/setting" element={<Setting />} />
-            <Route exact path="/profile" element={<Profile/>} />
+            <Route exact path="/profile" element={<Profile />} />
 
             <Route exact path="*" element={<p>ERROR 404</p>} />
           </Routes>

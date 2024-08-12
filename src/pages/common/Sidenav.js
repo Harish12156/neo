@@ -30,12 +30,19 @@ function Sidenav() {
     setIsOpen(false);
   };
 
+  const isDashboardActive = () => {
+    const dashboardRoutes = ['/', '/send', '/receive', '/account'];
+    return dashboardRoutes.includes(location.pathname);
+  };
+
   const getLinkClass = (path) => {
-    return location.pathname === path ? 'list-item-side active-page-root-css' : 'list-item-side';
+    return isDashboardActive() && path === '/' ? 'list-item-side active-page-root-css' : 
+           location.pathname === path ? 'list-item-side active-page-root-css' : 'list-item-side';
   };
 
   const getIcon = (defaultIcon, activeIcon, path) => {
-    return location.pathname === path ? activeIcon : defaultIcon;
+    return isDashboardActive() && path === '/' ? activeIcon :
+           location.pathname === path ? activeIcon : defaultIcon;
   };
 
   return (
@@ -51,7 +58,7 @@ function Sidenav() {
             </Link>
           </div>
 
-          <ul className='mt-4 d-flex flex-column list-item-top-sec'>
+          <ul className='mt-2 d-flex flex-column list-item-top-sec'>
             <Link to="/" className={getLinkClass('/')}>
               <LazyLoadImage
                 alt="Dashboard"

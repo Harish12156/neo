@@ -123,7 +123,7 @@ function Actions() {
                                     </Link>
                                 </div>
                                 <div className='col'>
-                                    <Link to="/account" className={`dash-actions-btn-1 ${getActiveClass('/account')}`}>
+                                    <Link to="/accounts" className={`dash-actions-btn-1 ${getActiveClass('/accounts')}`}>
                                         <BsBank className='dash-actions-action-1' />
                                         Account
                                     </Link>

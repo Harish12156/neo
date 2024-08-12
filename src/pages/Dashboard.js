@@ -4,6 +4,8 @@ import Actions from './dashboard-pages/inner/Actions';
 import Dashboardmain from './dashboard-pages/Dashboardmain';
 import { useLocation } from 'react-router-dom';
 import Send from './dashboard-pages/Send';
+import Receive from './dashboard-pages/Receive';
+import Accounts from './dashboard-pages/Accounts';
 
 function Dashboard() {
   const location = useLocation();
@@ -16,6 +18,8 @@ function Dashboard() {
             <Actions />
             {location.pathname === '/' && <Dashboardmain />}
             {location.pathname === '/send' && <Send />}
+            {location.pathname === '/receive' && <Receive />}
+            {location.pathname === '/accounts' && <Accounts />}
           </div>
           <div className='col-lg-4'>
             <Transactions />

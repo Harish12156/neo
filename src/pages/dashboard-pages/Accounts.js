@@ -1,5 +1,4 @@
 import React from 'react';
-import Scan from '../../assets/images/dashboard/send/scan.png';
 import Prof from '../../assets/images/dashboard/send/prof.png';
 import Success from '../../assets/images/dashboard/success.gif';
 
@@ -8,9 +7,9 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { FaChevronDown } from 'react-icons/fa';
 
 import { CiReceipt } from "react-icons/ci";
-import ContactList from './inner/ContactList';
+import BankList from './inner/BankList';
 
-function Send() {
+function Accounts() {
 
 
     return (
@@ -19,12 +18,8 @@ function Send() {
                 <div className="card-body">
                     <div className='row'>
                         <div className='col-lg-6 border-r-1'>
-                            <div className='d-flex align-items-center mb-3'>
-                                <h5 className="dash-head-1 mb-0">Send Money</h5>
-                                <div className='ms-auto send-scan-sec'>
-                                    <LazyLoadImage alt="Scan" src={Scan} />
-                                </div>
-                            </div>
+                            <h5 className="dash-head-1 mb-4">Send Amount</h5>
+
 
                             <div className='d-send-card-1'>
                                 <p className='text-muted mb-2'>Enter the amount</p>
@@ -35,7 +30,10 @@ function Send() {
 
                             <button className="d-flex flex-row bg-transparent border-0 my-3 gap-2 align-items-center w-100" type="button" data-bs-toggle="collapse" data-bs-target="#sendamountto" aria-expanded="false" aria-controls="sendamountto">
                                 <LazyLoadImage alt="Prof" src={Prof} width={50} />
-                                <h6 className='mb-0'>Brooklyn Simmons</h6>
+                                <div className='text-start'>
+                                    <h6 className='mb-0 '>Brooklyn Simmons</h6>
+                                    <p class="dash-c-txt-2">+1 9988776655</p>
+                                </div>
                                 <FaChevronDown className='ms-auto text-muted' />
                             </button>
 
@@ -52,10 +50,10 @@ function Send() {
                                 </div>
                             </div>
 
-                            <button className='d-send-btn-1 mt-4' data-bs-toggle="modal" data-bs-target="#sendmoney">Send Money</button>
+                            <button className='d-send-btn-1 mt-4' data-bs-toggle="modal" data-bs-target="#sendmoney">Send</button>
                         </div>
                         <div className='col-lg-6'>
-                            <ContactList />
+                            <BankList />
                         </div>
                     </div>
                 </div>
@@ -83,4 +81,4 @@ function Send() {
     );
 }
 
-export default Send;
+export default Accounts;

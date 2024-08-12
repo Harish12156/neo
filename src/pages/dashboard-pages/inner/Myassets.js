@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Btc from '../../../assets/images/dashboard/assets/btc.png';
 import Eth from '../../../assets/images/dashboard/assets/eth.png';
 import Sol from '../../../assets/images/dashboard/assets/sol.png';

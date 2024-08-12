@@ -147,9 +147,7 @@
 
 .profile-section-one .react-tel-input .selected-flag:hover,
 .profile-section-one .react-tel-input .selected-flag:focus,
-.profile-section-one .react-tel-input .selected-flag:active {
-    
-}
+.profile-section-one .react-tel-input .selected-flag:active {}
 
 
 @keyframes zoomOut {
@@ -177,4 +175,110 @@
     transition: all 0.1s ease-in-out;
 }
 
+
+
+.cryto-section .total-balance-sec {
+    background: #FFFFFF;
+}
+
+.cryto-section .total-heading {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cryto-section .bal-text {
+    font-size: 13px;
+    font-weight: 400;
+    color: #4F4F4F;
+}
+
+.cryto-section .avail-bal {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.cryto-section .value-pic {}
+
+.cryto-section .bal-text-two {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.cryto-section .link-btn {
+    background: #ffffff;
+    padding: 12px 16px;
+    color: var(--color-1);
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid #D7CEE3;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.cryto-section .arrow-right {
+    color: var(--color-1);
+    font-size: 20px;
+    margin-left: 14px;
+}
+
+.cryto-section .exchange .form-label {
+    font-size: 10px;
+    font-weight: 400;
+    color: #595656;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.cryto-section .exchange .form-control {
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 8px;
+    width: 90%;
+}
+.cryto-section .exchange .form-control:focus{
+    box-shadow: none;
+}
+
+.cryto-section .exchange .form-control::placeholder {
+    font-size: 10px;
+    font-weight: 400;
+    color: #595656;
+}
+.cryto-section .exchange .from-btn{
+    background: #F5F4F4;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.cryto-section .exchange .swap-icon{
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 2px;
+    font-size: 24px;
+}
+.cryto-section .exchange .fees-sec{
+    background: #F5F4F4;
+    padding: 10px;
+    border-radius: 8px;
+}
+.cryto-section .exchange .fees-text{
+    font-size: 12px;
+    font-weight: 400;
+    color: #595656;
+}
+.cryto-section .exchange .done-css {
+    background: linear-gradient(90.9deg, #B5379F 3.03%, #69678a 94.33%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+}
 /* ==========Karthick ============= */

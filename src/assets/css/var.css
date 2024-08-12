@@ -433,6 +433,12 @@
     position:absolute;
     top:0px!important;
   }
+  .epic-chart-sec-00 .apexcharts-legend{
+    position: absolute;
+    left: auto;
+    top: 24px;
+    right:6%!important;
+  }
   /* .epic-total-points-540 {
     position: absolute;
     text-align: center;
@@ -442,10 +448,10 @@
     transform: translate(-50%, -50%);
   } */
   /* <======================> */
-  .epic-total-points-54 {
+  .epic-total-points-54{
     position: absolute;
-    top: 50%;
-    left: 26%;
+    top: 38%;
+    left: 25%;
     font-size: 10px;
     text-align: center;
     color: grey;
@@ -751,14 +757,16 @@
     top: calc(50% - 20px);
     font-size: 12px;
   }
-  /* <=====================> */
-  .epic-total-points-54 {
+  .epic-chart-sec-00 .apexcharts-legend{
     position: absolute;
-    top: 50%;
-    left: 26%;
-    font-size: 10px;
-    text-align: center;
-    color: grey;
+    left: auto;
+    top: 24px;
+    right:6%!important;
+  }
+  /* <=====================> */
+  .epic-total-points-05 {
+    position: relative;
+   margin-top:-40%!important;
 }
 /* <=======================> */
 }
@@ -1078,6 +1086,22 @@
     color: black !important;
     box-shadow: none !important;
   }
+  .epic-chart-sec-00 .apexcharts-legend{
+    position: absolute;
+    left: auto;
+    top: 24px;
+    right:6%!important;
+  }
+  /* .new-custom-ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis!important;
+  } */
+  /* div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } */
   /* <====================> */
   .epic-total-points-54 {
     position: absolute;

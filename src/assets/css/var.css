@@ -439,15 +439,7 @@
     top: 24px;
     right:6%!important;
   }
-  /* .epic-total-points-540 {
-    position: absolute;
-    text-align: center;
-    font-size: 10px;
-    left: calc(50% - 50px);
-    top: calc(50% - 20px); 
-    transform: translate(-50%, -50%);
-  } */
-  /* <======================> */
+ 
   .epic-total-points-54{
     position: absolute;
     top: 38%;
@@ -459,7 +451,151 @@
 .epic-total-points-5{
   margin-top:-30px;
 }
-  /* <========================> */
+.first-portfolio-progress .progress-bar{
+width:80%;
+background-color:
+rgba(255, 160, 67, 1);
+}
+.first-portfolio-progress{
+  height:13px!important;
+}
+.second-portfolio-progress{
+  height:13px!important;
+}
+.second-portfolio-progress .progress-bar{
+background-color: rgba(0, 170, 255, 1)
+;
+width:70%;
+}
+.third-portfolio-progress{
+  height:13px!important;
+}
+.third-portfolio-progress .progress-bar{
+  background-color: 
+  rgba(11, 67, 141, 1)
+  ;
+  width:60%;
+  }
+  .fourth-portfolio-progress{
+    height:13px!important;
+  }
+  .fourth-portfolio-progress .progress-bar{
+    background-color: 
+    rgba(10, 166, 48, 1)
+    ;
+    width:70%;
+    }
+    .fifth-portfolio-progress{
+      background-color: 
+      rgba(132, 129, 138, 1)
+      ;
+      height:13px!important;
+    }
+    .fifth-portfolio-progress .progress-bar{
+      background-color: 
+      rgba(132, 129, 138, 1);
+      width:80%;
+      }
+      .f
+/* rgba(11, 67, 141, 1) */
+/* <============profile================> */
+.portfoli-my-asset-sec{
+background-color: white!important;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}
+.alt-portfoli-my-asset-sec{
+  background-color: white!important;
+  border-top-left-radius:10px;
+border-top-right-radius:10px;
+}
+.portfolio-whl-nav-tabs .nav-link{
+ border:1px solid grey!important;
+ border-radius:0px!important;
+ padding:5px 15px!important;
+ font-size: 13px;
+}
+.portfolio-nav-home-tab{
+  border-top-left-radius:5px!important;
+  border-bottom-left-radius:5px!important;
+}
+.portfolio-whl-table-1{
+  background-color: white!important;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius:10px;
+}
+.portfolio-whl-table-1 .table thead th {
+  font-weight: normal;
+  color: grey !important;
+  font-size: 13px;
+}
+.portfolio-whl-table-1 .table tbody td {
+  font-weight: normal;
+  /* color: grey !important; */
+  font-size: 13px;
+  vertical-align: middle;
+}
+.portfolio-whl-table-1 .table-values-rows td {
+  padding: 10px 10px; 
+}
+.portfolio-whl-table-1 .table-bal-ctn {
+  text-align: end !important;
+}
+.portfolio-whl-table-1 .table-bal-Price{
+text-align: center!important;
+}
+.bt-coin-img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right:10px;
+}
+.portfolio-arr-img{
+  width:15px!important;
+  height:15px!important;
+  color:green;
+}
+.portfolio-arr-img-001{
+  width:15px!important;
+  height:15px!important;
+  color:red;
+  transform: rotate(90deg);
+}
+.bitcoin-per-point{
+  color:green;
+}
+.bitcoin-per-point-red{
+  color:red;
+}
+.right-square-arrow{
+  color:red;
+  
+}
+.portfolio-arr-img-red{
+  width:15px!important;
+  height:15px!important;
+  background-color:red;
+ 
+}
+.table-values{
+  color:black!important;
+}
+.portfolio-nav-home-tab{
+  border-top-left-radius:10px!important;
+  border-bottom-left-radius:10px!important;
+}
+.portfolio-chart {
+  margin-top: 20px;
+}
+/* .right-square{
+  
+} */
+/* <======================================> */
+ 
 }
 
 /* Tablet styles */
@@ -1092,17 +1228,6 @@
     top: 24px;
     right:6%!important;
   }
-  /* .new-custom-ellipsis{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis!important;
-  } */
-  /* div {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  } */
-  /* <====================> */
   .epic-total-points-54 {
     position: absolute;
     top: 50%;
@@ -1111,6 +1236,6 @@
     text-align: center;
     color: grey;
 }
-/* <========================> */
+
 }
 

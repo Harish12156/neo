@@ -30,8 +30,8 @@ function Actions() {
     };
     return (
         <div>
-            <div className='row dash-swipe-card-sec'>
-                <div className='col-lg-6'>
+            <div className='row dash-swipe-card-sec g-4'>
+                <div className='col-xl-6'>
                     <Swiper
                         spaceBetween={20}
                         modules={[Pagination]}
@@ -46,7 +46,7 @@ function Actions() {
                                             <LazyLoadImage alt={`Favicon`} src={Favicon} className='dash-card-img-1' />
                                             <span className='dash-card-txt-1'>Rempic Pay Bank</span>
                                         </div>
-                                        <div className='d-flex flex-column'>
+                                        <div className='d-flex flex-column mt-0 mt-md-4'>
                                             <span>**** **** **** 1690</span>
                                             <div className='d-flex flex-row'>
                                                 <h5 className='mb-0'>Platinum Plus</h5>
@@ -105,7 +105,7 @@ function Actions() {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-                <div className='col-lg-6'>
+                <div className='col-xl-6'>
                     <div className="card dash-card-1">
                         <div className="card-body">
                             <h5 class="dash-head-1 mb-4">Quick Actions</h5>

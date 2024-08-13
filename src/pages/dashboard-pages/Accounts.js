@@ -1,6 +1,7 @@
 import React from 'react';
 import Prof from '../../assets/images/dashboard/send/prof.png';
 import Success from '../../assets/images/dashboard/success.gif';
+import Acc from '../../assets/images/dashboard/account/1.png';
 
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -16,20 +17,20 @@ function Accounts() {
         <>
             <div className="card dash-card-1 mt-4">
                 <div className="card-body">
-                    <div className='row'>
-                        <div className='col-lg-6 border-r-1'>
+                    <div className='row g-4'>
+                        <div className='col-xl-6 border-r-1'>
                             <h5 className="dash-head-1 mb-4">Send Amount</h5>
 
 
                             <div className='d-send-card-1'>
                                 <p className='text-muted mb-2'>Enter the amount</p>
                                 <div className='d-send-input-1'>
-                                    <input type="text" value="$ 100.00" readOnly />
+                                    <input type="text" value="$ 100.00" />
                                 </div>
                             </div>
 
                             <button className="d-flex flex-row bg-transparent border-0 my-3 gap-2 align-items-center w-100" type="button" data-bs-toggle="collapse" data-bs-target="#sendamountto" aria-expanded="false" aria-controls="sendamountto">
-                                <LazyLoadImage alt="Prof" src={Prof} width={50} />
+                                <LazyLoadImage alt="Acc" src={Acc} width={50} />
                                 <div className='text-start'>
                                     <h6 className='mb-0 '>Brooklyn Simmons</h6>
                                     <p class="dash-c-txt-2">+1 9988776655</p>
@@ -50,9 +51,9 @@ function Accounts() {
                                 </div>
                             </div>
 
-                            <button className='d-send-btn-1 mt-4' data-bs-toggle="modal" data-bs-target="#sendmoney">Send</button>
+                            <button className='d-send-btn-1 mt-4' data-bs-toggle="modal" data-bs-target="#transfermoney">Send</button>
                         </div>
-                        <div className='col-lg-6'>
+                        <div className='col-xl-6'>
                             <BankList />
                         </div>
                     </div>
@@ -60,15 +61,15 @@ function Accounts() {
             </div>
 
 
-            <div class="send-money-mod modal fade" id="sendmoney" tabindex="-1" aria-labelledby="sendmoneyLabel" aria-hidden="true">
+            <div class="send-money-mod modal fade" id="transfermoney" tabindex="-1" aria-labelledby="transfermoneyLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-body text-center py-4 modal-body-circle">
                             <LazyLoadImage alt="Prof" src={Success} width={85} />
-                            <h3 style={{ color: "var(--color-1)" }}>Send success</h3>
-                            <p className='text-muted mb-2'>Send Money has been successfully done</p>
-                            <h5 style={{ color: "var(--color-1)" }}>Amount Send</h5>
-                            <h3 style={{ marginBottom: "80px" }}>$ 123.00</h3>
+                            <h3 style={{ color: "var(--color-1)" }}>Bank Transfer success</h3>
+                            <p className='text-muted mb-4'>Bank Transfer has been successfully done</p>
+                            <h5 style={{ color: "var(--color-1)" }}>Amount</h5>
+                            <h3 style={{ marginBottom: "100px" }}>$ 123.00</h3>
                             <a><h5 style={{ color: "var(--color-1)" }} className='mb-5'><CiReceipt /> View Receipt</h5></a>
                             <div className='mb-5'>
                                 <button className='d-send-btn-1'>Done</button>

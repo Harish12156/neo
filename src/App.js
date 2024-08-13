@@ -51,6 +51,8 @@ function App() {
             <Route exact path="/send" element={<Dashboard />} />
             <Route exact path="/receive" element={<Dashboard />} />
             <Route exact path="/accounts" element={<Dashboard />} />
+            <Route exact path="/goals" element={<Dashboard />} />
+            <Route exact path="/data" element={<Dashboard />} />
             <Route exact path="/account" element={<Account />} />
             <Route exact path="/card" element={<Card />} />
             <Route exact path="/transactions" element={<Transactions />} />

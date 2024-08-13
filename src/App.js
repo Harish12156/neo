@@ -18,6 +18,7 @@ import Portfolio from './pages/Portfolio';
 import Setting from './pages/Setting';
 import Profile from './pages/Profile';
 import Receive from './pages/dashboard-pages/Receive';
+import Cryptoinner from './pages/Cryptoinner';
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
             <Route exact path="/portfolio" element={<Portfolio />} />
             <Route exact path="/setting" element={<Setting />} />
             <Route exact path="/profile" element={<Profile />} />
+            <Route exact path="/cryptoinner" element={<Cryptoinner />} />
 
             <Route exact path="*" element={<p>ERROR 404</p>} />
           </Routes>

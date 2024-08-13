@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Myassets from "./inner/Myassets";
 import ReactApexChart from 'react-apexcharts';
 
-
 function Dashboardmain() {
     const [chartOptions, setChartOptions] = useState({
         series: [{
@@ -23,6 +22,12 @@ function Dashboardmain() {
             stroke: {
                 curve: 'smooth',
                 colors: ['#8950DA']
+            },
+            markers: {
+                colors: ['var(--color-1)'],
+                strokeColors: ['#00000080'],
+                strokeWidth: 2,
+
             },
             fill: {
                 type: 'gradient',
@@ -52,6 +57,12 @@ function Dashboardmain() {
                     style: {
                         colors: '#BCBCBC'
                     }
+                },
+                axisBorder: {
+                    show: true,
+                    color: '#BCBCBC',
+                    offsetX: 0,
+                    offsetY: 0
                 }
             },
             yaxis: {
@@ -79,13 +90,15 @@ function Dashboardmain() {
                     background: '#D8C7F1'
                 }
             },
+            grid: {
+                show: false // Disable grid lines
+            }
         }
     });
 
     return (
         <div>
-        <Myassets />
-
+            <Myassets />
             <div className="card dash-card-1 mt-4">
                 <div className="card-body">
                     <div className='d-flex flex-row'>
@@ -99,7 +112,6 @@ function Dashboardmain() {
                     </div>
                     <div className='dash-ball-chart'>
                         <ReactApexChart options={chartOptions.options} series={chartOptions.series} type="area" height={250} />
-
                     </div>
                 </div>
             </div>

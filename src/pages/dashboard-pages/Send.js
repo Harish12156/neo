@@ -17,8 +17,8 @@ function Send() {
         <>
             <div className="card dash-card-1 mt-4">
                 <div className="card-body">
-                    <div className='row'>
-                        <div className='col-lg-6 border-r-1'>
+                    <div className='row g-4'>
+                        <div className='col-xl-6 border-r-1'>
                             <div className='d-flex align-items-center mb-3'>
                                 <h5 className="dash-head-1 mb-0">Send Money</h5>
                                 <div className='ms-auto send-scan-sec'>
@@ -54,7 +54,7 @@ function Send() {
 
                             <button className='d-send-btn-1 mt-4' data-bs-toggle="modal" data-bs-target="#sendmoney">Send Money</button>
                         </div>
-                        <div className='col-lg-6'>
+                        <div className='col-xl-6'>
                             <ContactList />
                         </div>
                     </div>
@@ -68,9 +68,9 @@ function Send() {
                         <div class="modal-body text-center py-4 modal-body-circle">
                             <LazyLoadImage alt="Prof" src={Success} width={85} />
                             <h3 style={{ color: "var(--color-1)" }}>Send success</h3>
-                            <p className='text-muted mb-2'>Send Money has been successfully done</p>
+                            <p className='text-muted mb-4'>Send Money has been successfully done</p>
                             <h5 style={{ color: "var(--color-1)" }}>Amount Send</h5>
-                            <h3 style={{ marginBottom: "80px" }}>$ 123.00</h3>
+                            <h3 style={{ marginBottom: "100px" }}>$ 123.00</h3>
                             <a><h5 style={{ color: "var(--color-1)" }} className='mb-5'><CiReceipt /> View Receipt</h5></a>
                             <div className='mb-5'>
                                 <button className='d-send-btn-1'>Done</button>

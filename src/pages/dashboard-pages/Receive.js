@@ -18,8 +18,8 @@ function Receive() {
         <>
             <div className="card dash-card-1 mt-4">
                 <div className="card-body">
-                    <div className='row'>
-                        <div className='col-lg-6 border-r-1'>
+                    <div className='row g-4'>
+                        <div className='col-xl-6 border-r-1'>
                             <h5 className="dash-head-1 mb-4">Request Money</h5>
                             <p className='mb-5'>You can request multiple payments from up to 20 people</p>
                             {!showQR && <>
@@ -71,7 +71,7 @@ function Receive() {
                             </>
                             }
                         </div>
-                        <div className='col-lg-6'>
+                        <div className='col-xl-6'>
                             {!showQR && <ContactList />}
                             {showQR && <LazyLoadImage alt="Qrcode" src={Qrcode} className='img-fluid' />}
                         </div>

@@ -31,18 +31,18 @@ function Sidenav() {
   };
 
   const isDashboardActive = () => {
-    const dashboardRoutes = ['/', '/send', '/receive', '/accounts'];
+    const dashboardRoutes = ['/', '/send', '/receive', '/accounts', '/goals', '/data'];
     return dashboardRoutes.includes(location.pathname);
   };
 
   const getLinkClass = (path) => {
-    return isDashboardActive() && path === '/' ? 'list-item-side active-page-root-css' : 
-           location.pathname === path ? 'list-item-side active-page-root-css' : 'list-item-side';
+    return isDashboardActive() && path === '/' ? 'list-item-side active-page-root-css' :
+      location.pathname === path ? 'list-item-side active-page-root-css' : 'list-item-side';
   };
 
   const getIcon = (defaultIcon, activeIcon, path) => {
     return isDashboardActive() && path === '/' ? activeIcon :
-           location.pathname === path ? activeIcon : defaultIcon;
+      location.pathname === path ? activeIcon : defaultIcon;
   };
 
   return (

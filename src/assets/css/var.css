@@ -452,23 +452,23 @@
   margin-top:-30px;
 }
 .first-portfolio-progress .progress-bar{
-width:80%;
+width:32%;
 background-color:
 rgba(255, 160, 67, 1);
 }
 .first-portfolio-progress{
-  height:13px!important;
+  height:7px!important;
 }
 .second-portfolio-progress{
-  height:13px!important;
+  height:7px!important;
 }
 .second-portfolio-progress .progress-bar{
 background-color: rgba(0, 170, 255, 1)
 ;
-width:70%;
+width:20%;
 }
 .third-portfolio-progress{
-  height:13px!important;
+  height:7px!important;
 }
 .third-portfolio-progress .progress-bar{
   background-color: 
@@ -477,26 +477,44 @@ width:70%;
   width:60%;
   }
   .fourth-portfolio-progress{
-    height:13px!important;
+    height:7px!important;
   }
   .fourth-portfolio-progress .progress-bar{
     background-color: 
     rgba(10, 166, 48, 1)
     ;
-    width:70%;
+    width:22%;
     }
     .fifth-portfolio-progress{
       background-color: 
       rgba(132, 129, 138, 1)
       ;
-      height:13px!important;
+      height:7px!important;
     }
     .fifth-portfolio-progress .progress-bar{
       background-color: 
       rgba(132, 129, 138, 1);
-      width:80%;
+      width:10%;
       }
-      .f
+      .epic-chart-select-option{
+        width:120px!important;
+        box-shadow: none!important;
+      }
+      .new-line-chart-btn{
+        font-size: 12px;
+        padding:5px 10px;
+        border:1px solid #ddd1d1;
+        background: transparent;
+        color:rgba(137, 80, 218, 1);
+      }
+      .new-statistics-chart-btn{
+        font-size: 12px;
+        padding:5px 10px;
+        border:1px solid #ddd1d1;
+        background: transparent;
+      }
+    
+      /* .rgba(132, 129, 138, 1) */
 /* rgba(11, 67, 141, 1) */
 /* <============profile================> */
 .portfoli-my-asset-sec{
@@ -531,7 +549,7 @@ border-top-right-radius:10px;
 }
 .portfolio-whl-table-1 .table tbody td {
   font-weight: normal;
-  /* color: grey !important; */
+ 
   font-size: 13px;
   vertical-align: middle;
 }
@@ -591,13 +609,144 @@ text-align: center!important;
 .portfolio-chart {
   margin-top: 20px;
 }
-/* .right-square{
+.new-portfolio-button-points{
+  background-color: white!important;
+  border-radius:10px;
+}
+.epic-chart-select-option{
+  font-size:12px!important;
+}
+.epic-super-script-num{
+  color:rgba(10, 166, 48, 1);
+}
+.epic-super-script-tot-num{
+  color:rgba(132, 129, 138, 1);
+  font-size:13px;
   
-} */
-/* <======================================> */
+}
+.epic-port-num{
+  font-size:19px;
+}
+.port-top-num-sec{
+  position:relative;
+  top:25px;
+}
+.portfolio-none-border-sec th {
+  border-bottom: none;
+}
+.new-adding-bit-coin{
+  font-weight:500;
+}
+.portfolio-horizontal-lines{
+  color:grey!important;
+}
+.apex-new-link-40{
+  padding:5px 20px;
+  font-size: 12px;
+  background: transparent;
+  border:1px solid #d9cdcd;
+  border-right:none;
+  color:rgba(31, 123, 244, 1);
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px;
+}
+.apex-new-charts-40{
+  padding:5px 20px;
+  font-size: 12px;
+  background: transparent;
+  border:1px solid #d9cdcd;
+  border-top-right-radius:4px;
+  border-bottom-right-radius:4px;
+}
+.zoomable-apex-chart{
+  background: white!important;
+  border-radius:10px;
+}
+.apex-line-chart-link-01{
+  padding:5px 20px;
+  font-size: 16px;
+  background: transparent;
+  border:1px solid #d9cdcd;
+  border-right:none;
+  color:rgba(31, 123, 244, 1);
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px;
+}
+.apex-line-chart-link-02{
+  padding:5px 20px;
+  font-size: 16px;
+  background: transparent;
+  border:1px solid #d9cdcd;
+  border-right:none;
+  color:rgba(31, 123, 244, 1);
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px;
+}
+.apex-new-line-chart-link-01{
+  padding:5px 20px;
+  font-size: 16px;
+  background: transparent;
+  border:1px solid #d9cdcd;
+  border-right:none;
+  color:rgba(31, 123, 244, 1);
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px;
+}
+.apex-new-line-chart-link-02{
+  padding:5px 20px;
+  font-size: 16px;
+  background: transparent;
+  border:1px solid #d9cdcd;
+  border-right:none;
+  color:red;
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px;
+}
+.aaa-01{
+  padding:6px 15px;
+  font-size: 12px;
+  background: transparent;
+  border:1px solid #d9cdcd;
+  border-right:none;
+  color:rgba(137, 80, 218, 1);
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px;
+}
+.aaa-02{
+  padding:6px 15px;
+  font-size: 12px;
+  background: transparent;
+  border:1px solid #d9cdcd;
+  border-top-right-radius:4px;
+  border-bottom-right-radius:4px;
+}
+.alt-apex-week-selector{
+  width:160px!important;
+  font-size:12px!important;
  
 }
-
+.apex-new-percentage-chart{
+  color:green;
+}
+.apex-dollar-btn{
+  color:grey;
+  font-size:16px;
+  font-weight: bold;
+}
+.apex-new-row-numbers{
+  color:rgba(32, 32, 32, 1);
+  font-weight: 600;
+  font-size:20px;
+}
+/* .apex-custom-chart-height{
+  height:400px!important;
+} */
+/* .apex-options-series-charts{
+  height:200px!important;
+} */
+/* rgba(32, 32, 32, 1) */
+/* <======================================> */
+}
 /* Tablet styles */
 @media (min-width: 768px) and (max-width: 1024px) {
   .epic-chart-sec-00 {
@@ -905,6 +1054,237 @@ text-align: center!important;
    margin-top:-40%!important;
 }
 /* <=======================> */
+/* <============profile================> */
+.portfoli-my-asset-sec{
+  background-color: white!important;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  }
+  .alt-portfoli-my-asset-sec{
+    background-color: white!important;
+    border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  }
+  .portfolio-whl-nav-tabs .nav-link{
+   border:1px solid grey!important;
+   border-radius:0px!important;
+   padding:5px 15px!important;
+   font-size: 13px;
+  }
+  .portfolio-nav-home-tab{
+    border-top-left-radius:5px!important;
+    border-bottom-left-radius:5px!important;
+  }
+  .portfolio-whl-table-1{
+    background-color: white!important;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:10px;
+  }
+  .portfolio-whl-table-1 .table thead th {
+    font-weight: normal;
+    color: grey !important;
+    font-size: 13px;
+  }
+  .portfolio-whl-table-1 .table tbody td {
+    font-weight: normal;
+   
+    font-size: 13px;
+    vertical-align: middle;
+  }
+  .portfolio-whl-table-1 .table-values-rows td {
+    padding: 10px 10px; 
+  }
+  .portfolio-whl-table-1 .table-bal-ctn {
+    text-align: end !important;
+  }
+  .portfolio-whl-table-1 .table-bal-Price{
+  text-align: center!important;
+  }
+  .bt-coin-img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px;
+  }
+  .portfolio-arr-img{
+    width:15px!important;
+    height:15px!important;
+    color:green;
+  }
+  .portfolio-arr-img-001{
+    width:15px!important;
+    height:15px!important;
+    color:red;
+    transform: rotate(90deg);
+  }
+  .bitcoin-per-point{
+    color:green;
+  }
+  .bitcoin-per-point-red{
+    color:red;
+  }
+  .right-square-arrow{
+    color:red;
+    
+  }
+  .portfolio-arr-img-red{
+    width:15px!important;
+    height:15px!important;
+    background-color:red;
+   
+  }
+  .table-values{
+    color:black!important;
+  }
+  .portfolio-nav-home-tab{
+    border-top-left-radius:10px!important;
+    border-bottom-left-radius:10px!important;
+  }
+  .portfolio-chart {
+    margin-top: 20px;
+  }
+  .new-portfolio-button-points{
+    background-color: white!important;
+    border-radius:10px;
+  }
+  .epic-chart-select-option{
+    font-size:12px!important;
+  }
+  .epic-super-script-num{
+    color:rgba(10, 166, 48, 1);
+  }
+  .epic-super-script-tot-num{
+    color:rgba(132, 129, 138, 1);
+    font-size:13px;
+    
+  }
+  .epic-port-num{
+    font-size:19px;
+  }
+  .first-portfolio-progress .progress-bar{
+    width:32%;
+    background-color:
+    rgba(255, 160, 67, 1);
+    }
+    .first-portfolio-progress{
+      height:7px!important;
+    }
+    .second-portfolio-progress{
+      height:7px!important;
+    }
+    .second-portfolio-progress .progress-bar{
+    background-color: rgba(0, 170, 255, 1)
+    ;
+    width:20%;
+    }
+    .third-portfolio-progress{
+      height:7px!important;
+    }
+    .third-portfolio-progress .progress-bar{
+      background-color: 
+      rgba(11, 67, 141, 1)
+      ;
+      width:60%;
+      }
+      .fourth-portfolio-progress{
+        height:7px!important;
+      }
+      .fourth-portfolio-progress .progress-bar{
+        background-color: 
+        rgba(10, 166, 48, 1)
+        ;
+        width:22%;
+        }
+        .fifth-portfolio-progress{
+          background-color: 
+          rgba(132, 129, 138, 1)
+          ;
+          height:7px!important;
+        }
+        .fifth-portfolio-progress .progress-bar{
+          background-color: 
+          rgba(132, 129, 138, 1);
+          width:10%;
+          }
+          .epic-chart-select-option{
+            width:120px!important;
+            box-shadow: none!important;
+          }
+          .new-line-chart-btn{
+            font-size: 12px;
+            padding:5px 10px;
+            border:1px solid #ddd1d1;
+            background: transparent;
+            color:rgba(137, 80, 218, 1);
+          }
+          .new-statistics-chart-btn{
+            font-size: 12px;
+            padding:5px 10px;
+            border:1px solid #ddd1d1;
+            background: transparent;
+          }
+          .port-tot-line-chart-views{
+            display: flex;
+          }
+          .port-top-num-sec{
+            position:relative;
+            top:25px;
+          }
+          .apex-new-link-40{
+            padding:5px 20px;
+            font-size: 12px;
+            background: transparent;
+            border:1px solid #d9cdcd;
+            border-right:none;
+            color:rgba(31, 123, 244, 1);
+            border-top-left-radius:4px;
+            border-bottom-left-radius:4px;
+          }
+          .apex-new-charts-40{
+            padding:5px 20px;
+            font-size: 12px;
+            background: transparent;
+            border:1px solid #d9cdcd;
+            border-top-right-radius:4px;
+            border-bottom-right-radius:4px;
+          }
+          .aaa-01{
+            padding:6px 15px;
+            font-size: 12px;
+            background: transparent;
+            border:1px solid #d9cdcd;
+            border-right:none;
+            color:rgba(137, 80, 218, 1);
+            border-top-left-radius:4px;
+            border-bottom-left-radius:4px;
+          }
+          .aaa-02{
+            padding:6px 15px;
+            font-size: 12px;
+            background: transparent;
+            border:1px solid #d9cdcd;
+            border-top-right-radius:4px;
+            border-bottom-right-radius:4px;
+          }
+          .apex-new-percentage-chart{
+            color:green;
+          }
+          .alt-apex-week-selector{
+            width:160px!important;
+            font-size: 12px!important;
+            /* padding:6px 15px; */
+          }
+          .apex-dollar-btn{
+            color:grey;
+            font-size:16px;
+           
+          }
+  
+  /* <======================================> */
 }
 
 /* Mobile styles */
@@ -1236,6 +1616,275 @@ text-align: center!important;
     text-align: center;
     color: grey;
 }
+/* <============profile================> */
+.portfoli-my-asset-sec{
+  background-color: white!important;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  }
+  .alt-portfoli-my-asset-sec{
+    background-color: white!important;
+    border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  }
+  .portfolio-whl-nav-tabs .nav-link{
+   border:1px solid grey!important;
+   border-radius:0px!important;
+   padding:5px 15px!important;
+   font-size: 13px;
+  }
+  .portfolio-nav-home-tab{
+    border-top-left-radius:5px!important;
+    border-bottom-left-radius:5px!important;
+  }
+  .portfolio-whl-table-1{
+    background-color: white!important;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:10px;
+  }
+  .portfolio-whl-table-1 .table thead th {
+    font-weight: normal;
+    color: grey !important;
+    font-size: 13px;
+    white-space:nowrap;
+  }
+  .portfolio-whl-table-1 .table tbody td {
+    font-weight: normal;
+   
+    font-size: 13px;
+    vertical-align: middle;
+  }
+  .portfolio-whl-table-1 .table-values-rows td {
+    padding: 10px 10px; 
+  }
+  .portfolio-whl-table-1 .table-bal-ctn {
+    text-align: end !important;
+  }
+  .portfolio-whl-table-1 .table-bal-Price{
+  text-align: center!important;
+  }
+  .bt-coin-img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px;
+  }
+  .portfolio-arr-img{
+    width:15px!important;
+    height:15px!important;
+    color:green;
+  }
+  .portfolio-arr-img-001{
+    width:15px!important;
+    height:15px!important;
+    color:red;
+    transform: rotate(90deg);
+  }
+  .bitcoin-per-point{
+    color:green;
+  }
+  .bitcoin-per-point-red{
+    color:red;
+  }
+  .right-square-arrow{
+    color:red;
+    
+  }
+  .portfolio-arr-img-red{
+    width:15px!important;
+    height:15px!important;
+    background-color:red;
+   
+  }
+  .table-values{
+    color:black!important;
+  }
+  .portfolio-nav-home-tab{
+    border-top-left-radius:10px!important;
+    border-bottom-left-radius:10px!important;
+  }
+  .portfolio-chart {
+    margin-top: 20px;
+  }
+  .new-portfolio-button-points{
+    background-color: white!important;
+    border-radius:10px;
+  }
+  .epic-chart-select-option{
+    font-size:12px!important;
+  }
+  .epic-super-script-num{
+    color:rgba(10, 166, 48, 1);
+  }
+  .epic-super-script-tot-num{
+    color:rgba(132, 129, 138, 1);
+    font-size:13px;
+    
+  }
+  .epic-port-num{
+    font-size:19px;
+  }
+  .first-portfolio-progress .progress-bar{
+    width:32%;
+    background-color:
+    rgba(255, 160, 67, 1);
+    }
+    .first-portfolio-progress{
+      height:7px!important;
+    }
+    .second-portfolio-progress{
+      height:7px!important;
+    }
+    .second-portfolio-progress .progress-bar{
+    background-color: rgba(0, 170, 255, 1)
+    ;
+    width:20%;
+    }
+    .third-portfolio-progress{
+      height:7px!important;
+    }
+    .third-portfolio-progress .progress-bar{
+      background-color: 
+      rgba(11, 67, 141, 1)
+      ;
+      width:60%;
+      }
+      .fourth-portfolio-progress{
+        height:7px!important;
+      }
+      .fourth-portfolio-progress .progress-bar{
+        background-color: 
+        rgba(10, 166, 48, 1)
+        ;
+        width:22%;
+        }
+        .fifth-portfolio-progress{
+          background-color: 
+          rgba(132, 129, 138, 1)
+          ;
+          height:7px!important;
+        }
+        .fifth-portfolio-progress .progress-bar{
+          background-color: 
+          rgba(132, 129, 138, 1);
+          width:10%;
+          }
+          .epic-chart-select-option{
+            width:120px!important;
+            box-shadow: none!important;
+          }
+          .new-line-chart-btn{
+            font-size: 12px;
+            padding:5px 10px;
+            border:1px solid #ddd1d1;
+            background: transparent;
+            color:rgba(137, 80, 218, 1);
+          }
+          .new-statistics-chart-btn{
+            font-size: 12px;
+            padding:5px 10px;
+            border:1px solid #ddd1d1;
+            background: transparent;
+          }
+          .port-tot-line-chart-views{
+            display: flex;
+          }
+          .portfolio-whl-table-1{
+            overflow-x: auto!important;
+          }
+          .port-top-num-sec{
+            position:relative;
+            top:0px;
+          }
+          .port-new-bitcoin-20{
+            font-size:10px;
+          }
+          .new-img-btc-01{
+            width:20px;
+            height:auto;
+            margin-right:10px;
+          }
+          .port-top-num-sec {
+            position: relative;
+            
+            top: -10px;
+            text-align: center;
+           
+            left: 40px;
+        }
+        .new-img-btc-001{
+          width:30px;
+          margin-right:10px;
+        }
+        .apex-new-link-40{
+          padding:5px 20px;
+          font-size: 12px;
+          background: transparent;
+          border:1px solid #d9cdcd;
+          border-right:none;
+          color:rgba(31, 123, 244, 1);
+          border-top-left-radius:4px;
+          border-bottom-left-radius:4px;
+        }
+        .apex-new-charts-40{
+          padding:5px 20px;
+          font-size: 12px;
+          background: transparent;
+          border:1px solid #d9cdcd;
+          border-top-right-radius:4px;
+          border-bottom-right-radius:4px;
+        }
+        .aaa-01{
+          padding:4px 10px;
+          font-size: 12px;
+          background: transparent;
+          border:1px solid #d9cdcd;
+          border-right:none;
+          color:rgba(137, 80, 218, 1);
+          border-top-left-radius:4px;
+          border-bottom-left-radius:4px;
+        }
+        .aaa-02{
+          padding:4px 10px;
+          font-size: 12px;
+          background: transparent;
+          border:1px solid #d9cdcd;
+          border-top-right-radius:4px;
+          border-bottom-right-radius:4px;
+        }
+        .alt-apex-week-selector{
+         width:90px!important;
+         font-size: 12px!important;
+        }
+        .portfolio-whl-table-1{
+          overflow-x: auto;
+        }
+        .apex-chart-customize-table{
+          width:900px;
+        }
+        .apex-new-percentage-chart{
+          color:green;
+        }
+        .apex-dollar-btn{
+          color:grey;
+          font-size:12px;
+          
+        }
+        /* .portfolio-whl-table-1{
+          width:1400px;
+          overflow-x:auto!important;
+        } */
+        /* .port-full-table-path{
+          width:100px!important;
+          background: red;
+        } */
+         
+
+  /* <======================================> */
 
 }
 

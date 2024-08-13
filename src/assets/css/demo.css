@@ -182,7 +182,7 @@
 }
 
 .cryto-section .total-heading {
-    font-size: 18px;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -240,7 +240,8 @@
     padding: 8px;
     width: 90%;
 }
-.cryto-section .exchange .form-control:focus{
+
+.cryto-section .exchange .form-control:focus {
     box-shadow: none;
 }
 
@@ -249,29 +250,34 @@
     font-weight: 400;
     color: #595656;
 }
-.cryto-section .exchange .from-btn{
+
+.cryto-section .exchange .from-btn {
     background: #F5F4F4;
     padding: 10px;
     border-radius: 10px;
     font-size: 12px;
     font-weight: 500;
 }
-.cryto-section .exchange .swap-icon{
+
+.cryto-section .exchange .swap-icon {
     border-radius: 50%;
     border: 1px solid grey;
     padding: 2px;
     font-size: 24px;
 }
-.cryto-section .exchange .fees-sec{
+
+.cryto-section .exchange .fees-sec {
     background: #F5F4F4;
     padding: 10px;
     border-radius: 8px;
 }
-.cryto-section .exchange .fees-text{
+
+.cryto-section .exchange .fees-text {
     font-size: 12px;
     font-weight: 400;
     color: #595656;
 }
+
 .cryto-section .exchange .done-css {
     background: linear-gradient(90.9deg, #B5379F 3.03%, #69678a 94.33%);
     border: none;
@@ -280,5 +286,103 @@
     width: 100%;
     font-size: 14px;
     padding: 10px;
+}
+
+.cryto-section .live-heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-1);
+}
+.cryto-section .table-size{
+    overflow: auto;
+}
+.cryto-section .livemarket-table {
+    
+}
+.livemarket-table tr {
+    
+}
+.livemarket-table td {
+    padding:15px 60px 15px 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.livemarket-table .text-one {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.livemarket-table .text-two {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #9E9E9E;
+}
+
+.livemarket-table .text-three {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #9E9E9E;
+}
+
+.livemarket-table .text-four {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.livemarket-table .fc-g {
+    color: #1FCB4F;
+}
+
+.livemarket-table .text-five {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #1A1A1A;
+}
+.livemarket-table .fc-r {
+    color: #F46D22;
+}
+.livemarket-table .graph-size{
+    
+}
+/* Optional: Customize scrollbar appearance */
+.table-size::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 7px;
+}
+.transaction .text-one{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+.transaction .text-two{
+    font-size: 13px;
+    font-weight: 400;
+    color: #9E9E9E;
+}
+
+
+.cryptoinner-section-one .graph-section{
+    background: #FFFFFF;
+}
+.graph-section .text-one{
+    
+}
+.graph-section .text-two{
+    font-size: 12px;
+    color: grey;
+}
+.graph-section .text-three{
+    font-size: 14px;
+}
+.fc-b{
+    color:#31B8C9;
+}
+.graph-section .text-four{
+    font-size: 12px;
 }
 /* ==========Karthick ============= */

@@ -1,5 +1,6 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Link } from 'react-router-dom';
 import greenbar from "../assets/images/Crypto/greenbars.png";
 import income from "../assets/images/Crypto/income.png";
 import redbar from "../assets/images/Crypto/redbar.png";
@@ -15,7 +16,14 @@ import bitcoin from "../assets/images/Crypto/Bitcoin.png";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdSwapVert } from "react-icons/md";
 import bitcointwo from "../assets/images/Crypto/Bitcoin-two.png";
-
+import ethereum from "../assets/images/Crypto/ethereum.png";
+import graph from "../assets/images/Crypto/graphs.png";
+import graphone from "../assets/images/Crypto/graphs (1).png";
+import bitcoinone from "../assets/images/Crypto/bitcoin.png";
+import litecoin from "../assets/images/Crypto/litecoin.png";
+import graphtwo from "../assets/images/Crypto/graphs(2).png";
+import transethereum from "../assets/images/Crypto/Group 332.png";
+import transbitcoin from "../assets/images/Crypto/Group 333.png";
 
 function Crypto() {
   return (
@@ -185,8 +193,96 @@ function Crypto() {
               </div>
             </div>
           </div>
-          <div className='row'>
-            <div className='col'></div>
+          <div className='row py-3'>
+            <div className='col-lg-8'>
+              <div className='live-market card border-0 p-3 rounded-3'>
+                <h2 className='live-heading'>Live Market</h2>
+                <div className='table-size'>
+                  <table className='livemarket-table my-3'>
+                    <tbody>
+                      <tr className=''>
+                        <Link to='/cryptoinner'>
+                          <td className=''>
+                            <div className='d-flex align-items-center gap-3'>
+                              <div className=''><LazyLoadImage alt="Ethereum" src={ethereum} className='' /></div>
+                              <div><h6 className='text-one'>Ethereum</h6><div className='text-two'>ETH / USDT</div></div>
+                            </div>
+                          </td>
+                          <td className=''><div className='text-three mb-2'>change</div><div className='text-four fc-g'>+14.02%</div></td>
+                          <td className=''><div className='text-three mb-2'>Price</div><div className='text-five'>39,786 USD</div></td>
+                          <td className=''><div><LazyLoadImage alt="Graph" src={graph} className='graph-size' /></div></td>
+                        </Link>
+                      </tr>
+                      <tr className=''>
+                        <Link to='/cryptoinner'>
+                          <td className=''>
+                            <div className='d-flex align-items-center gap-3'>
+                              <div className=''><LazyLoadImage alt="bitcoin" src={bitcoinone} className='' /></div>
+                              <div><h6 className='text-one'>Bitcoin</h6><div className='text-two'>ETH / USDT</div></div>
+                            </div>
+                          </td>
+                          <td className=''><div className='text-three mb-2'>change</div><div className='text-four fc-g'>+4.02%</div></td>
+                          <td className=''><div className='text-three mb-2'>Price</div><div className='text-five'>21,786 USD</div></td>
+                          <td className=''><div><LazyLoadImage alt="Graph" src={graphone} className='graph-size' /></div></td>
+                        </Link>
+                      </tr>
+                      <tr className=''>
+                        <Link to='/cryptoinner'>
+                          <td className=''>
+                            <div className='d-flex align-items-center gap-3'>
+                              <div className=''><LazyLoadImage alt="litecoin" src={litecoin} className='' /></div>
+                              <div><h6 className='text-one'>Litecoin</h6><div className='text-two'>ETH / USDT</div></div>
+                            </div>
+                          </td>
+                          <td className=''><div className='text-three mb-2'>change</div><div className='text-four fc-r'>-4.02%</div></td>
+                          <td className=''><div className='text-three mb-2'>Price</div><div className='text-five'>19,786 USD</div></td>
+                          <td className=''><div><LazyLoadImage alt="Graph" src={graph} className='graph-size' /></div></td>
+                        </Link>
+                      </tr>
+                      <tr className=''>
+                        <Link to='/cryptoinner'>
+                          <td className=''>
+                            <div className='d-flex align-items-center gap-3'>
+                              <div className=''><LazyLoadImage alt="litecoin" src={litecoin} className='' /></div>
+                              <div><h6 className='text-one'>Cardano</h6><div className='text-two'>ADA / USDT</div></div>
+                            </div>
+                          </td>
+                          <td className=''><div className='text-three mb-2'>change</div><div className='text-four fc-g'>+0.02%</div></td>
+                          <td className=''><div className='text-three mb-2'>Price</div><div className='text-five'>14,786 USD</div></td>
+                          <td className=''><div><LazyLoadImage alt="Graph" src={graphtwo} className='graph-size' /></div></td>
+                        </Link>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+            <div className='col-lg-4 transaction'>
+              <div className='card border-0 rounded-3 p-2'>
+                <h5 className=''>Transactions</h5>
+                <div className='d-flex align-items-center gap-2 py-3'>
+                  <div><LazyLoadImage alt="ethereum" src={transethereum} className='' /></div>
+                  <div><div className='text-one mb-1'>Ethereum</div><div className='text-two'>Received</div></div>
+                  <div className='ms-auto text-end'><div className='text-one mb-1'>$24,102</div><div className='text-two'>Today, 19:30</div></div>
+                </div>
+                <div className='d-flex align-items-center gap-2 py-3'>
+                  <div><LazyLoadImage alt="bitcoin" src={transbitcoin} className='' /></div>
+                  <div><div className='text-one mb-1'>Bitcoin</div><div className='text-two'>Buy</div></div>
+                  <div className='ms-auto text-end'><div className='text-one mb-1'>$4,157</div><div className='text-two'>Today, 14:32</div></div>
+                </div>
+                <div className='d-flex align-items-center gap-2 py-3'>
+                  <div><LazyLoadImage alt="bitcoin" src={transbitcoin} className='' /></div>
+                  <div><div className='text-one mb-1'>Bitcoin</div><div className='text-two'>Buy</div></div>
+                  <div className='ms-auto text-end'><div className='text-one mb-1'>$64,157</div><div className='text-two'>Today, 13:50</div></div>
+                </div>
+                <div className='d-flex align-items-center gap-2 py-3'>
+                  <div><LazyLoadImage alt="bitcoin" src={transbitcoin} className='' /></div>
+                  <div><div className='text-one mb-1'>Litecoin</div><div className='text-two'>Buy</div></div>
+                  <div className='ms-auto text-end'><div className='text-one mb-1'>$14,265</div><div className='text-two'>Today, 09:38</div></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

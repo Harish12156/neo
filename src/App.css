@@ -2,6 +2,7 @@
 
 :root {
   --color-1: #8950DA;
+  --color-2: #A287FF;
   --border-color-1: #BB9EE5;
   --background-color-1: linear-gradient(90.9deg, #B5379F 3.03%, #4E49B9 94.33%);
 
@@ -49,6 +50,10 @@ a {
   text-decoration: none !important;
 }
 
+.fc-y {
+  color: var(--color-1);
+}
+
 .fc-g {
   color: #1FCB4F;
 }
@@ -59,4 +64,36 @@ a {
 
 .top-web-sec {
   padding-top: 100px;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.modal.slide-in-from-right .modal-dialog {
+  animation: slideInFromRight 0.5s forwards;
+}
+
+@keyframes slideInFromDown {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal.slide-in-from-down .modal-dialog {
+  animation: slideInFromDown 0.5s forwards;
 }

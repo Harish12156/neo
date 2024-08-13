@@ -185,8 +185,12 @@ function Crypto() {
               </div>
             </div>
           </div>
-          <div className='row'>
-            <div className='col'></div>
+          <div className='row py-3'>
+            <div className='col-lg-8'>
+              <div className='live-market card border-0 p-4 rounded-3'>
+                <h2 className='live-heading'>Live Market</h2>
+              </div>
+            </div>
           </div>
         </div>
       </div>

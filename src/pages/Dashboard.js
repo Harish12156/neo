@@ -17,7 +17,7 @@ function Dashboard() {
     <div className='top-dash-overrall-sec'>
       <div className='container-fluid'>
         <div className='row'>
-          <div className='col-xl-8'>
+          <div className='col-xl-8 sdfdsf'>
             <Actions />
             {location.pathname === '/' && <Dashboardmain />}
             {location.pathname === '/send' && <Send />}
@@ -27,9 +27,7 @@ function Dashboard() {
             {location.pathname === '/data' && <Data />}
           </div>
           <div className='col-xl-4'>
-          {location.pathname === '/data' ? <Dataright /> : <Transactions />}
-
-            
+            {location.pathname === '/data' ? <Dataright /> : <Transactions />}
           </div>
         </div>
       </div>

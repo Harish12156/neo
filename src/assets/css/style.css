@@ -809,7 +809,7 @@
 }
 
 .dash-data-txt-4 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 600;
     background-color: transparent;
     background: linear-gradient(90deg, #8950DA 0%, #AF50A7 100%);
@@ -837,7 +837,8 @@
     border-radius: 10px;
     font-weight: 500;
 }
-.dash-md-i-1{
+
+.dash-md-i-1 {
     border: 5px solid #403F42;
     display: flex;
     width: 76px;
@@ -847,12 +848,106 @@
     font-size: 24px;
     border-radius: 50%;
 }
+
 .data-modal-1 .modal-content {
     border-top-right-radius: 20px !important;
     border-bottom-right-radius: 20px !important;
     overflow: hidden;
 
 }
+
+.data-month-tabs .nav-pills .nav-link.active {
+    background: var(--background-color-1);
+}
+
+.data-month-tabs .nav-pills .nav-link:active {
+    color: #000;
+}
+
+.data-month-tabs .nav-link, .data-month-tabs .nav-link:hover {
+    background-color: #F3F3F3;
+    color: #000;
+    font-size: 13px;
+    padding: 5px 0px;
+}
+
+.data-month-tabs span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.dash-data-card-1-1 {
+    background-color: #F7F6F9;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.dash-data-card-1-2 {
+    background-color: #DBC9F4;
+    padding: 4px 0px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: -24px;
+    z-index: 999;
+    position: relative;
+}
+
+.data-card-txt-1 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.data-card-txt-2 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.data-card-txt-3 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.data-card-txt-4 {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.data-card-img-1 {
+    width: 28px;
+    height: 28px;
+    margin-right: -8px;
+}
+
+.data-card-icon-1 {
+    color: #45BA56;
+    padding: 2px;
+    background-color: #FFF;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.data-card-txt-5 {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.dash-data-card-4 {
+    background-color: #F8F6FC;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.data-card-txt-6 {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.data-card-txt-7 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
 /* Desktop styles */
 @media (min-width: 1025px) {
     .data-modal-1 .modal-dialog {
@@ -1006,12 +1101,14 @@
 
 /* Mobile Tablet styles */
 @media (max-width: 1200px) {
-    .CircularProgressbar{
+    .CircularProgressbar {
         width: 120px !important;
     }
-    .d-grap-img-1{
+
+    .d-grap-img-1 {
         width: 30% !important;
     }
+
     .cont-list-height img {
         width: 40px;
     }
@@ -1049,6 +1146,29 @@
     font-size: 1.2rem;
 }
 
+.dash-data-chart .apexcharts-tooltip-marker, .dash-data-chart .apexcharts-tooltip-text-y-label {
+    display: none;
+}
+
+.dash-data-chart .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+    display: none;
+}
+
+.dash-data-chart .apexcharts-tooltip.apexcharts-theme-light {
+    background-color: #FFF;
+    border: none;
+}
+
+.dash-data-chart .apexcharts-tooltip-y-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-data-chart .apexcharts-tooltip-text-y-value {
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
 .d-swipe-btn-1 {
     background-color: #DCD0ED;
     border-radius: 50px;
@@ -1076,3 +1196,4 @@
     left: -25px;
     color: var(--color-1);
 }
+

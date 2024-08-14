@@ -27,9 +27,7 @@ function Dashboard() {
             {location.pathname === '/data' && <Data />}
           </div>
           <div className='col-xl-4'>
-          {location.pathname === '/data' ? <Dataright /> : <Transactions />}
-
-            
+            {location.pathname === '/data' ? <Dataright /> : <Transactions />}
           </div>
         </div>
       </div>

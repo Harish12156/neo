@@ -293,20 +293,43 @@
     font-weight: 600;
     color: var(--color-1);
 }
-.cryto-section .table-size{
+
+.cryto-section .table-size {
     overflow: auto;
 }
+
 .cryto-section .livemarket-table {
-    
+    width: 100%;
 }
-.livemarket-table tr {
-    
-}
+
+.livemarket-table tr {}
+
 .livemarket-table td {
-    padding:15px 60px 15px 0px;
+    padding: 15px 50px 15px 0px;
     vertical-align: middle;
     white-space: nowrap;
 }
+
+.livemarket-table td:first-child {
+    width: 30%;
+    /* First column */
+}
+
+.livemarket-table td:nth-child(2) {
+    width: 30%;
+    /* Second column */
+}
+
+.livemarket-table td:nth-child(3) {
+    width: 30%;
+    /* Third column */
+}
+
+.livemarket-table td:last-child {
+    width: 10%;
+    /* Fourth column */
+}
+
 
 .livemarket-table .text-one {
     font-size: 15px;
@@ -343,46 +366,190 @@
     letter-spacing: 0.02em;
     color: #1A1A1A;
 }
+
 .livemarket-table .fc-r {
     color: #F46D22;
 }
-.livemarket-table .graph-size{
-    
-}
+
+.livemarket-table .graph-size {}
+
 /* Optional: Customize scrollbar appearance */
 .table-size::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px;
+    /* Width of the scrollbar */
     height: 7px;
 }
-.transaction .text-one{
+
+.transaction .text-one {
     font-size: 16px;
     font-weight: 600;
     color: #1A1A1A;
 }
-.transaction .text-two{
+
+.transaction .text-two {
     font-size: 13px;
     font-weight: 400;
     color: #9E9E9E;
 }
 
 
-.cryptoinner-section-one .graph-section{
+.cryptoinner-section-one .graph-section {
     background: #FFFFFF;
 }
-.graph-section .text-one{
-    
+
+.graph-section .text-one {
+    font-size: 15px;
+    color: #191919;
+
 }
-.graph-section .text-two{
+
+.graph-section .text-two {
     font-size: 12px;
     color: grey;
 }
-.graph-section .text-three{
+
+.graph-section .text-three {
     font-size: 14px;
 }
-.fc-b{
-    color:#31B8C9;
+
+.fc-b {
+    color: #31B8C9;
 }
-.graph-section .text-four{
+
+.graph-section .text-four {
     font-size: 12px;
+}
+
+
+.graph-section .calendar-container {
+    position: relative;
+    display: inline-block;
+}
+
+.graph-section .calendar-icon-button {
+    margin-right: 5px;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #E8E8E8;
+}
+
+.graph-section .view-buttons {
+    margin-top: 10px;
+}
+
+.graph-section .view-buttons button {
+    margin-right: 5px;
+    padding: 6px 8px;
+    font-size: 11px;
+    border: none;
+    border-radius: 5px;
+    background: #E8E8E8;
+}
+
+.graph-section .react-calendar {
+    position: absolute;
+    top: 35px;
+    z-index: 99;
+}
+
+.cryptoinner-section-one .swap-section {
+    background: #FFFFFF;
+}
+
+.swap-section .nav-pills .nav-item {
+    background: #E8E8E8;
+    border-radius: 5px;
+}
+
+.swap-section .nav-pills .nav-link {
+    --bs-nav-link-padding-x: 60px;
+}
+
+.swap-section .nav-pills .nav-link.active,
+.swap-section .nav-pills .show>.nav-link{
+    background: linear-gradient(90.9deg, #B5379F 3.03%, #4E49B9 94.33%);
+}
+.swap-section .nav-link{
+    color: #FF4B1F;
+}
+.swap-section .text-one{
+    font-size: 13px;
+    color: #191919;
+}
+.swap-section .text-two {
+    font-size: 11px;
+    color: grey;
+}
+.swap-section .border-bottom-css{
+    border-bottom: 1px solid rgb(241 241 241);
+}
+.swap-section .position-relative {
+    position: relative;
+}
+
+.swap-section .position-absolute {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.swap-section .form-control{
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #ECE6E6;
+}
+.swap-section .form-control:focus{
+    border: 1px solid #ECE6E6;
+    box-shadow: none;
+}
+.swap-section .from-img{
+    background: #292929;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.swap-section .custom-placeholder-input {
+    color: transparent; /* Makes the default placeholder text transparent */
+}
+
+.swap-section .custom-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensures that the div doesn't interfere with input events */
+    color: #B8B8B8;
+    font-size: 12px;
+    line-height: 1rem;
+    white-space: wrap; /* Allows wrapping for the text */
+}
+
+.swap-section .custom-placeholder-input:focus + .custom-placeholder,
+.swap-section .custom-placeholder-input:not(:placeholder-shown) + .custom-placeholder {
+    display: none;
+}
+
+.swap-section .swap-icon{
+    background: linear-gradient(90.9deg, #B5379F 3.03%, #4E49B9 94.33%);
+    border: none;
+    border-radius: 50%;
+    color: white;
+}
+.swap-section .text-three{
+    font-size: 12px;
+    font-weight: 300;
+}
+.swap-section .done-css{
+    background: linear-gradient(90.9deg, #B5379F 3.03%, #69678a 94.33%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
 }
 /* ==========Karthick ============= */

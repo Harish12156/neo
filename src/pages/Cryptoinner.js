@@ -1,7 +1,15 @@
 import binance from "../assets/images/Crypto/binance.png";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { IoIosCopy } from "react-icons/io";
+import usdc from "../assets/images/Crypto/CoinUSDC.png";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdSwapVert } from "react-icons/md";
 
 
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import { FaCalendarAlt } from 'react-icons/fa';
+import { addDays, subDays, addMonths } from 'date-fns';
 
 
 import React, { useState } from 'react';
@@ -9,6 +17,45 @@ import ReactApexChart from 'react-apexcharts';
 
 
 function Cryptoinner() {
+
+    const [date, setDate] = useState(new Date());
+    const [isCalendarOpen, setIsCalendarOpen] = useState(false);
+    const [view, setView] = useState('month'); // 'month', 'year', etc.
+    const [range, setRange] = useState([new Date()]);
+
+    const toggleCalendar = () => {
+        setIsCalendarOpen(!isCalendarOpen);
+    };
+
+    const setDateRange = (type) => {
+        let newRange;
+        const now = new Date();
+
+        switch (type) {
+            case '1D':
+                newRange = [now];
+                break;
+            case '1H':
+                newRange = [subDays(now, 1), now];
+                break;
+            case '3D':
+                newRange = [subDays(now, 3), now];
+                break;
+            case '1W':
+                newRange = [subDays(now, 7), now];
+                break;
+            case '1M':
+                newRange = [subDays(now, 30), now];
+                break;
+            default:
+                newRange = [now];
+        }
+
+        setRange(newRange);
+        setDate(now);
+    };
+
+
 
 
 
@@ -90,9 +137,9 @@ function Cryptoinner() {
             <div className='cryptoinner-section-one'>
                 <div className='container-fluid'>
                     <div className='row'>
-                        <div className='col-lg-9'>
+                        <div className='col-lg-8'>
                             <div className='graph-section p-2 rounded-3'>
-                                <div className='d-flex align-items-center justify-content-around py-2 flex-lg-row flex-wrap'>
+                                <div className='d-flex align-items-center justify-content-around py-2 flex-lg-row flex-wrap gap-3'>
                                     <div className='d-flex align-items-center gap-1'>
                                         <LazyLoadImage alt="binance" src={binance} className='' />
                                         <div><div className="text-one">BTC/USDT</div><div className="text-two">Binance</div></div>
@@ -101,12 +148,154 @@ function Cryptoinner() {
                                     <div><div className="text-three">37,440.01</div><div className="text-four">24h high</div></div>
                                     <div><div className="text-three">37,440.01</div><div className="text-four">24h low</div></div>
                                     <div><div className="text-three">37,440.01</div><div className="text-four">24h volume(BTC)</div></div>
-                                        
+
+                                </div>
+                                <div className="d-flex align-items-center justify-content-between py-3">
+                                    <div>
+                                        <span className="text-one">Token: 0xfb7...c75a<IoIosCopy className="ms-1" /></span>
+                                        <span className="text-one ms-lg-3">Pair: 0xa29...7d6d<IoIosCopy className="ms-1" /></span>
+                                    </div>
+
+                                    <div className="calendar-container">
+                                        <span className="view-buttons">
+                                            <button onClick={() => setDateRange('1D')}>1D</button>
+                                            <button onClick={() => setDateRange('1H')}>1H</button>
+                                            <button onClick={() => setDateRange('3D')}>3D</button>
+                                            <button onClick={() => setDateRange('1W')}>1W</button>
+                                            <button onClick={() => setDateRange('1M')}>1M</button>
+                                        </span>
+                                        <button onClick={toggleCalendar} className="calendar-icon-button">
+                                            <FaCalendarAlt size={11} />
+                                        </button>
+                                        {isCalendarOpen && (
+                                            <Calendar
+                                                onChange={setDate}
+                                                value={date}
+                                                tileDisabled={({ date }) => date < range[0] || date > range[1]}
+                                            />
+                                        )}
+                                    </div>
+
                                 </div>
                                 <div id="chart">
                                     <ReactApexChart options={chartOptions} series={chartSeries} type="candlestick" height={350} />
                                 </div>
                                 <div id="html-dist"></div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="swap-section p-2 rounded-3">
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-buy" type="button" role="tab" aria-controls="pills-buy" aria-selected="true">Buy</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-sell-tab" data-bs-toggle="pill" data-bs-target="#pills-sell" type="button" role="tab" aria-controls="pills-sell" aria-selected="false">Sell</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-buy" role="tabpanel" aria-labelledby="pills-buy-tab" tabindex="0">
+                                        <div className="d-flex align-items-center py-2 border-bottom-css">
+                                            <div className='d-flex align-items-center gap-1'>
+                                                <LazyLoadImage alt="binance" src={binance} className='' />
+                                                <div><div className="text-one">BTC/USDT</div><div className="text-two">Binance</div></div>
+                                            </div>
+                                            <div className="ms-auto text-end"><div><div className="text-one fw-bold">0xa010...35B9e1</div><div className="text-two">Metamask wallet</div></div></div>
+                                        </div>
+
+                                        <div className="py-4">
+                                            <div className='d-flex align-items-center position-relative'>
+                                                <div className="flex-grow-1">
+                                                    <input type="text" className="form-control custom-placeholder-input" id="from" placeholder="" />
+                                                    <div className="custom-placeholder">
+                                                        100 <br /> balance ~ 0.00
+                                                    </div>
+                                                </div>
+
+                                                <div className='from-btn'>
+                                                    {/* Button trigger modal */}
+                                                    <div className="d-flex align-items-center gap-1 position-absolute end-0" data-bs-toggle="modal" data-bs-target="#myswapFromID">
+                                                        <div><LazyLoadImage alt='bitcoin' src={usdc} className='from-img' /></div>
+                                                        <div className="text-one">UAH</div>
+                                                        <div><MdKeyboardArrowDown className='me-1' /></div>
+                                                    </div>
+
+                                                    {/* Modal */}
+                                                    <div className="modal fade" id="myswapFromID" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="myswapFromLabel" aria-hidden="true">
+                                                        <div className="modal-dialog">
+                                                            <div className="modal-content">
+                                                                <div className="modal-header">
+                                                                    <h1 className="modal-title fs-5" id="myFromLabel">Modal title</h1>
+                                                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div className="modal-body">
+                                                                    ...
+                                                                </div>
+                                                                <div className="modal-footer">
+                                                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    <button type="button" className="btn btn-primary">Understood</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="m-auto text-center"><MdSwapVert className='swap-icon' /></div>
+                                            <div className='d-flex align-items-center position-relative'>
+                                                <div className="flex-grow-1">
+                                                    <input type="text" className="form-control custom-placeholder-input" id="from" placeholder="" />
+                                                    <div className="custom-placeholder">
+                                                        0.052145 <br /> balance ~ 2450.211
+                                                    </div>
+                                                </div>
+
+                                                <div className='from-btn'>
+                                                    {/* Button trigger modal */}
+                                                    <div className="d-flex align-items-center gap-1 position-absolute end-0" data-bs-toggle="modal" data-bs-target="#myswaptoID">
+                                                        <div><LazyLoadImage alt='bitcoin' src={usdc} className='from-img' /></div>
+                                                        <div className="text-one">UAH</div>
+                                                        <div><MdKeyboardArrowDown className='me-1' /></div>
+                                                    </div>
+
+                                                    {/* Modal */}
+                                                    <div className="modal fade" id="myswaptoID" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="myswaptoLabel" aria-hidden="true">
+                                                        <div className="modal-dialog">
+                                                            <div className="modal-content">
+                                                                <div className="modal-header">
+                                                                    <h1 className="modal-title fs-5" id="myFromLabel">Modal-title</h1>
+                                                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div className="modal-body">
+                                                                    ...
+                                                                </div>
+                                                                <div className="modal-footer">
+                                                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    <button type="button" className="btn btn-primary">Understood</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="py-3">
+                                            <div className="d-flex align-items-center py-1">
+                                                <div className="text-three">Price per USDC</div>
+                                                <div className="ms-auto text-end text-three fw-semibold">0.035422 ETH</div>
+                                            </div>
+                                            <div className="d-flex align-items-center py-1">
+                                                <div className="text-three">Price impact</div>
+                                                <div className="ms-auto text-end text-three fw-semibold fc-g">0.24 %</div>
+                                            </div>
+                                        </div>
+
+                                        <div className="py-4">
+                                            <button class="done-css">Buy</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-sell" role="tabpanel" aria-labelledby="pills-sell-tab" tabindex="0">Sell</div>
+                                </div>
                             </div>
                         </div>
                     </div>

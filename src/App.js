@@ -55,6 +55,8 @@ function App() {
             <Route exact path="/goals" element={<Dashboard />} />
             <Route exact path="/data" element={<Dashboard />} />
             <Route exact path="/account" element={<Account />} />
+            <Route exact path="/money-transfer" element={<Account />} />
+            <Route exact path="/account-transfer" element={<Account />} />
             <Route exact path="/card" element={<Card />} />
             <Route exact path="/transactions" element={<Transactions />} />
             <Route exact path="/crypto" element={<Crypto />} />

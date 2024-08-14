@@ -279,7 +279,9 @@
 .dash-actions-active .dash-actions-action-1 {
     color: #FFF !important;
 }
-
+.dash-actions-active .arrow-right{
+    color: #FFF !important;
+}
 .dash-actions-btn-1 {
     border: 1px solid #DDD0EF;
     background-color: transparent;
@@ -948,6 +950,36 @@
     font-weight: 600;
 }
 
+.dash-acco-btn-1 {
+    background-color: #FFF;
+    color: var(--color-1);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    width: 3vw;
+    height: 3vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.dash-acco-txt-1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    background-color: transparent;
+    background: linear-gradient(90deg, #8950DA 0%, #AF50A7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.livemarket-table td {
+    border: none;
+}
+.acc-img-c-1{
+    width: 55px;
+    height: 55px;
+}
+
 /* Desktop styles */
 @media (min-width: 1025px) {
     .data-modal-1 .modal-dialog {
@@ -1196,4 +1228,3 @@
     left: -25px;
     color: var(--color-1);
 }
-

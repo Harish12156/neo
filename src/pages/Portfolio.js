@@ -85,6 +85,19 @@ function Portfolio() {
       strokeColors: '#8950DA',
       strokeWidth: 2,
     },
+    yaxis: {
+      min: 0,
+      max: 120000,
+      tickAmount: 6,
+      labels: {
+          formatter: function (val) {
+              return (val / 1000) + 'k';
+          },
+          style: {
+              colors: '#BCBCBC'
+          }
+      }
+  },
     title: {
       
       align: 'left',
@@ -93,15 +106,8 @@ function Portfolio() {
         fontWeight: 'bold',
       }
     },
-    xaxis: {
-      type: 'category',
-      categories: ['5k', '10k', '15k', '20k', '25k', '30k', '35k'],
-      labels: {
-        style: {
-          fontSize: '10px'
-        }
-      }
-    },
+  
+    
     fill: {
       type: 'gradient',
       gradient: {
@@ -113,12 +119,12 @@ function Portfolio() {
               {
                   offset: 0,
                   color: '#8950DA',
-                  opacity: 0.7
+                  opacity: 0.1
               },
               {
                   offset: 100,
                   color: '#8950DA',
-                  opacity: 0.2
+                  opacity: 0.1
               }
           ]
       }

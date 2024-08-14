@@ -21,13 +21,22 @@ function Dashboardmain() {
             },
             stroke: {
                 curve: 'smooth',
-                colors: ['#8950DA']
+                colors: ['#8950DA'],
+                width: 3,
+                hover: {
+                    color: '#FF5733' // Change hover line color
+                }
             },
             markers: {
                 colors: ['var(--color-1)'],
-                strokeColors: ['#00000080'],
+                strokeColors: ['#8950DA'],
                 strokeWidth: 2,
-
+                hover: {
+                    size: 7,
+                    strokeWidth: 3,
+                    fillColor: '#FF5733', // Change marker fill color on hover
+                    strokeColor: '#FF5733' // Change marker stroke color on hover
+                }
             },
             fill: {
                 type: 'gradient',
@@ -63,6 +72,12 @@ function Dashboardmain() {
                     color: '#BCBCBC',
                     offsetX: 0,
                     offsetY: 0
+                },
+                tooltip: {
+                    enabled: false
+                },
+                crosshairs: {
+                    show: false,
                 }
             },
             yaxis: {
@@ -76,7 +91,8 @@ function Dashboardmain() {
                     style: {
                         colors: '#BCBCBC'
                     }
-                }
+                },
+
             },
             tooltip: {
                 x: {
@@ -96,6 +112,7 @@ function Dashboardmain() {
         }
     });
 
+
     return (
         <div>
             <Myassets />
@@ -113,6 +130,7 @@ function Dashboardmain() {
                     <div className='dash-ball-chart'>
                         <ReactApexChart options={chartOptions.options} series={chartOptions.series} type="area" height={250} />
                     </div>
+                  
                 </div>
             </div>
         </div>

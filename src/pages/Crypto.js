@@ -66,26 +66,26 @@ function Crypto() {
                 </div>
               </div>
               <div className='pt-3'>
-                <div className='row align-items-center flex-wrap'>
-                  <div className='col-6 col-md-3'>
+                <div className='d-flex align-items-center gap-3 flex-wrap flex-lg-row'>
+                  <div className=''>
                     <button className='link-btn'>
                       <LazyLoadImage alt='convert' src={convert} className='link-img me-1'></LazyLoadImage>
                       Convert<MdKeyboardArrowRight className='arrow-right' />
                     </button>
                   </div>
-                  <div className='col-6 col-md-3'>
+                  <div className=''>
                     <button className='link-btn'>
                       <LazyLoadImage alt='transfer' src={transfer} className='link-img me-1'></LazyLoadImage>
                       Transfer<MdKeyboardArrowRight className='arrow-right' />
                     </button>
                   </div>
-                  <div className='col-6 col-md-3'>
+                  <div className=''>
                     <button className='link-btn'>
                       <LazyLoadImage alt='bridge' src={bridge} className='link-img me-1'></LazyLoadImage>
                       Bridge<MdKeyboardArrowRight className='arrow-right' />
                     </button>
                   </div>
-                  <div className='col-6 col-md-3'>
+                  <div className=''>
                     <button className='link-btn'>
                       <LazyLoadImage alt='stake' src={stake} className='link-img me-1'></LazyLoadImage>
                       Stake<MdKeyboardArrowRight className='arrow-right' />
@@ -209,7 +209,7 @@ function Crypto() {
                             </div>
                           </td>
                           <td className=''><div className='text-three mb-2'>change</div><div className='text-four fc-g'>+14.02%</div></td>
-                          <td className=''><div className='text-three mb-2'>Price</div><div className='text-five'>39,786 USD</div></td>
+                          <td className=''><div className='text-three mb-2'>Price</div><div className='text-five'>21,786 USD</div></td>
                           <td className=''><div><LazyLoadImage alt="Graph" src={graph} className='graph-size' /></div></td>
                         </Link>
                       </tr>

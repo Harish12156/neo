@@ -35,14 +35,29 @@ function Sidenav() {
     return dashboardRoutes.includes(location.pathname);
   };
 
+  const isAccountActive = () => {
+    const accountRoutes = ['/account', '/money-transfer', '/account-transfer'];
+    return accountRoutes.includes(location.pathname);
+  };
+
   const getLinkClass = (path) => {
-    return isDashboardActive() && path === '/' ? 'list-item-side active-page-root-css' :
-      location.pathname === path ? 'list-item-side active-page-root-css' : 'list-item-side';
+    if (isDashboardActive() && path === '/') {
+      return 'list-item-side active-page-root-css';
+    }
+    if (isAccountActive() && path === '/account') {
+      return 'list-item-side active-page-root-css';
+    }
+    return location.pathname === path ? 'list-item-side active-page-root-css' : 'list-item-side';
   };
 
   const getIcon = (defaultIcon, activeIcon, path) => {
-    return isDashboardActive() && path === '/' ? activeIcon :
-      location.pathname === path ? activeIcon : defaultIcon;
+    if (isDashboardActive() && path === '/') {
+      return activeIcon;
+    }
+    if (isAccountActive() && path === '/account') {
+      return activeIcon;
+    }
+    return location.pathname === path ? activeIcon : defaultIcon;
   };
 
   return (
@@ -139,5 +154,6 @@ function Sidenav() {
     </div>
   );
 }
+
 
 export default Sidenav;

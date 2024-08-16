@@ -31,6 +31,7 @@ body {
 /* width */
 ::-webkit-scrollbar {
   width: 2px;
+  height: 2px;
 }
 
 /* Track */
@@ -62,10 +63,19 @@ a {
   color: #F46D22;
 }
 
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
 .top-web-sec {
   padding-top: 100px;
 }
-.cur-point{
+
+.cur-point {
   cursor: pointer;
 }
 

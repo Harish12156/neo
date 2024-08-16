@@ -24,7 +24,7 @@ function Fiattofiat() {
                         <div class="d-flex align-items-center gap-2">
                             <div><LazyLoadImage alt='bitcoin' src={bitcoin} className='' /></div>
                             <div>USD</div>
-                            <div><MdKeyboardArrowDown className='' /></div>
+                            <div><MdKeyboardArrowDown className='fs-16' /></div>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ function Fiattofiat() {
                         <div class="d-flex align-items-center gap-2">
                             <div><LazyLoadImage alt='bitcoin' src={bitcointwo} className='' /></div>
                             <div>ADA</div>
-                            <div><MdKeyboardArrowDown className='' /></div>
+                            <div><MdKeyboardArrowDown className='fs-16' /></div>
                         </div>
                     </div>
                 </div>

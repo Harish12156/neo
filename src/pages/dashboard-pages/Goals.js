@@ -26,9 +26,31 @@ function Goals() {
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
     const [isChecked, setIsChecked] = useState(true);
+    const [isSwiped, setIsSwiped] = useState(false);
+    const [swipeStart, setSwipeStart] = useState(null);
+    const [swipeEnd, setSwipeEnd] = useState(null);
+
 
     const handleCheckboxChange = () => {
         setIsChecked(!isChecked);
+    };
+
+    const handleMouseDown = (e) => {
+        setSwipeStart(e.clientX);
+    };
+
+    const handleMouseMove = (e) => {
+        if (swipeStart !== null) {
+            setSwipeEnd(e.clientX);
+        }
+    };
+
+    const handleMouseUp = () => {
+        if (swipeEnd - swipeStart > 100) {
+            setIsSwiped(true);
+        }
+        setSwipeStart(null);
+        setSwipeEnd(null);
     };
     return (
         <>
@@ -243,14 +265,22 @@ function Goals() {
                             <h5 className='mt-5'>Description</h5>
                             <span>It is a long established fact that a reader will be distracted by the readable content of a page</span>
                             <div className='mt-4'>
-                            <button className='d-swipe-btn-1'>
-                                <div className='d-flex flex-row align-items-center'>
-                                    <div className='d-swipe-btn-1-1' >
+                                <button
+                                    className='d-swipe-btn-1'
+                                    onMouseDown={handleMouseDown}
+                                    onMouseMove={handleMouseMove}
+                                    onMouseUp={handleMouseUp}
+                                >
+                                    <div
+                                        className='d-swipe-btn-1-1'
+                                        style={{ left: isSwiped ? 'calc(100% - 50px)' : '0' }}
+                                    >
                                         <MdOutlineKeyboardDoubleArrowRight />
                                     </div>
-                                    <span className='d-swipe-btn-1-2'>Slide to redeem </span>
-                                </div>
-                            </button>
+                                    <span className='d-swipe-btn-1-2'>
+                                        {isSwiped ? 'Redeemed' : 'Slide to redeem'}
+                                    </span>
+                                </button>
                             </div>
 
                         </div>

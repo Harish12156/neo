@@ -13,8 +13,8 @@ function MyWallet() {
       <div className="card dash-card-1">
         <div className="card-body">
           <div className='row g-4 align-items-center'>
-            <div className='col-xl-5 text-center'>
-              <h5 className='dash-acco-txt-1'>My Wallet</h5>
+            <div className='col-xl-5 '>
+              <h5 className='dash-acco-txt-1 mx-xl-auto'>My Wallet</h5>
             </div>
             <div className='col-xl-6'>
               <div className='card h-100 dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe2})` }}>
@@ -36,25 +36,25 @@ function MyWallet() {
               </div>
             </div>
           </div>
-          <div className='row align-items-center cryto-section mt-5'>
-            <div className='col-12 col-md-4'>
+          <div className='d-flex flex-md-row flex-column align-items-center cryto-section mt-5 gap-md-5 gap-2'>
+            <div className='mt-sec-link-btn'>
               <Link 
                 to="/money-transfer" 
                 className={`link-btn w-100 ${location.pathname === "/money-transfer" ? "dash-actions-active" : ""}`}
               >
                 <BsPersonBoundingBox className='arrow-right ms-0 me-2 ' />
                 Money Transfer
-                <MdKeyboardArrowRight className='arrow-right ms-auto' />
+                <MdKeyboardArrowRight className='arrow-right ms-auto arrow-right-1' />
               </Link>
             </div>
-            <div className='col-12 col-md-4'>
+            <div className='mt-sec-link-btn'>
               <Link 
                 to="/account-transfer" 
                 className={`link-btn w-100 ${location.pathname === "/account-transfer" ? "dash-actions-active" : ""}`}
               >
                 <BsBank2 className='arrow-right ms-0 me-2' />
                 Account Transfer 
-                <MdKeyboardArrowRight className='arrow-right ms-auto' />
+                <MdKeyboardArrowRight className='arrow-right ms-auto arrow-right-1' />
               </Link>
             </div>
           </div>

@@ -62,7 +62,7 @@ function Transactions() {
                     <div className="collapse show" id="collapsetrans1">
                         <div className='dash-trans-table'>
                             {transactions.map((transaction) => (
-                                <div className='d-flex flex-row gap-3 mb-4' key={transaction.id}>
+                                <div className='d-flex flex-row gap-2 mb-4' key={transaction.id}>
                                     {transaction.image2 ? (
                                         <div className='d-flex'>
                                             <LazyLoadImage alt={`${transaction.name}`} src={transaction.image} className='dash-trans-img-2' />
@@ -93,7 +93,7 @@ function Transactions() {
                     <div className="collapse show" id="collapsetrans2">
                         <div className='dash-trans-table'>
                             {transactions2.map((transaction) => (
-                                <div className='d-flex flex-row gap-3 mb-4' key={transaction.id}>
+                                <div className='d-flex flex-row gap-2 mb-4' key={transaction.id}>
                                     <div>
                                         <LazyLoadImage alt={`${transaction.name}`} src={transaction.image} className='dash-trans-img-1' />
                                     </div>

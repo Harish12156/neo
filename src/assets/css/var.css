@@ -760,20 +760,19 @@ height:auto;
 padding:10px 0px;
 }
 
-.transaction-new-tables .table>:not(caption)>*>* {
+/* .transaction-new-tables .table>:not(caption)>*>* {
   padding: .5rem 1.8rem;
-}
+} */
 .transaction-new-tables .transaction-table-td-00{
   background: none!important;
 }
 
 .transaction-table-td-01{
-  padding-top: 15px!important;
-  padding-bottom: 15px!important;
-margin-top:10px!important;
-margin-bottom:10px!important;
+  padding-top:16px!important;
+    padding-bottom:16px!important;
 vertical-align: middle;
   font-size:13px;
+  white-space: nowrap;
 }
 .transaction-table-td-00{
   padding-top: 15px!important;
@@ -803,21 +802,63 @@ padding:10px!important;
 table {
   border-spacing: 0 10px;
 }
-.transaction-table-td-01 {
-  margin-bottom: 10px;
-}
+
 .transaction-table-full-01{
   border-radius:10px;
+
+}
+.new-table-height-01{
+  height:50px!important;
+  background-color:white;
+  border-radius:5px;
+  padding-top:10px!important;
+  padding-bottom:10px!important;
+}
+.new-table-height-00{
+  width:10%
+}
+.new-table-height-01{
+  width:25%;
+}
+.new-table-height-02{
+  width:20%;
+}
+.new-table-height-03{
+  width:10%;
+}
+.new-table-height-04{
+  width:20%;
+}
+.new-table-height-05{
+  width:15%;
+}
+.transaction-table-full-00{
+  border-bottom:1px solid white;
+}
+.table-flordy-images-01{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+}
+.tot-transaction-process-img .form-select {
+  background-image: url("../../assets/images/select-curve-img.png")!important;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 10px;
   
 }
-/* .transaction-table-full-01{
-  border-collapse: collapse;
-  border-spacing:15px 0px;
-} */
-/* .transaction-table-td-00{
-  padding-top: 15px!important;
-  padding-bottom: 15px!important;
-} */
+.alt-apex-week-selector{
+  position:relative;
+}
+.alt-apex-week-selector::before{
+content:"";
+width:20px;
+height:20px;
+background:red;
+position:absolute;
+right:0px;
+
+}
 /* <=======================================> */
 }
 
@@ -1223,7 +1264,7 @@ table {
   }
   .new-portfolio-button-points{
     background-color: white!important;
-    border-radius:10px;
+    border-radius:30px!important;
   }
   .epic-chart-select-option{
     font-size:12px!important;
@@ -1370,20 +1411,20 @@ table {
   padding:10px 0px;
   }
   
-  .transaction-new-tables .table>:not(caption)>*>* {
+  /* .transaction-new-tables .table>:not(caption)>*>* {
     padding: .5rem 1.8rem;
-  }
+  } */
   .transaction-new-tables .transaction-table-td-00{
     background: none!important;
   }
   
   .transaction-table-td-01{
-    padding-top: 15px!important;
-    padding-bottom: 15px!important;
-  margin-top:10px!important;
-  margin-bottom:10px!important;
+    
+    padding-top:16px!important;
+    padding-bottom:16px!important;
   vertical-align: middle;
     font-size:13px;
+    white-space: nowrap;
   }
   .transaction-table-td-00{
     padding-top: 15px!important;
@@ -1409,9 +1450,43 @@ table {
   }
   .transaction-table-full-01{
     width:1000px!important;
+    
   }
   .transaction-table-full-00{
     overflow-x: auto;
+  }
+  .transaction-table-full-00{
+    border-bottom:1px solid white;
+  }
+  .new-table-height-00{
+    width:10%
+  }
+  .new-table-height-01{
+    width:25%;
+  }
+  .new-table-height-02{
+    width:20%;
+  }
+  .new-table-height-03{
+    width:10%;
+  }
+  .new-table-height-04{
+    width:20%;
+  }
+  .new-table-height-05{
+    width:15%;
+  }
+  .table-flordy-images-01{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+  }
+  .tot-transaction-process-img .form-select {
+    background-image: url("../../assets/images/select-curve-img.png")!important;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 10px;
+    
   }
   /* .transaction-table-td-00{
     padding-top: 15px!important;
@@ -2030,12 +2105,11 @@ table {
   }
   
   .transaction-table-td-01{
-    padding-top: 15px!important;
-    padding-bottom: 15px!important;
-  margin-top:10px!important;
-  margin-bottom:10px!important;
+    padding-top:16px!important;
+    padding-bottom:16px!important;
   vertical-align: middle;
     font-size:13px;
+    white-space: nowrap;
   }
   .transaction-table-td-00{
     padding-top: 15px!important;
@@ -2061,6 +2135,7 @@ table {
   }
   .transaction-table-full-01{
     width:1000px!important;
+   
   }
   .transaction-table-full-00{
     overflow-x: auto;
@@ -2070,6 +2145,39 @@ table {
   }
   .alt-apex-week-selector{
     width:115px!important;
+  }
+  .transaction-table-full-00{
+    border-bottom:1px solid white;
+  }
+  .new-table-height-00{
+    width:10%
+  }
+  .new-table-height-01{
+    width:25%;
+  }
+  .new-table-height-02{
+    width:20%;
+  }
+  .new-table-height-03{
+    width:10%;
+  }
+  .new-table-height-04{
+    width:20%;
+  }
+  .new-table-height-05{
+    width:15%;
+  }
+  .table-flordy-images-01{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+  }
+  .tot-transaction-process-img .form-select {
+    background-image: url("../../assets/images/select-curve-img.png")!important;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size:10px!important;
+    
   }
   /* .transaction-table-td-00{
     padding-top: 15px!important;

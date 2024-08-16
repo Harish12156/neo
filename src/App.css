@@ -65,6 +65,9 @@ a {
 .top-web-sec {
   padding-top: 100px;
 }
+.cur-point{
+  cursor: pointer;
+}
 
 @keyframes slideInFromRight {
   0% {

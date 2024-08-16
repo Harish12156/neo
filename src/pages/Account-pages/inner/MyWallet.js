@@ -37,7 +37,7 @@ function MyWallet() {
             </div>
           </div>
           <div className='row align-items-center cryto-section mt-5'>
-            <div className='col-6 col-md-4'>
+            <div className='col-12 col-md-4'>
               <Link 
                 to="/money-transfer" 
                 className={`link-btn w-100 ${location.pathname === "/money-transfer" ? "dash-actions-active" : ""}`}
@@ -47,7 +47,7 @@ function MyWallet() {
                 <MdKeyboardArrowRight className='arrow-right ms-auto' />
               </Link>
             </div>
-            <div className='col-6 col-md-4'>
+            <div className='col-12 col-md-4'>
               <Link 
                 to="/account-transfer" 
                 className={`link-btn w-100 ${location.pathname === "/account-transfer" ? "dash-actions-active" : ""}`}

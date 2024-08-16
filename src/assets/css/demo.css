@@ -279,13 +279,13 @@
 }
 
 .cryto-section .exchange .done-css {
-    background: linear-gradient(90.9deg, #B5379F 3.03%, #69678a 94.33%);
+    background: linear-gradient(90.9deg, #B5379F 3.03%, #4E49B9 94.33%);
+    padding: 16px 0px;
+    width: 100%;
+    color: #FFF;
     border: none;
     border-radius: 10px;
-    color: white;
-    width: 100%;
-    font-size: 14px;
-    padding: 10px;
+    font-weight: 600;
 }
 
 .cryto-section .live-heading {
@@ -467,23 +467,28 @@
 }
 
 .swap-section .nav-pills .nav-link.active,
-.swap-section .nav-pills .show>.nav-link{
+.swap-section .nav-pills .show>.nav-link {
     background: linear-gradient(90.9deg, #B5379F 3.03%, #4E49B9 94.33%);
 }
-.swap-section .nav-link{
+
+.swap-section .nav-link {
     color: #FF4B1F;
 }
-.swap-section .text-one{
+
+.swap-section .text-one {
     font-size: 13px;
     color: #191919;
 }
+
 .swap-section .text-two {
     font-size: 11px;
     color: grey;
 }
-.swap-section .border-bottom-css{
+
+.swap-section .border-bottom-css {
     border-bottom: 1px solid rgb(241 241 241);
 }
+
 .swap-section .position-relative {
     position: relative;
 }
@@ -497,23 +502,26 @@
 }
 
 
-.swap-section .form-control{
+.swap-section .form-control {
     border-radius: 10px;
     padding: 12px;
     border: 1px solid #ECE6E6;
 }
-.swap-section .form-control:focus{
+
+.swap-section .form-control:focus {
     border: 1px solid #ECE6E6;
     box-shadow: none;
 }
-.swap-section .from-img{
+
+.swap-section .from-img {
     background: #292929;
     padding: 4px;
     border-radius: 5px;
 }
 
 .swap-section .custom-placeholder-input {
-    color: transparent; /* Makes the default placeholder text transparent */
+    color: transparent;
+    /* Makes the default placeholder text transparent */
 }
 
 .swap-section .custom-placeholder {
@@ -521,35 +529,158 @@
     top: 50%;
     left: 8px;
     transform: translateY(-50%);
-    pointer-events: none; /* Ensures that the div doesn't interfere with input events */
+    pointer-events: none;
+    /* Ensures that the div doesn't interfere with input events */
     color: #B8B8B8;
     font-size: 12px;
     line-height: 1rem;
-    white-space: wrap; /* Allows wrapping for the text */
+    white-space: wrap;
+    /* Allows wrapping for the text */
 }
 
-.swap-section .custom-placeholder-input:focus + .custom-placeholder,
-.swap-section .custom-placeholder-input:not(:placeholder-shown) + .custom-placeholder {
+.swap-section .custom-placeholder-input:focus+.custom-placeholder,
+.swap-section .custom-placeholder-input:not(:placeholder-shown)+.custom-placeholder {
     display: none;
 }
 
-.swap-section .swap-icon{
+.swap-section .swap-icon {
     background: linear-gradient(90.9deg, #B5379F 3.03%, #4E49B9 94.33%);
     border: none;
     border-radius: 50%;
     color: white;
 }
-.swap-section .text-three{
+
+.swap-section .text-three {
     font-size: 12px;
     font-weight: 300;
 }
-.swap-section .done-css{
-    background: linear-gradient(90.9deg, #B5379F 3.03%, #69678a 94.33%);
+
+.swap-section .done-css {
+    background: linear-gradient(90.9deg, #B5379F 3.03%, #4E49B9 94.33%);
     border: none;
     border-radius: 10px;
     color: white;
     width: 100%;
     font-size: 14px;
     padding: 10px;
+}
+
+
+.trade-section .nav-pills .nav-link.active,
+.trade-section .nav-pills .show>.nav-link {
+    background: linear-gradient(90.9deg, #B5379F 3.03%, #4E49B9 94.33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.trade-section .nav-link {
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cryptoinner-section-one .cryto-table {
+    overflow: auto;
+    background: #FFFFFF;
+}
+
+.cryptoinner-section-one .cryto-table-section {
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.cryptoinner-section-one .cryto-table-section th {
+    font-size: 10px;
+    font-weight: 300;
+    color: #191919;
+    line-height: 18.38px;
+    padding: 10px;
+}
+
+.cryptoinner-section-one .cryto-table-section td {
+    padding: 10px;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18.38px;
+}
+
+.cryptoinner-section-one .cryto-table-section td:first-child {
+    width: 15%;
+}
+
+.cryptoinner-section-one .cryto-table-section td:nth-child(2) {
+    width: 15%;
+}
+
+.cryptoinner-section-one .cryto-table-section td:nth-child(3) {
+    width: 10%;
+}
+
+.cryptoinner-section-one .cryto-table-section td:nth-child(4) {
+    width: 10%;
+}
+
+.cryptoinner-section-one .cryto-table-section td:nth-child(5) {
+    width: 10%;
+}
+
+.cryptoinner-section-one .cryto-table-section td:nth-child(6) {
+    width: 15%;
+}
+
+.cryptoinner-section-one .cryto-table-section td:last-child {
+    width: 15%;
+}
+
+
+.cryto-table .crypto-table-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+.cryto-table .option-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 18.38px;
+}
+
+.cryto-table .search-input {
+    padding-left: 10px;
+    width: 200px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 0.5px solid #E6E1EE
+}
+
+.cryto-table .search-input::placeholder {
+    font-size: 10px;
+}
+
+.crypto-table-options .search-btn {
+    border: none;
+    background: #D9D1E4;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 16px;
+}
+
+.card-section .mycard-section{
+    background: #ffffff;
+}
+.mycard-section h6{
+    color: #8950DA;
+}
+.mycard-section .card-body{
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 }
 /* ==========Karthick ============= */

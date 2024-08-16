@@ -33,14 +33,14 @@ function Card() {
                             <span className='dash-card-txt-1'>Rempic Pay Bank</span>
                           </div>
                           <div className='d-flex flex-column mt-0 mt-md-4'>
-                            <span>**** **** **** 1690</span>
+                            <span className='dash-card-txt-1-1'>**** **** **** 1690</span>
                             <div className='d-flex flex-row'>
-                              <h5 className='mb-0'>Platinum Plus</h5>
-                              <span className='ms-auto'>Exp 01/22</span>
+                              <h5 className='mb-0 dash-card-txt-1-2'>Platinum Plus</h5>
+                              <span className='ms-auto dash-card-txt-1-2'>Exp 01/22</span>
                             </div>
                           </div>
                           <div className='d-flex flex-row align-items-center'>
-                            <h5 className='mb-0'>Sunny Aveiro</h5>
+                            <h5 className='mb-0 dash-card-txt-1'>Sunny Aveiro</h5>
                             <LazyLoadImage alt={`VisaInc`} src={VisaInc} className='dash-card-img-2 ms-auto' />
                           </div>
                         </div>
@@ -57,14 +57,14 @@ function Card() {
                             <span className='dash-card-txt-1'>Dutch Bangla Bank</span>
                           </div>
                           <div className='d-flex flex-column'>
-                            <span>**** **** **** 1690</span>
+                            <span className='dash-card-txt-1-1'>**** **** **** 1690</span>
                             <div className='d-flex flex-row'>
-                              <h5 className='mb-0'>Platinum Plus</h5>
-                              <span className='ms-auto'>Exp 01/22</span>
+                              <h5 className='mb-0 dash-card-txt-1-2'>Platinum Plus</h5>
+                              <span className='ms-auto dash-card-txt-1-2'>Exp 01/22</span>
                             </div>
                           </div>
                           <div className='d-flex flex-row align-items-center'>
-                            <h5 className='mb-0'>Sunny Aveiro</h5>
+                            <h5 className='mb-0 dash-card-txt-1'>Sunny Aveiro</h5>
                             <LazyLoadImage alt={`Master`} src={Master} className='dash-card-img-2 ms-auto' style={{ height: "40px" }} />
                           </div>
                         </div>

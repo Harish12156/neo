@@ -70,7 +70,7 @@ const data = [
 function FiatCurrency() {
     return (
         <div className="card dash-card-1 mt-4">
-            <div className="card-body">
+            <div className="card-body cryto-section">
                 <h2 className='dash-head-1 mb-4'>Live Market</h2>
                 <div className='table-size'>
                     <table className='livemarket-table my-3 table'>

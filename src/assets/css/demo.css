@@ -674,13 +674,47 @@
     padding: 4px 16px;
 }
 
-.card-section .mycard-section{
+.card-section .mycard-section {
     background: #ffffff;
 }
-.mycard-section h6{
+
+.mycard-section h6 {
     color: #8950DA;
 }
-.mycard-section .card-body{
+
+.mycard-section .card-body {
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 }
+
+.mycard-section .addcard-btn {
+    background: #8950DA;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    --bs-btn-padding-x: 5rem;
+}
+.mycard-section .addcard-btn:hover{
+    background: #8950DA;
+    color: black;  
+}
+.mycard-section .offcanvas .form-control::placeholder{
+    font-size: 12px;
+    color: #C3C7E5;
+}
+.mycard-section .offcanvas .form-control:focus{
+    border-color: var(--color-1);
+    box-shadow: none;
+}
+
+.mycard-section .offcanvas .form-select{
+    
+}
+
+.mycard-section .offcanvas .form-select:focus{
+    border-color: var(--color-1);
+    box-shadow: none;
+}
+
+  
 /* ==========Karthick ============= */

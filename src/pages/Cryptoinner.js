@@ -239,7 +239,7 @@ function Cryptoinner() {
                         </div>
                         <div className="col-lg-4">
                             <div className="swap-section p-2 rounded-3">
-                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link active" id="pills-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-buy" type="button" role="tab" aria-controls="pills-buy" aria-selected="true">Buy</button>
                                     </li>

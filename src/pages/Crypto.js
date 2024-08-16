@@ -66,29 +66,29 @@ function Crypto() {
                 </div>
               </div>
               <div className='pt-3'>
-                <div className='d-flex align-items-center gap-3 flex-wrap flex-lg-row'>
+                <div className='row row-cols-2 row-cols-md-2 row-cols-lg-4'>
                   <div className=''>
-                    <button className='link-btn'>
+                    <button className='link-btn w-100'>
                       <LazyLoadImage alt='convert' src={convert} className='link-img me-1'></LazyLoadImage>
-                      Convert<MdKeyboardArrowRight className='arrow-right' />
+                      Convert<MdKeyboardArrowRight className='arrow-right ms-auto' />
                     </button>
                   </div>
                   <div className=''>
-                    <button className='link-btn'>
+                    <button className='link-btn w-100'>
                       <LazyLoadImage alt='transfer' src={transfer} className='link-img me-1'></LazyLoadImage>
-                      Transfer<MdKeyboardArrowRight className='arrow-right' />
+                      Transfer<MdKeyboardArrowRight className='arrow-right ms-auto' />
                     </button>
                   </div>
                   <div className=''>
-                    <button className='link-btn'>
+                    <button className='link-btn w-100'>
                       <LazyLoadImage alt='bridge' src={bridge} className='link-img me-1'></LazyLoadImage>
-                      Bridge<MdKeyboardArrowRight className='arrow-right' />
+                      Bridge<MdKeyboardArrowRight className='arrow-right ms-auto' />
                     </button>
                   </div>
                   <div className=''>
-                    <button className='link-btn'>
+                    <button className='link-btn w-100'>
                       <LazyLoadImage alt='stake' src={stake} className='link-img me-1'></LazyLoadImage>
-                      Stake<MdKeyboardArrowRight className='arrow-right' />
+                      Stake<MdKeyboardArrowRight className='arrow-right ms-auto' />
                     </button>
                   </div>
                 </div>

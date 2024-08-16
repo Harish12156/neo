@@ -30,7 +30,7 @@ function Crypto() {
     <div className='cryto-section'>
       <div className='cryto-section-one'>
         <div className='container-fluid'>
-          <div className='row'>
+          <div className='row gap-3 gap-lg-0'>
             <div className='col-lg-8'>
               <div className='total-balance-sec card border-0 p-4 rounded-3'>
                 <h2 className='total-heading'>Total Balance</h2>
@@ -193,7 +193,7 @@ function Crypto() {
               </div>
             </div>
           </div>
-          <div className='row py-3'>
+          <div className='row gap-3 gap-lg-0 py-3'>
             <div className='col-lg-8'>
               <div className='live-market card border-0 p-3 rounded-3'>
                 <h2 className='live-heading'>Live Market</h2>

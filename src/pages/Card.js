@@ -119,7 +119,7 @@ function Card() {
           <div className='row'>
             <div className='col-lg-4'>
               <div className='card h-100 mycard-section border-0 p-3 rounded-3 position-relative'>
-                <h6 className='fw-semibold'>My Card</h6>
+                <h6 className='dash-head-1 '>My Card</h6>
                 <div className='d-flex align-items-center flex-column py-3 gap-3'>
                   <div className='w-100'>
                     <div className='card h-100 dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe1})` }}>
@@ -129,7 +129,7 @@ function Card() {
                             <LazyLoadImage alt={`Favicon`} src={Favicon} className='dash-card-img-1' />
                             <span className='dash-card-txt-1'>Rempic Pay Bank</span>
                           </div>
-                          <div className='d-flex flex-column mt-0 mt-md-4'>
+                          <div className='d-flex flex-column mt-0 mt-md-4 py-4'>
                             <span className='dash-card-txt-1-1'>**** **** **** 1690</span>
                             <div className='d-flex flex-row'>
                               <h5 className='mb-0 dash-card-txt-1-2'>Platinum Plus</h5>
@@ -153,7 +153,7 @@ function Card() {
                             <LazyLoadImage alt={`Favicon`} src={Favicon} className='dash-card-img-1' />
                             <span className='dash-card-txt-1'>Dutch Bangla Bank</span>
                           </div>
-                          <div className='d-flex flex-column'>
+                          <div className='d-flex flex-column py-4'>
                             <span className='dash-card-txt-1-1'>**** **** **** 1690</span>
                             <div className='d-flex flex-row'>
                               <h5 className='mb-0 dash-card-txt-1-2'>Platinum Plus</h5>
@@ -268,7 +268,7 @@ function Card() {
                   <div>
                     <div className='d-flex align-items-center justify-content-between'>
                       <div>
-                        <h5 className='mb-auto fw-semibold'>Card Transaction</h5>
+                        <h5 className='mb-auto dash-head-1 '>Card Transaction</h5>
                       </div>
                       <div className='d-flex me-2'>
                         <LazyLoadImage src={Icon} alt='Graph' className='img-fluid transaction-icon-img' />

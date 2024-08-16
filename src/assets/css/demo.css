@@ -58,7 +58,7 @@
     font-size: 22px;
     font-weight: 500;
     line-height: 33px;
-    color: #8950DA;
+    color: var(--color-1);
 }
 
 .profile-section-one .user-id {
@@ -83,7 +83,7 @@
 
 .profile-section-one .nav-pills .nav-link.active,
 .profile-section-one .nav-pills .show>.nav-link {
-    color: #8950DA;
+    color: var(--color-1);
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -129,7 +129,7 @@
 }
 
 .profile-section-one .nav-link:hover {
-    color: #8950DA;
+    color: var(--color-1);
 }
 
 .profile-section-one .react-tel-input .flag-dropdown {
@@ -179,12 +179,6 @@
 
 .profile-section-one .tab-pane {
     transition: all 0.1s ease-in-out;
-}
-
-
-
-.cryto-section .total-balance-sec {
-    background: #FFFFFF;
 }
 
 .cryto-section .total-heading {
@@ -695,27 +689,28 @@
 }
 
 .mycard-section h6 {
-    color: #8950DA;
+    color: var(--color-1);
 }
 .mycard-section .card{
     --bs-card-spacer-y: 2.5rem;
 }
-.mycard-section .card-body {
+/* .mycard-section .card-body {
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-}
+} */
 
 .mycard-section .addcard-btn {
-    background: #8950DA;
+    background: var(--color-1);
     color: white;
     border-radius: 10px;
     font-size: 14px;
     font-weight: 600;
     --bs-btn-padding-x: 5rem;
+    --bs-btn-padding-y: 16px;
 }
 
 .mycard-section .addcard-btn:hover {
-    background: #8950DA;
-    color: black;
+    background: var(--color-1);
+    color: #FFF;
 }
 
 .mycard-section .offcanvas .form-control::placeholder {

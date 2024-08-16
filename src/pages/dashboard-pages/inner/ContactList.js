@@ -28,7 +28,7 @@ function ContactList() {
                             <div className='cont-list-height'>
                                 {contacts.map((contact, index) => (
                                     <div key={index} className='d-flex flex-row align-items-center mb-2 gap-1'>
-                                        <LazyLoadImage alt="Prof" src={contact.image} width={65} />
+                                        <LazyLoadImage alt="Prof" src={contact.image} width={55} />
                                         <div>
                                             <p className='dash-c-txt-1'>{contact.name}</p>
                                             <p className='dash-c-txt-2'>{contact.phone}</p>

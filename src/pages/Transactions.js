@@ -97,8 +97,8 @@ function Transactions()
 
   return (
     <div>
-      <div className='container-fluid py-5'>
-        <div className='row'>
+      <div className='container-fluid py-1'>
+        <div className='row tot-transaction-process-img'>
           <div className='col-lg-12'>
             <div>
               <div className='d-flex align-items-center justify-content-between'>
@@ -107,7 +107,7 @@ function Transactions()
                 </div>
                 <div className='d-flex me-2'>
                   <LazyLoadImage src={Icon} alt='Graph' className='img-fluid transaction-icon-img' />
-                  <select className="form-select alt-apex-week-selector ms-2 py-2 border-0" aria-label="Default select example">
+                  <select className="form-select alt-apex-week-selector ms-2 py-2 me-2 border-0" aria-label="Default select example">
                     <option>Last Month</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -119,18 +119,18 @@ function Transactions()
           </div>
         </div>
 
-        <div className='row mt-2'>
+        <div className='row mt-2 '>
           <div className='col-lg-12'>
             <div className='transaction-new-tables transaction-table-full-00'>
               <table className="table px-5 table table-spacing transaction-table-full-01">
                 <thead>
-                  <tr >
-                    <th scope="col" className='transaction-table-td-00'>S.no</th>
-                    <th scope="col" className='transaction-table-td-00'>Name</th>
-                    <th scope="col" className='transaction-table-td-00'>Invoice ID</th>
-                    <th scope="col" className='transaction-table-td-00'>Amount</th>
-                    <th scope="col" className='transaction-table-td-00'>Date</th>
-                    <th scope="col" className='transaction-table-td-00'>Status</th>
+                  <tr className='d-flex transaction-table-full-00'>
+                    <th scope="col" className='transaction-table-td-00 new-table-height-00'>S.no</th>
+                    <th scope="col" className='transaction-table-td-00 new-table-height-01'>Name</th>
+                    <th scope="col" className='transaction-table-td-00 new-table-height-02'>Invoice ID</th>
+                    <th scope="col" className='transaction-table-td-00 new-table-height-03'>Amount</th>
+                    <th scope="col" className='transaction-table-td-00 new-table-height-04'>Date</th>
+                    <th scope="col" className='transaction-table-td-00 new-table-height-05'>Status</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -142,7 +142,7 @@ function Transactions()
                       statusColor = 'green';
                     } else if (index >= 1 && index < 2) {
                       statusColor = 'rgba(243, 99, 79, 1)';
-                      backgroundcolor='rgba(252, 67, 41, 0.1)'
+                      backgroundcolor='rgba(252, 67, 41, 0.1)';
                     }  
                     else if (index >= 2 && index < 5) {
                       statusColor = 'rgba(69, 194, 24, 1)';
@@ -169,35 +169,35 @@ function Transactions()
                     }
 
                     return (
-                      <tr key={index} className='new-mark-relegious-01  table-row-padding'>
-                        <td className="transaction-table-td-01">
-                          <div className=''>
-                          {index + 1}
-                            </div>
-                            </td>
-                        <td className="transaction-table-td-01">
-                          <div className=''>
-                          <LazyLoadImage src={item.images} alt={item.name} className='transaction-img me-2' style={{ width: '30px', height: '30px', borderRadius: '50%' }} />
-                          {item.name}
-                            </div>
-                            </td>
-                        <td className="transaction-table-td-01 transaction-table-td-02">
-                          <div className=''>
-                          {item.values} <HiDownload className='text-dark' />
-                            </div></td>
-                        <td className="transaction-table-td-01">
-                          <div className=''>
-                          {item.Amount}
-                            </div></td>
-                        <td className="transaction-table-td-01 transaction-table-td-02">
-                          <div className=''>
-                          {item.time}
-                            </div></td>
-                        <td className="transaction-table-td-01 transaction-table-td-03" >
-                          <div className=''>
-                          <button className='py-1 px-2 border-0 complete-cancelled-btn' style={{ color: statusColor,background: backgroundcolor}}>{item.status}</button>
-                            </div></td>
-                      </tr>
+                      <tr key={index} className='new-mark-relegious-01 table-row-padding d-flex align-items-center w-100 new-table-height-01'>
+  <td className="transaction-table-td-01 new-table-height-00 border-0">
+    <div className='ms-lg-3'>{index + 1}</div>
+  </td>
+  
+  <td className="transaction-table-td-01 d-flex align-items-center new-table-height-01 border-0">
+    <LazyLoadImage src={item.images} alt={item.name} className='transaction-img me-2 table-flordy-images-01'/>
+    {item.name}
+  </td>
+  
+  <td className="transaction-table-td-01 transaction-table-td-02 new-table-height-02 border-0">
+    <div>{item.values} <HiDownload className='text-dark' /></div>
+  </td>
+  
+  <td className="transaction-table-td-01  new-table-height-03 border-0">
+    <div>{item.Amount}</div>
+  </td>
+  
+  <td className="transaction-table-td-01 transaction-table-td-02 new-table-height-04 border-0">
+    <div>{item.time}</div>
+  </td>
+  
+  <td className="transaction-table-td-01 transaction-table-td-03 new-table-height-05 border-0">
+    <button className=' px-2 border-0 complete-cancelled-btn' style={{ color: statusColor, background: backgroundcolor }}>
+      {item.status}
+    </button>
+  </td>
+</tr>
+
                     );
                   })}
                 </tbody>

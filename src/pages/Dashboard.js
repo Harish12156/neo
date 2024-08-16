@@ -16,7 +16,7 @@ function Dashboard() {
   return (
     <div className='top-dash-overrall-sec'>
       <div className='container-fluid'>
-        <div className='row'>
+        <div className='row g-4'>
           <div className='col-xl-8'>
             <Actions />
             {location.pathname === '/' && <Dashboardmain />}

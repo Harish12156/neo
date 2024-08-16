@@ -112,7 +112,7 @@ function Crypto() {
                     <div class="d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#myUniqueModalID">
                       <div><LazyLoadImage alt='bitcoin' src={bitcoin} className='' /></div>
                       <div>UAH</div>
-                      <div><MdKeyboardArrowDown className='' /></div>
+                      <div><MdKeyboardArrowDown className='fs-16' /></div>
                     </div>
 
                     {/* <!-- Modal --> */}
@@ -153,7 +153,7 @@ function Crypto() {
                     <div class="d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#myUniqueModalID-two">
                       <div><LazyLoadImage alt='bitcoin' src={bitcointwo} className='' /></div>
                       <div>ADA</div>
-                      <div><MdKeyboardArrowDown className='' /></div>
+                      <div><MdKeyboardArrowDown className='fs-16' /></div>
                     </div>
 
                     {/* <!-- Modal --> */}

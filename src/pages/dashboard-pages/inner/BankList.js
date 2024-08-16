@@ -29,7 +29,7 @@ function BankList() {
     return (
         <>
             <div className='d-flex justify-content-between mb-4'>
-                <h5 className="dash-head-1">Bank List</h5>
+                <h5 className="dash-head-1 mb-0">Bank List</h5>
                 <button className="dash-head-1 bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#addnewbank">+ Add New</button>
             </div>
             <div className="input-group mb-3 contact-search-f">
@@ -40,7 +40,7 @@ function BankList() {
             <div className='cont-list-height'>
                 {banks.map((bank, index) => (
                     <div key={index} className='d-flex flex-row align-items-center mb-2 gap-1'>
-                        <LazyLoadImage alt="Prof" src={bank.image} width={65} />
+                        <LazyLoadImage alt="Prof" src={bank.image} width={55} />
                         <div>
                             <p className='dash-c-txt-1'>{bank.name}</p>
                             <p className='dash-c-txt-2'>{bank.accno}</p>

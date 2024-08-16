@@ -56,14 +56,14 @@ function Data() {
                         <div className="card-body">
                             <div className='dash-data-card-1'>
                                 <div className='row g-4 mt-1'>
-                                    <div className='col-6 mt-0'>
+                                    <div className='col-md-6 mt-0'>
                                         <p className='mb-1'>Total expenses</p>
                                         <p className='dash-data-txt-1'>$29,100.50</p>
                                         <div className='dash-data-txt-2'>
                                             +0.25%
                                         </div>
                                     </div>
-                                    <div className='col-6 mt-0 text-center'>
+                                    <div className='col-md-6 mt-0 text-md-center'>
                                         <LazyLoadImage src={Graph} style={{ width: "60%" }} alt='Graph' className='img-fluid d-grap-img-1' />
                                     </div>
                                 </div>
@@ -86,15 +86,16 @@ function Data() {
 
                                 <div class="collapse show" id="collapseExample">
                                     <div className='row g-4 mt-1 align-items-center'>
-                                        <div className='col-xl-6 mt-0'>
-                                            <div className='d-flex gap-2'>
+                                        <div className='col-md-6 mt-0'>
+                                            <div className='row g-2'>
+                                            <div className='col-4'>
                                                 <CircularProgressbar
                                                     value={percentage}
                                                     text={`${percentage}%`}
 
                                                     styles={buildStyles({
                                                         strokeLinecap: 'butt',
-                                                        textSize: '16px',
+                                                        textSize: '22px',
                                                         fontWeight: "700",
                                                         pathTransitionDuration: 0.5,
                                                         pathColor: `var( --color-2)`,
@@ -105,14 +106,15 @@ function Data() {
                                                     className="custom-progressbar"
 
                                                 />
-                                                <div>
+                                                </div>
+                                                <div className='col-8'>
                                                     <p className='dash-data-txt-4 mb-1'>$1,589</p>
                                                     <button className='dash-data-btn-1'>Left</button>
                                                 </div>
+                                            
                                             </div>
-
                                         </div>
-                                        <div className='col-xl-6 mt-0'>
+                                        <div className='col-md-6 mt-0'>
                                             <div className='d-flex gap-2'>
                                                 <div className='data-prog-1' style={{ backgroundColor: "#d8d8d8" }}></div>
                                                 <span>%47 Shopping</span>
@@ -127,9 +129,9 @@ function Data() {
 
                                 <div class="goal-divider-1" style={{ borderColor: "#efefef" }}></div>
 
-                                <div className='d-flex'>
+                                <div className='d-flex flex-md-row flex-column'>
                                     <p className='dash-data-txt-4 mb-0' style={{ fontSize: "18px" }}>Total Budget:</p>
-                                    <h6 className='ms-auto'>$782 of $2,569 Spend</h6>
+                                    <h6 className='ms-md-auto'>$782 of $2,569 Spend</h6>
                                 </div>
                             </div>
                         </div>

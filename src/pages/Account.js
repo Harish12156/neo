@@ -9,6 +9,7 @@ import Fiattofiat from './Account-pages/inner/Fiattofiat';
 import Cryptotofiat from './Account-pages/inner/Cryptotofiat';
 import { useLocation } from 'react-router-dom';
 import Accounts from './dashboard-pages/Accounts';
+import Moneytransfer from './Account-pages/Moneytransfer';
 
 
 function Account() {
@@ -21,7 +22,7 @@ function Account() {
         <div className='col-xl-8'>
           <MyWallet />
           {location.pathname === '/account' && <FiatCurrency />}
-          {location.pathname === '/money-transfer' && <p>money-transfer</p>}
+          {location.pathname === '/money-transfer' && <Moneytransfer />}
           {location.pathname === '/account-transfer' && <Accounts />}
 
         </div>

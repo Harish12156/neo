@@ -131,6 +131,56 @@ function Cryptoinner() {
 
 
 
+    const data = [
+        {
+            id: 1,
+            time: "2022-07-22 11:20:00",
+            symbol: "Perpetual",
+            side: "Sell",
+            price: "258.22",
+            quantity: "256.32USDT",
+            fee: "0.011155455 USDT",
+            realizedprofit: "14.22566665548 USDT",
+        },
+        {
+            id: 2,
+            time: "2022-07-22 11:20:00",
+            symbol: "Perpetual",
+            side: "Sell",
+            price: "258.22",
+            quantity: "256.32USDT",
+            fee: "0.011155455 USDT",
+            realizedprofit: "14.22566665548 USDT",
+        },
+        {
+            id: 3,
+            time: "2022-07-22 11:20:00",
+            symbol: "Perpetual",
+            side: "Sell",
+            price: "258.22",
+            quantity: "256.32USDT",
+            fee: "0.011155455 USDT",
+            realizedprofit: "14.22566665548 USDT",
+        },
+        {
+            id: 4,
+            time: "2022-07-22 11:20:00",
+            symbol: "Perpetual",
+            side: "Sell",
+            price: "258.22",
+            quantity: "256.32USDT",
+            fee: "0.011155455 USDT",
+            realizedprofit: "14.22566665548 USDT",
+        }
+
+
+    ];
+
+
+
+
+
+
 
     return (
         <div className='cryptoinner-section'>
@@ -294,9 +344,199 @@ function Cryptoinner() {
                                             <button class="done-css">Buy</button>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="pills-sell" role="tabpanel" aria-labelledby="pills-sell-tab" tabindex="0">Sell</div>
+                                    <div class="tab-pane fade" id="pills-sell" role="tabpanel" aria-labelledby="pills-sell-tab" tabindex="0">
+                                        <div className="d-flex align-items-center py-2 border-bottom-css">
+                                            <div className='d-flex align-items-center gap-1'>
+                                                <LazyLoadImage alt="binance" src={binance} className='' />
+                                                <div><div className="text-one">BTC/USDT</div><div className="text-two">Binance</div></div>
+                                            </div>
+                                            <div className="ms-auto text-end"><div><div className="text-one fw-bold">0xa010...35B9e1</div><div className="text-two">Metamask wallet</div></div></div>
+                                        </div>
+
+                                        <div className="py-4">
+                                            <div className='d-flex align-items-center position-relative'>
+                                                <div className="flex-grow-1">
+                                                    <input type="text" className="form-control custom-placeholder-input" id="from" placeholder="" />
+                                                    <div className="custom-placeholder">
+                                                        100 <br /> balance ~ 0.00
+                                                    </div>
+                                                </div>
+
+                                                <div className='from-btn'>
+                                                    {/* Button trigger modal */}
+                                                    <div className="d-flex align-items-center gap-1 position-absolute end-0" data-bs-toggle="modal" data-bs-target="#myswapFromID">
+                                                        <div><LazyLoadImage alt='bitcoin' src={usdc} className='from-img' /></div>
+                                                        <div className="text-one">UAH</div>
+                                                        <div><MdKeyboardArrowDown className='me-1' /></div>
+                                                    </div>
+
+                                                    {/* Modal */}
+                                                    <div className="modal fade" id="myswapFromID" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="myswapFromLabel" aria-hidden="true">
+                                                        <div className="modal-dialog">
+                                                            <div className="modal-content">
+                                                                <div className="modal-header">
+                                                                    <h1 className="modal-title fs-5" id="myFromLabel">Modal title</h1>
+                                                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div className="modal-body">
+                                                                    ...
+                                                                </div>
+                                                                <div className="modal-footer">
+                                                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    <button type="button" className="btn btn-primary">Understood</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="m-auto text-center"><MdSwapVert className='swap-icon' /></div>
+                                            <div className='d-flex align-items-center position-relative'>
+                                                <div className="flex-grow-1">
+                                                    <input type="text" className="form-control custom-placeholder-input" id="from" placeholder="" />
+                                                    <div className="custom-placeholder">
+                                                        0.052145 <br /> balance ~ 2450.211
+                                                    </div>
+                                                </div>
+
+                                                <div className='from-btn'>
+                                                    {/* Button trigger modal */}
+                                                    <div className="d-flex align-items-center gap-1 position-absolute end-0" data-bs-toggle="modal" data-bs-target="#myswaptoID">
+                                                        <div><LazyLoadImage alt='bitcoin' src={usdc} className='from-img' /></div>
+                                                        <div className="text-one">UAH</div>
+                                                        <div><MdKeyboardArrowDown className='me-1' /></div>
+                                                    </div>
+
+                                                    {/* Modal */}
+                                                    <div className="modal fade" id="myswaptoID" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="myswaptoLabel" aria-hidden="true">
+                                                        <div className="modal-dialog">
+                                                            <div className="modal-content">
+                                                                <div className="modal-header">
+                                                                    <h1 className="modal-title fs-5" id="myFromLabel">Modal-title</h1>
+                                                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div className="modal-body">
+                                                                    ...
+                                                                </div>
+                                                                <div className="modal-footer">
+                                                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    <button type="button" className="btn btn-primary">Understood</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="py-3">
+                                            <div className="d-flex align-items-center py-1">
+                                                <div className="text-three">Price per USDC</div>
+                                                <div className="ms-auto text-end text-three fw-semibold">0.035422 ETH</div>
+                                            </div>
+                                            <div className="d-flex align-items-center py-1">
+                                                <div className="text-three">Price impact</div>
+                                                <div className="ms-auto text-end text-three fw-semibold fc-g">0.24 %</div>
+                                            </div>
+                                        </div>
+
+                                        <div className="py-4">
+                                            <button class="done-css">Sell</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div className="row pt-3 pb-5 trade-section">
+                        <div className="col-lg-10 col-12">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item border-end border-secondary-subtle" role="presentation">
+                                    <button class="nav-link active" id="pills-tradehistory-tab" data-bs-toggle="pill" data-bs-target="#pills-tradehistory" type="button" role="tab" aria-controls="pills-tradehistory" aria-selected="true">Trade History</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-mytrade-tab" data-bs-toggle="pill" data-bs-target="#pills-mytrade" type="button" role="tab" aria-controls="pills-mytrade" aria-selected="false">My Trade</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-tradehistory" role="tabpanel" aria-labelledby="pills-tradehistory-tab" tabindex="0">
+                                <div className="cryto-table">
+                                <div className="crypto-table-options">
+                                    <div className="option-btn">1 day</div>
+                                    <div className="option-btn">1 week</div>
+                                    <div className="option-btn">1 month</div>
+                                    <div className="option-btn">3 month</div>
+                                    <form className="d-flex align-items-center"><input type="text" className="search-input" placeholder="YYYY-MM-DD-YYYY-MM-DD" /><button type="submit" className="search-btn">Search</button></form>
+                                </div>
+                                <table className="cryto-table-section border-0">
+
+                                    <thead>
+                                        <tr>
+                                            <th>Time</th>
+                                            <th>Symbol</th>
+                                            <th>Side</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Fee</th>
+                                            <th>Realized Profit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {data.map((item) => (
+                                            <tr key={item.id}>
+                                                <td>{item.time}</td>
+                                                <td><span className="fw-semibold me-2">BNBUSD</span>{item.symbol}</td>
+                                                <td className="fc-r fw-bold">{item.side}</td>
+                                                <td>{item.price}</td>
+                                                <td>{item.quantity}</td>
+                                                <td>{item.fee}</td>
+                                                <td>{item.realizedprofit}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-mytrade" role="tabpanel" aria-labelledby="pills-mytrade-tab" tabindex="0">
+                                <div className="cryto-table">
+                                <div className="crypto-table-options">
+                                    <div className="option-btn">1 day</div>
+                                    <div className="option-btn">1 week</div>
+                                    <div className="option-btn">1 month</div>
+                                    <div className="option-btn">3 month</div>
+                                    <form className="d-flex align-items-center"><input type="text" className="search-input" placeholder="YYYY-MM-DD-YYYY-MM-DD" /><button type="submit" className="search-btn">Search</button></form>
+                                </div>
+                                <table className="cryto-table-section border-0">
+
+                                    <thead>
+                                        <tr>
+                                            <th>Time</th>
+                                            <th>Symbol</th>
+                                            <th>Side</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Fee</th>
+                                            <th>Realized Profit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {data.map((item) => (
+                                            <tr key={item.id}>
+                                                <td>{item.time}</td>
+                                                <td><span className="fw-semibold me-2">BNBUSD</span>{item.symbol}</td>
+                                                <td className="fc-r fw-bold">{item.side}</td>
+                                                <td>{item.price}</td>
+                                                <td>{item.quantity}</td>
+                                                <td>{item.fee}</td>
+                                                <td>{item.realizedprofit}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>

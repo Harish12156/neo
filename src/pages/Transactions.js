@@ -2,6 +2,15 @@ import React from 'react';
 import Icon from "../assets/images/icon button.png";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { HiDownload } from "react-icons/hi";
+import transactionlogo1 from "../../src/assets/images/transaction-img1.png";
+import transactionlogo2 from "../../src/assets/images/transaction-img2.png";
+import transactionlogo3 from "../../src/assets/images/transaction-img-3.png";
+import transactionlogo4 from "../../src/assets/images/transaction-img-4.png";
+import transactionlogo5 from "../../src/assets/images/transaction-img-5.png";
+import transactionlogo6 from "../../src/assets/images/transaction-img-6.png";
+import transactionlogo7 from "../../src/assets/images/transaction-img-7.png";
+import transactionlogo8 from "../../src/assets/images/transaction-img-8.png";
+import transactionlogo9 from "../../src/assets/images/transaction-img-9.png";
 
 function Transactions()
  {
@@ -15,6 +24,7 @@ function Transactions()
         name:'Floyd Miles',
         values:14255151,
         Amount:"$220",  
+        images: transactionlogo1, 
         time: `${monthString}, ${dateString}, ${timeString}`,
         status:"completed",
     },
@@ -22,41 +32,47 @@ function Transactions()
       name:'Esther Howard',
       values:14255151,
       Amount:"$70",
+      images: transactionlogo2, 
       time: `${monthString}, ${dateString}, ${timeString}`,
-      status:"completed", 
+      status:"cancelled", 
     },
     { 
       name:'Ronald Richards',
       values:14255151,
       Amount:"$250",
+      images: transactionlogo3,
       time: `${monthString}, ${dateString}, ${timeString}`,
-      status:"cancelled", 
+      status:"completed", 
     },
     {
       name:'Theresa Webb',
       values:14255151,
       Amount:"$1200",
+      images: transactionlogo4,
       time: `${monthString}, ${dateString}, ${timeString}`,
-      status:"cancelled", 
+      status:"completed", 
     },
     {
       name:'Floyd Miles',
       values:14255151,
       Amount:"$220",
+      images: transactionlogo5,
       time: `${monthString}, ${dateString}, ${timeString}`,
-      status:"cancelled", 
+      status:"completed", 
   },
   {
     name:'Esther Howard',
     values:14255151,
     Amount:"$70",
+    images: transactionlogo6,
     time: `${monthString}, ${dateString}, ${timeString}`,
-    status:"completed", 
+    status:"cancelled", 
 },
 {
   name:'Ronald Richards',
   values:14255151,
   Amount:"$250",
+  images: transactionlogo7,
   time: `${monthString}, ${dateString}, ${timeString}`,
   status:"completed", 
 },
@@ -64,6 +80,7 @@ function Transactions()
   name:'Esther Howard',
   values:14255151,
   Amount:"$70",
+  images: transactionlogo8,
   time: `${monthString}, ${dateString}, ${timeString}`,
   status:"cancelled",
 },
@@ -71,9 +88,10 @@ function Transactions()
   name:'Ronald Richards',
   values:14255151,
   Amount:"$250",
+  images: transactionlogo9,
   time: `${monthString}, ${dateString}, ${timeString}`,
-  status:"cancelled",
-  width:"100px",
+  status:"completed",
+  
 },
   ];
 
@@ -85,7 +103,7 @@ function Transactions()
             <div>
               <div className='d-flex align-items-center justify-content-between'>
                 <div>
-                  <p className='mb-auto dash-head-1'>Transaction History</p>
+                  <p className='mb-auto dash-head-1 new-dash-head-1'>Transaction History</p>
                 </div>
                 <div className='d-flex me-2'>
                   <LazyLoadImage src={Icon} alt='Graph' className='img-fluid transaction-icon-img' />
@@ -103,8 +121,8 @@ function Transactions()
 
         <div className='row mt-2'>
           <div className='col-lg-12'>
-            <div className='transaction-new-tables'>
-              <table className="table">
+            <div className='transaction-new-tables transaction-table-full-00'>
+              <table className="table px-5 table table-spacing transaction-table-full-01">
                 <thead>
                   <tr >
                     <th scope="col" className='transaction-table-td-00'>S.no</th>
@@ -118,29 +136,72 @@ function Transactions()
                 <tbody>
                   {expensive.map((item, index) => {
                     let statusColor;
+                    let backgroundcolor;
 
-                    if (index < 0) {
+                    if (index < 1) {
                       statusColor = 'green';
-                    } else if (index >= 1 && index < 1) {
-                      statusColor = 'red';
-                    } else if (index === 5) {
-                      statusColor = 'green'; 
-                    } else {
+                    } else if (index >= 1 && index < 2) {
+                      statusColor = 'rgba(243, 99, 79, 1)';
+                      backgroundcolor='rgba(252, 67, 41, 0.1)'
+                    }  
+                    else if (index >= 2 && index < 5) {
+                      statusColor = 'rgba(69, 194, 24, 1)';
+                      backgroundcolor='#ecf9e8'
+                    }
+                    else if (index >= 5 && index < 6) {
+                      statusColor = 'rgba(243, 99, 79, 1)';
+                      backgroundcolor='rgba(252, 67, 41, 0.1)';
+                    }
+                    else if (index >= 6 && index < 7) {
+                      statusColor = 'rgba(69, 194, 24, 1)';
+                      backgroundcolor='#ecf9e8'
+                    }
+                    else if (index >= 7 && index < 8) {
+                      statusColor = 'rgba(243, 99, 79, 1)';
+                      backgroundcolor='rgba(252, 67, 41, 0.1)';
+                    }
+                    else if (index >= 8 && index < 9) {
+                      statusColor = 'rgba(69, 194, 24, 1)';
+                      backgroundcolor='#ecf9e8'
+                    }
+                    else {
                       statusColor = 'default';
                     }
 
                     return (
-                      <tr key={index} className='new-mark-relegious-01 my-2'>
-                        <td className="transaction-table-td-01">{index + 1}</td>
-                        <td className="transaction-table-td-01">{item.name}</td>
-                        <td className="transaction-table-td-01 transaction-table-td-02">{item.values} <HiDownload className='text-dark' /></td>
-                        <td className="transaction-table-td-01">{item.Amount}</td>
-                        <td className="transaction-table-td-01 transaction-table-td-02">{item.time}</td>
-                        <td className="transaction-table-td-01" style={{ color: statusColor }}>{item.status}</td>
+                      <tr key={index} className='new-mark-relegious-01  table-row-padding'>
+                        <td className="transaction-table-td-01">
+                          <div className=''>
+                          {index + 1}
+                            </div>
+                            </td>
+                        <td className="transaction-table-td-01">
+                          <div className=''>
+                          <LazyLoadImage src={item.images} alt={item.name} className='transaction-img me-2' style={{ width: '30px', height: '30px', borderRadius: '50%' }} />
+                          {item.name}
+                            </div>
+                            </td>
+                        <td className="transaction-table-td-01 transaction-table-td-02">
+                          <div className=''>
+                          {item.values} <HiDownload className='text-dark' />
+                            </div></td>
+                        <td className="transaction-table-td-01">
+                          <div className=''>
+                          {item.Amount}
+                            </div></td>
+                        <td className="transaction-table-td-01 transaction-table-td-02">
+                          <div className=''>
+                          {item.time}
+                            </div></td>
+                        <td className="transaction-table-td-01 transaction-table-td-03" >
+                          <div className=''>
+                          <button className='py-1 px-2 border-0 complete-cancelled-btn' style={{ color: statusColor,background: backgroundcolor}}>{item.status}</button>
+                            </div></td>
                       </tr>
                     );
                   })}
                 </tbody>
+
               </table>
             </div>
           </div>

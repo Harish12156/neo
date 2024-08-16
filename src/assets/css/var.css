@@ -759,11 +759,20 @@ height:auto;
 .transaction-new-tables .new-mark-relegious-01{
 padding:10px 0px;
 }
+
+.transaction-new-tables .table>:not(caption)>*>* {
+  padding: .5rem 1.8rem;
+}
+.transaction-new-tables .transaction-table-td-00{
+  background: none!important;
+}
+
 .transaction-table-td-01{
   padding-top: 15px!important;
   padding-bottom: 15px!important;
 margin-top:10px!important;
 margin-bottom:10px!important;
+vertical-align: middle;
   font-size:13px;
 }
 .transaction-table-td-00{
@@ -778,6 +787,33 @@ margin-bottom:10px!important;
 .transaction-table-td-02{
   color:grey!important;
 }
+.table-row-padding{
+  padding:10px 0!important;
+}
+.transaction-table-td-03:nth-child(2){
+background-color:red!important;
+padding:10px!important;
+}
+.complete-cancelled-btn{
+  border-radius:5px;
+}
+.new-mark-relegious-01 {
+  padding-bottom: 15px; 
+}
+table {
+  border-spacing: 0 10px;
+}
+.transaction-table-td-01 {
+  margin-bottom: 10px;
+}
+.transaction-table-full-01{
+  border-radius:10px;
+  
+}
+/* .transaction-table-full-01{
+  border-collapse: collapse;
+  border-spacing:15px 0px;
+} */
 /* .transaction-table-td-00{
   padding-top: 15px!important;
   padding-bottom: 15px!important;
@@ -1321,6 +1357,67 @@ margin-bottom:10px!important;
             font-size:16px;
            
           }
+
+/* <==========transaction=============> */
+.transaction-icon-img{
+  width:35px;
+  height:auto;
+  }
+  .transaction-new-tables .new-mark-relegious-01{
+    margin-bottom:20px!important;
+  }
+  .transaction-new-tables .new-mark-relegious-01{
+  padding:10px 0px;
+  }
+  
+  .transaction-new-tables .table>:not(caption)>*>* {
+    padding: .5rem 1.8rem;
+  }
+  .transaction-new-tables .transaction-table-td-00{
+    background: none!important;
+  }
+  
+  .transaction-table-td-01{
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+  margin-top:10px!important;
+  margin-bottom:10px!important;
+  vertical-align: middle;
+    font-size:13px;
+  }
+  .transaction-table-td-00{
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+  }
+  .transaction-new-tables .table tr th{
+    font-weight:normal;
+    font-size:10px;
+    color:grey
+  }
+  .transaction-table-td-02{
+    color:grey!important;
+  }
+  .table-row-padding{
+    padding:10px 0!important;
+  }
+  .transaction-table-td-03:nth-child(2){
+  background-color:red!important;
+  padding:10px!important;
+  }
+  .complete-cancelled-btn{
+    border-radius:5px;
+  }
+  .transaction-table-full-01{
+    width:1000px!important;
+  }
+  .transaction-table-full-00{
+    overflow-x: auto;
+  }
+  /* .transaction-table-td-00{
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+  } */
+  /* <=======================================> */
   
   /* <======================================> */
 }
@@ -1912,16 +2009,77 @@ margin-bottom:10px!important;
           font-size:12px;
           
         }
-        /* .portfolio-whl-table-1{
-          width:1400px;
-          overflow-x:auto!important;
-        } */
-        /* .port-full-table-path{
-          width:100px!important;
-          background: red;
-        } */
-         
 
+        /* <==========transaction=============> */
+.transaction-icon-img{
+  width:35px;
+  height:auto;
+  }
+  .transaction-new-tables .new-mark-relegious-01{
+    margin-bottom:20px!important;
+  }
+  .transaction-new-tables .new-mark-relegious-01{
+  padding:10px 0px;
+  }
+  
+  .transaction-new-tables .table>:not(caption)>*>* {
+    padding: .5rem 1.8rem;
+  }
+  .transaction-new-tables .transaction-table-td-00{
+    background: none!important;
+  }
+  
+  .transaction-table-td-01{
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+  margin-top:10px!important;
+  margin-bottom:10px!important;
+  vertical-align: middle;
+    font-size:13px;
+  }
+  .transaction-table-td-00{
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+  }
+  .transaction-new-tables .table tr th{
+    font-weight:normal;
+    font-size:10px;
+    color:grey
+  }
+  .transaction-table-td-02{
+    color:grey!important;
+  }
+  .table-row-padding{
+    padding:10px 0!important;
+  }
+  .transaction-table-td-03:nth-child(2){
+  background-color:red!important;
+  padding:10px!important;
+  }
+  .complete-cancelled-btn{
+    border-radius:5px;
+  }
+  .transaction-table-full-01{
+    width:1000px!important;
+  }
+  .transaction-table-full-00{
+    overflow-x: auto;
+  }
+  .new-dash-head-1{
+    font-size:12px;
+  }
+  .alt-apex-week-selector{
+    width:115px!important;
+  }
+  /* .transaction-table-td-00{
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+  } */
+  /* <=======================================> */
+        /* <==============transaction==================> */
+     
+   
+        /* <================================================> */
   /* <======================================> */
 
 }

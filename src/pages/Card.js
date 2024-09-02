@@ -122,7 +122,7 @@ function Card() {
                 <h6 className='dash-head-1 '>My Card</h6>
                 <div className='d-flex align-items-center flex-column py-3 gap-3'>
                   <div className='w-100'>
-                    <div className='card h-100 dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe1})` }}>
+                    <div className='card dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe1})` }}>
                       <div className='card-body'>
                         <div className='d-flex flex-column justify-content-between h-100'>
                           <div className='d-flex flex-row gap-2 align-items-center'>
@@ -146,7 +146,7 @@ function Card() {
                     </div>
                   </div>
                   <div className='w-100'>
-                    <div className='card h-100 dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe3})` }}>
+                    <div className='card dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe3})` }}>
                       <div className='card-body'>
                         <div className='d-flex flex-column justify-content-between h-100'>
                           <div className='d-flex flex-row gap-2 align-items-center'>
@@ -182,7 +182,7 @@ function Card() {
                         bottom: 0,
                         left: 0,
                         right: 0,
-                        height: showOffcanvas ? '100%' : '0px',  // Apply height: 100% only when opened
+                        height: showOffcanvas ? '100%' : '0px',
                         border: 'none',
                         zIndex:'9'
                       }}

@@ -777,4 +777,50 @@
 .card-transaction .form-select:focus{
     box-shadow: none;
 }
+
+
+/* ====KYC ============ */
+/* .Kycdocuments .card-body{
+    height: 500px;
+    overflow: scroll;
+} */
+.kycdoc-section .form-label {
+    font-weight: 500;
+    font-size: 14px;
+}
+.kycdoc-section .form-select:focus {
+    border-color: #dee2e6;
+    outline: 0;
+    box-shadow: none;
+}
+
+.kycdoc-section input::placeholder{
+    font-size: 13px;
+    color: rgb(161, 161, 161);
+}
+
+.kycdoc-section .custom-select option {
+    font-size: 14px; /* Font size for all options */
+    color: #333; /* Font color for options */
+}
+
+.kycdoc-section .custom-select option:first-child {
+    font-size: 16px; /* Font size for the first (placeholder) option */
+    color: #999; /* Lighter color for the placeholder */
+}
+.kycdoc-section .form-control:focus{
+    box-shadow: none;
+    border-color: #dee2e6;
+}
+.kycdoc-section .option-css{
+    font-size: 12px;
+    color: var(--color-1);
+}
+.kycdoc-section .form-check-input{
+    width: 1.5em;
+    height: 1.5em;
+    border-color:#333;
+}
+/* ====KYC ============ */
+
 /* ==========Karthick ============= */

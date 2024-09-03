@@ -15,6 +15,9 @@
         font-size: 14px;
         padding: 10px;
     }
+    .swap-section .nav-pills .nav-link {
+        --bs-nav-link-padding-x: 60px;
+    }
 }
 
 /* =====Desktop ======== */
@@ -34,6 +37,9 @@
         font-size: 14px;
         padding: 10px;
     }
+    .swap-section .nav-pills .nav-link {
+        --bs-nav-link-padding-x: 50px;
+    }
 }
 
 /* =====Mobile ======= */
@@ -52,7 +58,7 @@
     font-size: 22px;
     font-weight: 500;
     line-height: 33px;
-    color: #8950DA;
+    color: var(--color-1);
 }
 
 .profile-section-one .user-id {
@@ -77,7 +83,7 @@
 
 .profile-section-one .nav-pills .nav-link.active,
 .profile-section-one .nav-pills .show>.nav-link {
-    color: #8950DA;
+    color: var(--color-1);
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -123,7 +129,7 @@
 }
 
 .profile-section-one .nav-link:hover {
-    color: #8950DA;
+    color: var(--color-1);
 }
 
 .profile-section-one .react-tel-input .flag-dropdown {
@@ -173,12 +179,6 @@
 
 .profile-section-one .tab-pane {
     transition: all 0.1s ease-in-out;
-}
-
-
-
-.cryto-section .total-balance-sec {
-    background: #FFFFFF;
 }
 
 .cryto-section .total-heading {
@@ -257,6 +257,7 @@
     border-radius: 10px;
     font-size: 12px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .cryto-section .exchange .swap-icon {
@@ -427,7 +428,7 @@
 }
 
 .graph-section .calendar-icon-button {
-    margin-right: 5px;
+    margin: 3px;
     padding: 2px 10px;
     border: none;
     border-radius: 5px;
@@ -439,7 +440,7 @@
 }
 
 .graph-section .view-buttons button {
-    margin-right: 5px;
+    margin: 3px;
     padding: 6px 8px;
     font-size: 11px;
     border: none;
@@ -462,9 +463,6 @@
     border-radius: 5px;
 }
 
-.swap-section .nav-pills .nav-link {
-    --bs-nav-link-padding-x: 60px;
-}
 
 .swap-section .nav-pills .nav-link.active,
 .swap-section .nav-pills .show>.nav-link {
@@ -636,13 +634,25 @@
 .cryptoinner-section-one .cryto-table-section td:last-child {
     width: 15%;
 }
+.buy-modal .modal-content {
+    background-color: var(--color-1);
+    padding: 40px 30px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+}
+.buy-modal .modal-body {
+    background-color: #FFF;
+    border-radius: 20px;
+    position: relative;
+}
 
 
 .cryto-table .crypto-table-options {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin: 10px;
+    gap: 0px;
+    margin:  10px 10px 10px 0px;
     white-space: nowrap;
 }
 
@@ -679,42 +689,92 @@
 }
 
 .mycard-section h6 {
-    color: #8950DA;
+    color: var(--color-1);
 }
-
-.mycard-section .card-body {
+.mycard-section .card{
+    --bs-card-spacer-y: 2.5rem;
+}
+/* .mycard-section .card-body {
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-}
+} */
 
 .mycard-section .addcard-btn {
-    background: #8950DA;
+    background: var(--color-1);
     color: white;
     border-radius: 10px;
     font-size: 14px;
     font-weight: 600;
     --bs-btn-padding-x: 5rem;
+    --bs-btn-padding-y: 16px;
 }
-.mycard-section .addcard-btn:hover{
-    background: #8950DA;
-    color: black;  
+
+.mycard-section .addcard-btn:hover {
+    background: var(--color-1);
+    color: #FFF;
 }
-.mycard-section .offcanvas .form-control::placeholder{
+
+.mycard-section .offcanvas .form-control::placeholder {
     font-size: 12px;
     color: #C3C7E5;
 }
-.mycard-section .offcanvas .form-control:focus{
+
+.mycard-section .offcanvas .form-control:focus {
     border-color: var(--color-1);
     box-shadow: none;
 }
 
-.mycard-section .offcanvas .form-select{
-    
-}
+.mycard-section .offcanvas .form-select {}
 
-.mycard-section .offcanvas .form-select:focus{
+.mycard-section .offcanvas .form-select:focus {
     border-color: var(--color-1);
     box-shadow: none;
 }
 
-  
+.card-section .card-transaction {
+    background: #ffffff;
+}
+.card-transaction h5{
+    color: var(--color-1);
+}
+.card-section .transaction-section-table {
+    overflow: auto;
+}
+
+.card-section .transaction-table {
+    width: 100%;
+}
+
+.card-section .transaction-table th {
+    font-size: 10px;
+    font-weight: 400;
+    color: #333333;
+    opacity: 0.7;
+    padding: 15px;
+}
+
+.card-section .transaction-table td {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+    padding: 18px 15px;
+    white-space: nowrap;
+}
+/* .card-section .transaction-table td:first-child{
+    width: 20%;
+}
+.card-section .transaction-table td:nth-child(2){
+    width: 20%;
+}
+.card-section .transaction-table td:nth-child(3){
+    width: 20%;
+}
+.card-section .transaction-table td:nth-child(5){
+    width: 20%;
+}
+.card-section .transaction-table td:last-child{
+    width: 20%;
+} */
+.card-transaction .form-select:focus{
+    box-shadow: none;
+}
 /* ==========Karthick ============= */

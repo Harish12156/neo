@@ -17,7 +17,7 @@ function MyWallet() {
               <h5 className='dash-acco-txt-1 mx-xl-auto'>My Wallet</h5>
             </div>
             <div className='col-xl-6'>
-              <div className='card h-100 dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe2})` }}>
+              <div className='card dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe2})` }}>
                 <div className='card-body'>
                   <div className='d-flex flex-column justify-content-between h-100'>
                     <h5 className='mb-0'>Current Balance</h5>

@@ -39,7 +39,7 @@ function Actions() {
                         className="mySwiper"
                     >
                         <SwiperSlide>
-                            <div className='card h-100 dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe1})` }}>
+                            <div className='card dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe1})` }}>
                                 <div className='card-body'>
                                     <div className='d-flex flex-column justify-content-between h-100'>
                                         <div className='d-flex flex-row gap-2 align-items-center'>
@@ -63,7 +63,7 @@ function Actions() {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='card h-100 dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe2})` }}>
+                            <div className='card dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe2})` }}>
                                 <div className='card-body'>
                                     <div className='d-flex flex-column justify-content-between h-100'>
                                         <h5 className='mb-0'>Current Balance</h5>
@@ -81,7 +81,7 @@ function Actions() {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='card h-100 dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe3})` }}>
+                            <div className='card dash-swipe-card-1' style={{ backgroundImage: `url(${Swipe3})` }}>
                                 <div className='card-body'>
                                     <div className='d-flex flex-column justify-content-between h-100'>
                                         <div className='d-flex flex-row gap-2 align-items-center'>

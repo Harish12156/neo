@@ -23,17 +23,18 @@ function Account() {
           <MyWallet />
           {location.pathname === '/account' && <FiatCurrency />}
           {location.pathname === '/money-transfer' && <Moneytransfer />}
-          {location.pathname === '/account-transfer' && <Accounts />}
+          {location.pathname === '/account-transfer' && <Accounts/>}
 
         </div>
 
 
         <div className='col-xl-4  '>
           <div className='cryto-section'>
-            <Fiattofiat />
-            <Cryptotofiat />
+            <Fiattofiat/>
+            <Cryptotofiat/>
           </div>
         </div>
+        
       </div>
     </div>
   )

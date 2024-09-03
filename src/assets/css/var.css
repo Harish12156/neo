@@ -837,6 +837,46 @@ table {
 .transaction-table-full-00{
   border-bottom:1px solid #e3dbdb00;
 }
+.transaction-table-full-00{
+  border-bottom:1px solid white;
+}
+.new-table-height-00{
+  width:10%;
+  border-top-left-radius:12px;
+  border-bottom-left-radius:12px;
+}
+.new-table-height-01{
+  width:25%;
+}
+.new-table-height-02{
+  width:20%;
+}
+.new-table-height-03{
+  width:10%;
+}
+.new-table-height-04{
+  width:20%;
+}
+.new-table-height-05{
+  width:15%;
+  border-top-right-radius:12px;
+  border-bottom-right-radius:12px;
+}
+.table-flordy-images-01{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+}
+.tot-transaction-process-img .form-select {
+  background-image: url("../../assets/images/select-curve-img.png")!important;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 10px;
+  
+}
+.transaction-table-full-00 {
+  border-bottom: 1px solid #e3dbdb00;
+}
 /* .transaction-table-full-01{
   border-collapse: collapse;
   border-spacing:15px 0px;
@@ -1477,7 +1517,9 @@ table {
     border-bottom:1px solid white;
   }
   .new-table-height-00{
-    width:10%
+    width:10%;
+    border-top-left-radius:12px;
+    border-bottom-left-radius:12px;
   }
   .new-table-height-01{
     width:25%;
@@ -1493,6 +1535,8 @@ table {
   }
   .new-table-height-05{
     width:15%;
+    border-top-right-radius:12px;
+    border-bottom-right-radius:12px;
   }
   .table-flordy-images-01{
     width:20px;
@@ -2199,6 +2243,43 @@ table {
   .transaction-table-full-00{
     border-bottom:1px solid white;
   }
+  .new-table-height-00{
+    width:10%;
+    border-top-left-radius:12px;
+    border-bottom-right-radius:12px;
+  }
+  .new-table-height-01{
+    width:25%;
+  }
+  .new-table-height-02{
+    width:20%;
+  }
+  .new-table-height-03{
+    width:10%;
+  }
+  .new-table-height-04{
+    width:20%;
+  }
+  .new-table-height-05{
+    width:15%;
+    border-top-right-radius:12px;
+    border-bottom-right-radius:12px;
+  }
+  .table-flordy-images-01{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+  }
+  .tot-transaction-process-img .form-select {
+    background-image: url("../../assets/images/select-curve-img.png")!important;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size:10px!important;
+    
+  }
+  .transaction-table-full-00 {
+    border-bottom: 1px solid #e3dbdb00;
+  }
 
   /* .transaction-table-td-00{
     padding-top: 15px!important;
@@ -2214,37 +2295,5 @@ table {
 
 }
 
-.new-table-height-00{
-  width:10%
-}
-.new-table-height-01{
-  width:25%;
-}
-.new-table-height-02{
-  width:20%;
-}
-.new-table-height-03{
-  width:10%;
-}
-.new-table-height-04{
-  width:20%;
-}
-.new-table-height-05{
-  width:15%;
-}
-.table-flordy-images-01{
-  width:20px;
-  height:20px;
-  border-radius:50%;
-}
-.tot-transaction-process-img .form-select {
-  background-image: url("../../assets/images/select-curve-img.png")!important;
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size:10px!important;
-  
-}
-.transaction-table-full-00 {
-  border-bottom: 1px solid #e3dbdb00;
-}
+
 /* #e3dbdb00 */

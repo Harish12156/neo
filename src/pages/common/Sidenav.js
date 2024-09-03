@@ -22,7 +22,7 @@ import DataContext from '../../context/DataContext';
 import { RxCross1 } from "react-icons/rx";
 
 function Sidenav() {
-  const { isOpen, setIsOpen } = useContext(DataContext);
+  const { isOpen, setIsOpen, setIsLogedIn } = useContext(DataContext);
   const location = useLocation();
   const currentYear = new Date().getFullYear();
 
@@ -30,8 +30,12 @@ function Sidenav() {
     setIsOpen(false);
   };
 
+  const toggleLogin = () => {
+    setIsLogedIn(false);
+  };
+
   const isDashboardActive = () => {
-    const dashboardRoutes = ['/', '/send', '/receive', '/accounts', '/goals', '/data'];
+    const dashboardRoutes = ['/','/send','/receive','/accounts','/goals','/data'];
     return dashboardRoutes.includes(location.pathname);
   };
 
@@ -50,6 +54,7 @@ function Sidenav() {
     return location.pathname === path ? 'list-item-side active-page-root-css' : 'list-item-side';
   };
 
+
   const getIcon = (defaultIcon, activeIcon, path) => {
     if (isDashboardActive() && path === '/') {
       return activeIcon;
@@ -60,12 +65,13 @@ function Sidenav() {
     return location.pathname === path ? activeIcon : defaultIcon;
   };
 
+  
   return (
     <div className={`top-left-side-nav-banner ${isOpen ? 'side-open-width' : 'side-close-width'}`}>
       <div className='pt-3 d-flex flex-column h-100'>
         <div>
           <div className='text-end d-md-none mb-2'>
-            <button className='mobile-sidenav-close' onClick={toggleClick}><RxCross1 /></button>
+            <button className='mobile-sidenav-close' onClick={toggleClick}><RxCross1/></button>
           </div>
           <div className='text-center'>
             <Link to="/" className=''>
@@ -104,7 +110,7 @@ function Sidenav() {
             <Link to="/transactions" className={getLinkClass('/transactions')}>
               <LazyLoadImage
                 alt="Transactions"
-                src={getIcon(Transactions, Transactionsw, '/transactions')}
+                src={getIcon(Transactions,Transactionsw, '/transactions')}
                 className='side-text-1'
               />
               <span className='hides-when-close'>Transactions</span>
@@ -136,10 +142,12 @@ function Sidenav() {
               />
               <span className='hides-when-close'>Setting</span>
             </Link>
+
           </ul>
         </div>
+
         <div className='mt-auto'>
-          <button className="list-item-side justify-content-center list-item-side-logout mb-1">
+          <button className="list-item-side justify-content-center list-item-side-logout mb-1" onClick={toggleLogin}>
             <LazyLoadImage
               alt="Dashboard"
               src={Signout}
@@ -147,9 +155,9 @@ function Sidenav() {
             />
             <span className='hides-when-close'>Logout</span>
           </button>
-
-          <p className='side-logout-text-1'>© {currentYear} All Rights Reserved</p>
+          <p className='side-logout-text-1'>©{currentYear}All Rights Reserved</p>
         </div>
+
       </div>
     </div>
   );

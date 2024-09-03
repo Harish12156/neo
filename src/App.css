@@ -110,3 +110,28 @@ a {
 .modal.slide-in-from-down .modal-dialog {
   animation: slideInFromDown 0.5s forwards;
 }
+
+/* <===========Business-form===============> */
+.custom{
+  
+  padding: 100px 0px 0px 0px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.business-title{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-1);
+}
+.business-names{
+  font-weight: 300;
+  font-size: 14px;
+}
+.business-input-box{
+  padding: .375rem .75rem;
+  width:100%;
+}
+.whl-business-form-box{
+background-color: white;
+border-radius:15px;
+}

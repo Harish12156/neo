@@ -212,6 +212,12 @@
     color: var(--color-1);
 }
 
+.dash-head-2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-1);
+}
+
 .dash-trans-sec {
     min-height: calc(100vh - 100px);
 }
@@ -272,6 +278,11 @@
 .dash-trans-txt-2 {
     font-size: 13px;
     opacity: 0.8;
+}
+
+.dash-trans-txt-3 {
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .dash-actions-active {
@@ -1505,6 +1516,10 @@
 
     .dash-head-1 {
         font-size: 1.1rem;
+    }
+
+    .dash-head-2 {
+        font-size: 1rem;
     }
 
     .dash-acco-txt-1 {

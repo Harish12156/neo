@@ -35,12 +35,12 @@ function Accounts() {
                                     <h6 className='mb-0 '>Brooklyn Simmons</h6>
                                     <p class="dash-c-txt-2">+1 9988776655</p>
                                 </div>
-                                <FaChevronDown className='ms-auto text-muted' />
+                                <FaChevronDown className='ms-auto text-muted'/>
                             </button>
 
                             <div className="collapse show" id="sendamountto">
                                 <div className='d-send-card-1'>
-                                    <div className='d-flex pb-3' style={{ borderBottom: "1px solid #000" }}>
+                                    <div className='d-flex pb-3' style={{borderBottom:"1px solid #000" }}>
                                         <p className='d-send-txt-1'>Fee :</p>
                                         <p className='d-send-txt-1 ms-auto'>1.00 USD</p>
                                     </div>
@@ -70,7 +70,7 @@ function Accounts() {
                             <p className='text-muted mb-4'>Bank Transfer has been successfully done</p>
                             <h5 style={{ color: "var(--color-1)" }}>Amount</h5>
                             <h3 style={{ marginBottom: "100px" }}>$ 123.00</h3>
-                            <a><h5 style={{ color: "var(--color-1)" }} className='mb-5'><CiReceipt /> View Receipt</h5></a>
+                            <a><h5 style={{ color: "var(--color-1)" }} className='mb-5'><CiReceipt/>View Receipt</h5></a>
                             <div className='mb-5'>
                                 <button className='d-send-btn-1'>Done</button>
                             </div>

@@ -197,7 +197,6 @@ function Transactions()
     </button>
   </td>
 </tr>
-
                     );
                   })}
                 </tbody>
@@ -206,7 +205,6 @@ function Transactions()
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

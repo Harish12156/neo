@@ -22,12 +22,16 @@ import DataContext from '../../context/DataContext';
 import { RxCross1 } from "react-icons/rx";
 
 function Sidenav() {
-  const { isOpen, setIsOpen } = useContext(DataContext);
+  const { isOpen, setIsOpen, setIsLogedIn } = useContext(DataContext);
   const location = useLocation();
   const currentYear = new Date().getFullYear();
 
   const toggleClick = () => {
     setIsOpen(false);
+  };
+
+  const toggleLogin = () => {
+    setIsLogedIn(false);
   };
 
   const isDashboardActive = () => {
@@ -139,7 +143,7 @@ function Sidenav() {
           </ul>
         </div>
         <div className='mt-auto'>
-          <button className="list-item-side justify-content-center list-item-side-logout mb-1">
+          <button className="list-item-side justify-content-center list-item-side-logout mb-1" onClick={toggleLogin}>
             <LazyLoadImage
               alt="Dashboard"
               src={Signout}

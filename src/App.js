@@ -23,6 +23,7 @@ import Mainbanner from './pages/home/Mainbanner';
 import Footer from './pages/home/Footer';
 import Type from './pages/home/Type';
 import Signin from './pages/home/Signin';
+import Signup from './pages/home/Signup';
 
 
 function App() {
@@ -84,8 +85,9 @@ function App() {
               } />
               <Route exact path="/type" element={<Type />} />
               <Route exact path="/signin" element={<Signin />} />
+              <Route exact path="/signup" element={<Signup />} />
 
-              <Route exact path="*" element={<p>ERROR 404</p>} />
+              <Route exact path="*" element={<p className='bef-login-home-sec'>ERROR 404</p>} />
 
             </Routes>
 

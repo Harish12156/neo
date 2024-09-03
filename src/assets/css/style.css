@@ -1177,19 +1177,63 @@
     font-weight: 500;
 }
 
-.bef-login-home-sec-foot{
+.bef-login-home-sec-foot {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: rgba(161, 161, 161, 0.123);
 }
-.bef-login-two-tab-sec{
+
+.bef-login-two-tab-sec {
     background: var(--background-color-1);
-    color: #FFF; 
-    padding-bottom: 60px; 
+    color: #FFF;
+    padding-bottom: 60px;
 }
-.bef-login-home-sec img{
+
+.bef-login-home-sec img {
     width: 70%;
     margin-top: 30px;
+}
+
+.bef-signin-h-sec .form-label {
+    font-weight: 500 !important;
+}
+
+.bef-signin-h-sec .form-check-input {
+    box-shadow: none !important;
+}
+
+.bef-signin-h-sec .form-check-input:checked {
+    background-color: #B5379F;
+    border-color: #B5379F;
+}
+
+.link-s-l-1 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-1);
+    text-decoration: underline !important;
+}
+
+.success-icon-1 {
+    width: 20px !important;
+    height: 20px !important;
+    margin-top: 0px !important;
+}
+
+.d-send-btn-gr-1 {
+    background: var(--background-color-1);
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    padding: 2px;
+}
+
+.d-send-btn-gr-1-1 {
+    background: #FFF;
+    color: var(--color-1);
+    padding: 16px 0px;
+    border-radius: 50px;
+    font-weight: 600;
 }
 
 /* Desktop styles */
@@ -1431,6 +1475,7 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
     .bef-l-btn-1 {
         font-size: 1rem;
         background-color: #FFF;

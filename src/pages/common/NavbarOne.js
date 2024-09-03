@@ -98,7 +98,10 @@ function NavbarOne() {
                                         <li class="nav-item">
                                             <a class="nav-link" href="/type">SignIn</a>
                                         </li>
-                                        <button className='bef-b-login-1' onClick={toggleLogin}>
+                                        <button className='bef-b-login-1'
+                                        // href="/signup"
+                                         onClick={toggleLogin}
+                                         >
                                             Signup
                                         </button>
                                     </Nav>

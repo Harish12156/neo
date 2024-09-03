@@ -1,14 +1,10 @@
 import React, { useState } from 'react'
 import { FaEye, FaEyeSlash } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 function Signin() {
     const [oldPassword, setOldPassword] = useState('');
-    const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');
-
     const [showOldPassword, setShowOldPassword] = useState(false);
-    const [showPassword, setShowPassword] = useState(false);
-    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
     const toggleOldPasswordVisibility = () => {
         setShowOldPassword(!showOldPassword);
@@ -22,8 +18,8 @@ function Signin() {
                         <div className='col-lg-6'>
                             <div className='card dash-card-1'>
                                 <div className='card-body'>
-                                    <h5 class="dash-head-1 mb-4">Sign in</h5>
-                                    <p class="mb-0 dash-trans-txt-2 mb-3">Get an account and control your finances better with full control of your budgets and savings.</p>
+                                    <h5 class="dash-head-1 mb-2">Sign in</h5>
+                                    <p class="mb-0 dash-trans-txt-2 mb-4">Get an account and control your finances better with full control of your budgets and savings.</p>
 
                                     <div className='profile-section-one '>
                                         <div class="mb-3">
@@ -47,10 +43,20 @@ function Signin() {
                                                 {showOldPassword ? <FaEye /> : <FaEyeSlash />}
                                             </span>
                                         </div>
+                                        <div class="mb-3 form-check d-flex align-items-center gap-2">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                                            <label class="form-label mb-0" for="exampleCheck1">Remember Me</label>
+
+                                            <Link to="/forgot-password" className='ms-auto link-s-l-1'>Forgot Password ?</Link>
+                                        </div>
 
                                         <div class="mt-4 mb-3">
                                             <button class="d-send-btn-1 rounded-pill">SignIn</button>
-                                            </div>
+                                        </div>
+                                        <div class="mb-3  d-flex align-items-center gap-2">
+
+                                            <Link to="/signup" className='ms-auto link-s-l-1'>Sign Up</Link>
+                                        </div>
                                     </div>
 
                                 </div>

@@ -26,6 +26,7 @@ import Signin from './pages/home/Signin';
 import Business from './pages/home/Business';
 import Signup from './pages/home/Signup';
 import Kycdocuments from './pages/home/Kycdocuments';
+import Accountsection from './pages/home/Accountsection';
 
 
 function App() {
@@ -92,6 +93,7 @@ function App() {
               <Route exact path="/business" element={<Business />} />
               <Route exact path="/signup" element={<Signup />} />
               <Route exact path="/kycdocuments" element={<Kycdocuments />} />
+              <Route exact path="/accountsection" element={<Accountsection />} />
 
               <Route exact path="*" element={<p className='bef-login-home-sec'>ERROR 404</p>} />
 

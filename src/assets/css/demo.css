@@ -15,6 +15,7 @@
         font-size: 14px;
         padding: 10px;
     }
+
     .swap-section .nav-pills .nav-link {
         --bs-nav-link-padding-x: 60px;
     }
@@ -37,6 +38,7 @@
         font-size: 14px;
         padding: 10px;
     }
+
     .swap-section .nav-pills .nav-link {
         --bs-nav-link-padding-x: 50px;
     }
@@ -634,6 +636,7 @@
 .cryptoinner-section-one .cryto-table-section td:last-child {
     width: 15%;
 }
+
 .buy-modal .modal-content {
     background-color: var(--color-1);
     padding: 40px 30px;
@@ -641,6 +644,7 @@
     border-radius: 20px;
     position: relative;
 }
+
 .buy-modal .modal-body {
     background-color: #FFF;
     border-radius: 20px;
@@ -652,7 +656,7 @@
     display: flex;
     align-items: center;
     gap: 0px;
-    margin:  10px 10px 10px 0px;
+    margin: 10px 10px 10px 0px;
     white-space: nowrap;
 }
 
@@ -691,9 +695,11 @@
 .mycard-section h6 {
     color: var(--color-1);
 }
-.mycard-section .card{
+
+.mycard-section .card {
     --bs-card-spacer-y: 2.5rem;
 }
+
 /* .mycard-section .card-body {
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 } */
@@ -733,9 +739,11 @@
 .card-section .card-transaction {
     background: #ffffff;
 }
-.card-transaction h5{
+
+.card-transaction h5 {
     color: var(--color-1);
 }
+
 .card-section .transaction-section-table {
     overflow: auto;
 }
@@ -759,6 +767,7 @@
     padding: 18px 15px;
     white-space: nowrap;
 }
+
 /* .card-section .transaction-table td:first-child{
     width: 20%;
 }
@@ -774,53 +783,94 @@
 .card-section .transaction-table td:last-child{
     width: 20%;
 } */
-.card-transaction .form-select:focus{
+.card-transaction .form-select:focus {
     box-shadow: none;
 }
 
 
 /* ====KYC ============ */
-/* .Kycdocuments .card-body{
-    height: 500px;
+.Kycdocuments .card-body{
+    height: 525px;
     overflow: scroll;
-} */
+}
 .kycdoc-section .form-label {
     font-weight: 500;
     font-size: 14px;
 }
+
 .kycdoc-section .form-select:focus {
     border-color: #dee2e6;
     outline: 0;
     box-shadow: none;
 }
 
-.kycdoc-section input::placeholder{
+.kycdoc-section input::placeholder {
     font-size: 13px;
     color: rgb(161, 161, 161);
 }
 
 .kycdoc-section .custom-select option {
-    font-size: 14px; /* Font size for all options */
-    color: #333; /* Font color for options */
+    font-size: 14px;
+    /* Font size for all options */
+    color: #333;
+    /* Font color for options */
 }
 
 .kycdoc-section .custom-select option:first-child {
-    font-size: 16px; /* Font size for the first (placeholder) option */
-    color: #999; /* Lighter color for the placeholder */
+    font-size: 16px;
+    /* Font size for the first (placeholder) option */
+    color: #999;
+    /* Lighter color for the placeholder */
 }
-.kycdoc-section .form-control:focus{
+
+.kycdoc-section .form-control:focus {
     box-shadow: none;
     border-color: #dee2e6;
 }
-.kycdoc-section .option-css{
+
+.kycdoc-section .option-css {
     font-size: 12px;
     color: var(--color-1);
 }
-.kycdoc-section .form-check-input{
+
+.kycdoc-section .form-check-input {
     width: 1.5em;
     height: 1.5em;
-    border-color:#333;
+    border-color: #333;
 }
+
+.kycdoc-section .text-one {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.kycdoc-section .doc-css {
+    width: 25px;
+    height: 30px;
+    margin: 0px;
+}
+
+.kycdoc-section .doc-section {
+    background: #2828280D;
+    border-radius: 5px;
+    padding: 10px 4px 10px 10px;
+}
+
+.kycdoc-section .doc-border{
+    border-bottom: 0.5px solid #d9d9d981;
+}
+
+.kycdoc-section .en-css {
+    width: 100px;
+    height: 100px;
+}
+
+.kycdoc-section .doc-section-two {
+    background: #DDE2E7;
+    border-radius: 10px;
+    padding: 10px 4px 10px 10px;
+}
+
 /* ====KYC ============ */
 
 

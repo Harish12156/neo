@@ -1,5 +1,11 @@
 import React, { useEffect } from 'react'
 import Form from 'react-bootstrap/Form';
+import { CgFileDocument } from "react-icons/cg";
+
+
+import document from '../../assets/images/home/document.png';
+import envelope from "../../assets/images/home/envelope.png";
+
 
 function Kycdocuments() {
 
@@ -8,7 +14,7 @@ function Kycdocuments() {
             <div className='bef-login-home-sec pb-5'>
                 <div className='container'>
                     <div className='row justify-content-center'>
-                        <div className='col-lg-6'>
+                        <div className='col-lg-7'>
                             <div className='card dash-card-1'>
                                 <div className='card-body'>
                                     <h5 className='dash-head-1 mb-2'>KYC Documents</h5>
@@ -100,7 +106,42 @@ function Kycdocuments() {
                                             </div>
                                         </div>
 
-                                        <div className='d-flex align-items-center gap-3'>
+                                        <div className='mb-3'>
+                                            <div className='doc-section'>
+                                                <div className='d-flex align-items-center py-3 doc-border'>
+                                                    <div className='text-one'>Terms and Conditions</div>
+                                                    <div className='ms-auto'>
+                                                        <CgFileDocument className='doc-css' />
+                                                    </div>
+                                                </div>
+                                                <div className='d-flex align-items-center py-3 doc-border'>
+                                                    <div className='text-one'>Pricelist</div>
+                                                    <div className='ms-auto'>
+                                                        <CgFileDocument className='doc-css' />
+                                                    </div>
+                                                </div>
+                                                <div className='d-flex align-items-center py-3 doc-border'>
+                                                    <div className='text-one'>Terms and condition partner bank</div>
+                                                    <div className='ms-auto'>
+                                                        <CgFileDocument className='doc-css' />
+                                                    </div>
+                                                </div>
+                                                <div className='d-flex align-items-center py-3 doc-border'>
+                                                    <div className='text-one'>Other condition partner Bank</div>
+                                                    <div className='ms-auto'>
+                                                        <CgFileDocument className='doc-css' />
+                                                    </div>
+                                                </div>
+                                                <div className='d-flex align-items-center py-3'>
+                                                    <div className='text-one'>Special condition: cash deposits</div>
+                                                    <div className='ms-auto'>
+                                                        <CgFileDocument className='doc-css' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className='d-flex align-items-center gap-3 mb-3'>
                                             <div>
                                                 <h5 className='dash-head-2 mb-1'>Privacy Policy</h5>
                                                 <p className='dash-trans-txt-2'>
@@ -112,12 +153,58 @@ function Kycdocuments() {
                                             </div>
                                         </div>
 
-                                        <div className=''>
-                                            <div className='d-flex align-items-center mb-3'>
-                                                <div className='text-one'>Terms and Conditions</div>
-                                                <div className='ms-auto'>the</div>
+                                        <div className='mb-3'>
+                                            <div className='doc-section'>
+                                                <div className='d-flex align-items-center py-3 doc-border'>
+                                                    <div className='text-one'>Data Privacy policy platform</div>
+                                                    <div className='ms-auto'>
+                                                        <CgFileDocument className='doc-css' />
+                                                    </div>
+                                                </div>
+                                                <div className='d-flex align-items-center py-3 doc-border'>
+                                                    <div className='text-one'>Data Protection policy partner bank</div>
+                                                    <div className='ms-auto'>
+                                                        <CgFileDocument className='doc-css' />
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+
+                                        <div className='mb-3 text-center'>
+                                            <img src={envelope} className='en-css' alt='mail' />
+                                            <div className='my-5'>
+                                                <h6 className='fw-semibold'>Open your mail App</h6>
+                                                <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but.</p>
+                                            </div>
+                                        </div>
+
+                                        <div className='mb-3'>
+                                            <h6 className='lh-base text-center my-4'>Hereby I am opening a bank account in my own name and I confirm the following</h6>
+                                            <ul className='list-unstyled ms-3'>
+                                                <li><p className='dash-trans-txt-2'>1.  I am fully legally responsible for all account activity</p></li>
+                                                <li><p className='dash-trans-txt-2'>2.  I use account exclusively for privacy purposes</p></li>
+                                                <li><p className='dash-trans-txt-2'>3.  I do not act on behalf of, or instructed by a third person</p></li>
+                                            </ul>
+                                        </div>
+
+                                        <div className='mb-3 doc-section-two'>
+                                            <p className='dash-trans-txt-2 mb-0'>Beware of trickstes that try to mislead Persons into
+                                                opening bank accounts under false premises (e.g.
+                                                app-testing, job offers credit brokering,identificaton
+                                                for apartment offers) and misuse your account
+                                                for criminal purposes.</p>
+                                        </div>
+
+                                        <div className='d-flex align-items-center gap-3 mb-3 justify-content-center'>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="privacy" />
+                                            </div>
+                                            <div className='dash-trans-txt-2'>
+                                                I confirm the above listed statements
+                                            </div>
+                                        </div>
+
+
 
                                     </div>
                                 </div>

@@ -13,26 +13,27 @@ function Business() {
 
           <div className='row business-form-00'>
             <div className='col-lg-10 mx-auto mt-lg-4'>
-              <div>
+              <div className='whole-business-form'>
                 <form>
 
                   <div className="row">
                     <div className="col-lg-12">
+                    <h6 className="mb-4 business-input-headings">Name of the Company:</h6>
                       <div>
                         <div className="mb-4 pt-2">
-                          <label htmlFor="firstName" className="form-label fw-bold business-input-headings">First name :</label>
+                          <label htmlFor="firstName" className="form-label  business-input-headings">First name :</label>
                           <input type="text" className="form-control business-input-group-box" id="firstName" placeholder="First name" />
                         </div>
                         <div className="mb-4 pt-2">
-                          <label htmlFor="abbreviateName" className="form-label fw-bold business-input-headings">Abbreviate name :</label>
+                          <label htmlFor="abbreviateName" className="form-label  business-input-headings">Abbreviate name :</label>
                           <input type="text" className="form-control business-input-group-box" id="abbreviateName" placeholder="Abbreviate name" />
                         </div>
                         <div className="mb-4 pt-2">
-                          <label htmlFor="foreignLanguageName" className="form-label fw-bold business-input-headings">Foreign languages name (if applicable) :</label>
+                          <label htmlFor="foreignLanguageName" className="form-label business-input-headings">Foreign languages name (if applicable) :</label>
                           <input type="text" className="form-control business-input-group-box" id="foreignLanguageName" placeholder="Languages name" />
                         </div>
                         <div className="mb-4 pt-2">
-                          <label htmlFor="legalForm" className="form-label fw-bold business-input-headings">Legal form :</label>
+                          <label htmlFor="legalForm" className="form-label  business-input-headings">Legal form :</label>
                           <input type="text" className="form-control business-input-group-box" id="legalForm" placeholder="Legal form" />
                         </div>
                       </div>
@@ -44,30 +45,30 @@ function Business() {
 
                   <div className="row">
                     <div className="col-lg-12">
-                      <h6 className="mb-4 business-input-headings fw-bold">Name of the Company:</h6>
+                     
                       <div>
                         <div className="mb-4 pt-2">
-                          <label htmlFor="date" className="form-label fw-bold business-input-headings">Date :</label>
+                          <label htmlFor="date" className="form-label  business-input-headings">Date :</label>
                           <input type="date" className="form-control business-input-group-box" id="date" placeholder="Date" />
                         </div>
                         <div className="mb-4 pt-2">
-                          <label htmlFor="registrationNumber" className="form-label fw-bold business-input-headings">Registration number :</label>
+                          <label htmlFor="registrationNumber" className="form-label  business-input-headings">Registration number :</label>
                           <input type="text" className="form-control business-input-group-box" id="registrationNumber" placeholder="Registration number" />
                         </div>
                         <div className="mb-4 pt-2">
-                          <label htmlFor="registrationAuthority" className="form-label fw-bold business-input-headings">Name of the registration authority :</label>
+                          <label htmlFor="registrationAuthority" className="form-label  business-input-headings">Name of the registration authority :</label>
                           <input type="text" className="form-control business-input-group-box" id="registrationAuthority" placeholder="Registration authority" />
                         </div>
                         <div className="mb-4 pt-2">
-                          <label htmlFor="placeOfRegistration" className="form-label fw-bold business-input-headings">Place of registration :</label>
+                          <label htmlFor="placeOfRegistration" className="form-label  business-input-headings">Place of registration :</label>
                           <input type="text" className="form-control business-input-group-box" id="placeOfRegistration" placeholder="Place of registration" />
                         </div>
                         <div className="mb-4 pt-2">
-                          <label htmlFor="legalAddress" className="form-label fw-bold business-input-headings">Legal address :</label>
+                          <label htmlFor="legalAddress" className="form-label  business-input-headings">Legal address :</label>
                           <input type="text" className="form-control business-input-group-box" id="legalAddress" placeholder="Legal address" />
                         </div>
                         <div className="mb-4 pt-2">
-                          <label htmlFor="postalAddress" className="form-label fw-bold business-input-headings">Postal address :</label>
+                          <label htmlFor="postalAddress" className="form-label  business-input-headings">Postal address :</label>
                           <input type="text" className="form-control business-input-group-box" id="postalAddress" placeholder="Postal address" />
                         </div>
                       </div>
@@ -80,26 +81,25 @@ function Business() {
                     <div className="col-lg-12">
                       <div className="row">
                         <div className="col-lg-4 col-12 mb-3">
-                          <label className="mb-2 fw-bold business-input-headings">E-mail, URL :</label>
+                          <label className="mb-2  business-input-headings">E-mail, URL :</label>
                           <input type="email" className="form-control business-input-group-box" placeholder="Email address" aria-label="Email address" />
                         </div>
                         <div className="col-lg-4 col-12 mb-3">
-                          <label className="mb-2 fw-bold business-input-headings">Test login :</label>
+                          <label className="mb-2  business-input-headings">Test login :</label>
                           <input type="text" className="form-control business-input-group-box" placeholder="Test login" aria-label="Test login" />
                         </div>
                         <div className="col-lg-4 col-12 mb-3">
-                          <label className="mb-2 fw-bold business-input-headings">Test password :</label>
+                          <label className="mb-2  business-input-headings">Test password :</label>
                           <input type="password" className="form-control business-input-group-box" placeholder="Test password" aria-label="Test password" />
                         </div>
                       </div>
                     </div>
                   </div>
 
-
                   {/* <======================> */}
 
                   <div className="row mb-4">
-                    <h6 className="mb-3 fw-bold business-input-headings">License information (if applicable)</h6>
+                    <h6 className="mb-3  business-input-headings">License information (if applicable) :</h6>
                     <div className="col-lg-12">
                       <div>
                         <div className="form-check mb-3">
@@ -141,17 +141,18 @@ function Business() {
                   <div className="row mb-4">
                     <div className="row">
                       <div className="col-lg-6 col-12 mb-3">
-                        <label className="mb-2 fw-bold business-input-headings">Country of Tax Residency :</label>
+                        <label className="mb-2  business-input-headings">Country of Tax Residency :</label>
                         <input type="text" className="form-control business-input-group-box" placeholder="Tax Residency" />
                       </div>
                       <div className="col-lg-6 col-12 mb-3">
-                        <label className="mb-2 fw-bold business-input-headings">TAX number :</label>
+                        <label className="mb-2  business-input-headings">TAX number :</label>
                         <input type="text" className="form-control business-input-group-box" placeholder="TAX number" />
                       </div>
                     </div>
                   </div>
 
                   {/* <=========================> */}
+
                   <div className="row mb-4">
                     <div className="form-check mb-3">
                       <input className="form-check-input" type="checkbox" value="" id="registeredShareCapitalCheck" />
@@ -166,16 +167,17 @@ function Business() {
                       </label>
                     </div>
                     <div className="mt-4">
-                      <label htmlFor="personnelNumber" className="form-label fw-bold business-input-headings">Actual number of personnel :</label>
+                      <label htmlFor="personnelNumber" className="form-label  business-input-headings">Actual number of personnel :</label>
                       <input type="text" className="form-control business-input-group-box" id="personnelNumber" placeholder="Number of personnel" />
                     </div>
                   </div>
 
                   {/* <========================> */}
+
                   <div className="row mt-4">
                     <div className="col-lg-12">
                       <div>
-                        <h6 className="fw-bold business-input-headings">
+                        <h6 className="business-input-headings">
                           Are there any insolvency (bankruptcy) legal proceedings against the Company? Are there any legally effective court decisions on insolvency (bankruptcy) in respect of the Company?
                         </h6>
                       </div>
@@ -193,18 +195,21 @@ function Business() {
                           </label>
                         </div>
                       </div>
+
                       <div className="mt-4">
-                        <label htmlFor="specifyDetails" className="form-label fw-bold business-input-headings">If Yes, please specify :</label>
+                        <label htmlFor="specifyDetails" className="form-label  business-input-headings">If Yes, please specify :</label>
                         <input type="text" className="form-control business-input-group-box mb-4" id="specifyDetails" placeholder="" />
                       </div>
+
                     </div>
                   </div>
 
                   {/* <==============================> */}
+
                   <div className="row my-4">
                     <div className="col-lg-12">
                       <div>
-                        <h6 className="fw-bold business-input-headings">
+                        <h6 className="business-input-headings">
                           Are there any facts of your financial obligations default due to lack of funds in bank accounts?
                         </h6>
                       </div>
@@ -222,18 +227,21 @@ function Business() {
                           </label>
                         </div>
                       </div>
-                      <div className="mt-4">
-                        <label htmlFor="additionalDetails" className="form-label fw-bold business-input-headings">If Yes, please specify :</label>
-                        <input type="text" className="form-control mb-4" id="additionalDetails" placeholder="" />
+
+                       <div className="mt-4">
+                        <label htmlFor="specifyDetails" className="form-label  business-input-headings">If Yes, please specify :</label>
+                        <input type="text" className="form-control business-input-group-box mb-4" id="specifyDetails" placeholder="" />
                       </div>
+
                     </div>
                   </div>
 
                   {/* <=====================> */}
+
                   <div className=''>
                     <div className="row mt-4 mb-4">
                       <div className="col-lg-12">
-                        <h6 className="fw-bold my-3 business-input-headings">
+                        <h6 className="my-3 business-input-headings">
                           Administrative bodies of the Company (list of the Board of Directors (if applicable), CEO or representative)
                         </h6>
 
@@ -317,10 +325,10 @@ function Business() {
                           </div>
                         </div>
 
-                        <h6 className="fw-bold my-3 business-input-headings">Name of the CFO (or equivalent)</h6>
+                        <h6 className="my-3 business-input-headings">Name of the CFO (or equivalent)</h6>
                         <input type="text" className="form-control business-input-group-box mb-4" placeholder="Name of the CFO" />
 
-                        <h6 className="fw-bold my-3 business-input-headings">
+                        <h6 className=" my-3 business-input-headings">
                           Information about the person(s) who is/are the Company’s ultimate beneficial owner(s), with an indication of the share of equity
                           (full details of the beneficial owner specified in the application in the form prescribed in Appendix 3)
                         </h6>
@@ -329,10 +337,12 @@ function Business() {
                     </div>
 
                   </div>
+
                   {/* <======================> */}
+
                   <div className="row mt-4 mb-4">
                     <div className="col-lg-12">
-                      <h6 className="fw-bold mb-3 business-input-headings">
+                      <h6 className="mb-3 business-input-headings">
                         Details of Shareholders (participants) holding 25% or more of the authorized capital with an indication of percentage of shares held
                       </h6>
 
@@ -341,7 +351,7 @@ function Business() {
                       </p>
 
                       <div className="mb-4">
-                        <p className="mb-2"><span className="fw-bold">1. </span>Percentage of shares held</p>
+                        <p className="mb-2"><span className="">1. </span>Percentage of shares held</p>
                         <p className="mb-2">Is the Shareholder acting as a nominee?</p>
                         <div className="d-flex mt-2 mb-3">
                           <div className="form-check me-3">
@@ -360,7 +370,7 @@ function Business() {
                       </div>
 
                       <div className="mb-4">
-                        <p className="mb-2"><span className="fw-bold">2. </span>Percentage of shares held</p>
+                        <p className="mb-2"><span className="">2. </span>Percentage of shares held</p>
                         <p className="mb-2">Is the Shareholder acting as a nominee?</p>
                         <div className="d-flex mt-2 mb-3">
                           <div className="form-check me-3">
@@ -379,7 +389,7 @@ function Business() {
                       </div>
 
                       <div className="mb-4">
-                        <p className="mb-2"><span className="fw-bold">3. </span>Percentage of shares held</p>
+                        <p className="mb-2"><span className="">3. </span>Percentage of shares held</p>
                         <p className="mb-2">Is the Shareholder acting as a nominee?</p>
                         <div className="d-flex mt-2 mb-3">
                           <div className="form-check me-3">
@@ -398,7 +408,7 @@ function Business() {
                       </div>
 
                       <div className="mb-4">
-                        <p className="mb-2"><span className="fw-bold">4. </span>Percentage of shares held</p>
+                        <p className="mb-2"><span className="">4. </span>Percentage of shares held</p>
                         <p className="mb-2">Is the Shareholder acting as a nominee?</p>
                         <div className="d-flex mt-2 mb-3">
                           <div className="form-check me-3">
@@ -426,7 +436,7 @@ function Business() {
                         <p className='mb-3'>Types of activity (goods, services)</p>
                         <p className='mb-4'>Region (countries) of the business activity?</p>
 
-                        <h6 className='fw-bold business-input-headings mb-3'>
+                        <h6 className='business-input-headings mb-3'>
                           Does your Company have an obligation for the preparation of financial statements to comply with applicable legislation framework?
                         </h6>
                         <div className='d-flex mb-4'>
@@ -445,40 +455,39 @@ function Business() {
                         </div>
 
                         <div className="my-4">
-                          <label htmlFor="reasonForNo" className="form-label fw-bold business-input-headings">If No, please specify the reason:</label>
+                          <label htmlFor="reasonForNo" className="form-label  business-input-headings">If No, please specify the reason:</label>
                           <input type="text" className="form-control" id="reasonForNo" placeholder="" />
                         </div>
 
                         <div className="my-4">
-                          <label htmlFor="businessDuration" className="form-label fw-bold business-input-headings">How long has the Company been carrying on business activity in this area?</label>
+                          <label htmlFor="businessDuration" className="form-label  business-input-headings">How long has the Company been carrying on business activity in this area?</label>
                           <input type="text" className="form-control" id="businessDuration" placeholder="" />
                         </div>
 
                         <div className="my-4">
-                          <label htmlFor="planningTurnover" className="form-label fw-bold business-input-headings">Please specify the planning turnover of the Company (monthly/yearly), average amount of transactions:</label>
+                          <label htmlFor="planningTurnover" className="form-label  business-input-headings">Please specify the planning turnover of the Company (monthly/yearly), average amount of transactions:</label>
                           <input type="text" className="form-control" id="planningTurnover" placeholder="" />
                         </div>
 
                         <div className="my-4">
-                          <label htmlFor="companyWebsite" className="form-label fw-bold business-input-headings">Please specify the website of the Company or other sources of information about the Company:</label>
+                          <label htmlFor="companyWebsite" className="form-label  business-input-headings">Please specify the website of the Company or other sources of information about the Company:</label>
                           <input type="text" className="form-control" id="companyWebsite" placeholder="" />
                         </div>
 
                         <div className="my-4">
-                          <label htmlFor="companyHistory" className="form-label fw-bold business-input-headings">History, reputation, segment of the market, and competitors of the Company:</label>
+                          <label htmlFor="companyHistory" className="form-label  business-input-headings">History, reputation, segment of the market, and competitors of the Company:</label>
                           <input type="text" className="form-control" id="companyHistory" placeholder="" />
                         </div>
                       </div>
                     </div>
                   </div>
 
-
                   {/* <=======================> */}
 
                   <div className='row'>
                     <div className='col-lg-12'>
                       <div>
-                        <h6 className='fw-bold text-center my-4 business-input-headings'>General AML Policies, Practices and Procedures</h6>
+                        <h6 className='text-center my-4 business-input-headings'>General AML Policies, Practices and Procedures</h6>
                       </div>
                       <div>
                         <div className="d-flex my-2">
@@ -549,7 +558,9 @@ function Business() {
                         <div className="d-flex my-2">
                           <span style={{ minWidth: '50px' }}>3.(c)</span>
                           <div>
-                            <span class="my-4"><label for="formGroupExampleInput" class="form-label fw-bold business-input-headings">Does your institution have a designated employee responsible for disputes( chargebacks) and penalties?</label><input type="text" class="form-control" id="formGroupExampleInput" placeholder="" /></span>
+                            <span class="my-4"><label for="formGroupExampleInput" class="form-label  business-input-headings">Does your institution have a designated employee responsible for disputes( chargebacks) and penalties?</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" />
+                            </span>
 
                           </div>
                         </div>
@@ -702,65 +713,65 @@ function Business() {
                           </div>
                         </div>
                         <div>
-                          <h6 class="fw-bold text-center my-4 business-input-headings">PROTECTION OF PERSONAL DATA</h6>
+                          <h6 class="text-center my-4 business-input-headings">PROTECTION OF PERSONAL DATA</h6>
                           <p>The personal data requested above may be recorded in one or several databases in accordance with applicable legislation. REM INTERNATIONAL PAYMENTS INC. may outsource the processing and storage of this data. You expressly authorize REM INTERNATIONAL PAYMENTS INC. to collect and process  this personal data. You may make a written request to consult the data concerning yourself and to rectify any inaccuracies in this data. REM INTERNATIONAL PAYMENTS INC. may record or process your personal data for the purpose of managing its contractual relationships with you, including transfer of personal data to our partners in order to provide services to you.</p>
                         </div>
                         <div>
-                          <h6 class="fw-bold text-center my-4 business-input-headings">FOREIGN ACCOUNT TAX COMPLIANCE ACT (FATCA)</h6>
+                          <h6 class="text-center my-4 business-input-headings">FOREIGN ACCOUNT TAX COMPLIANCE ACT (FATCA)</h6>
                           <p>We would like to draw your attention to the USA's Foreign Account Tax Compliance Act (a.k.a FATCA) and its possible implications*. Please indicate if you or any of your beneficial owners are a U.S citizen or resident or are otherwise to be considered as a 'US Person' as per FATCA:</p>
-                          <p><span className='fw-bold'>N0  </span>I/We hereby declare that we are familiar with the FATCA guidelines and possible implications on the parties and that I am/we and any of our beneficial owners are NOT a U.S citizen or resident or are otherwise to be considered as a 'US Person' as per FATCA</p>
-                          <p><span className='fw-bold'>YES  </span>I/We hereby declare that we are familiar with the FATCA guidelines and possible implications on the parties and that I am/we or any of our beneficial owners ARE a U.S citizen or resident or are otherwise to be considered as a 'US Person' as per FATCA and will provide us as soon as possible with the relevant documents, information, W-9 forms and other materials as requested by us.</p>
+                          <p><span className='fw-bold'>N0  </span> I/We hereby declare that we are familiar with the FATCA guidelines and possible implications on the parties and that I am/we and any of our beneficial owners are NOT a U.S citizen or resident or are otherwise to be considered as a 'US Person' as per FATCA</p>
+                          <p><span className='fw-bold'>YES  </span> I/We hereby declare that we are familiar with the FATCA guidelines and possible implications on the parties and that I am/we or any of our beneficial owners ARE a U.S citizen or resident or are otherwise to be considered as a 'US Person' as per FATCA and will provide us as soon as possible with the relevant documents, information, W-9 forms and other materials as requested by us.</p>
                           <p>I/We agree to indemnify REM INTERNATIONAL PAYMENTS INC. in respect of any false or misleading information regarding my/our “U.S. person” status for U.S. federal income tax purposes. I/We agree to notify REM INTERNATIONAL PAYMENTS INC. 30 days of any change in the aforementioned statement.</p>
                           <p>For more information see also: http://www.irs.gov/Businesses/Corporations/Foreign-Account-Tax-Compliance-Act-FATCA.</p>
                         </div>
                         <div>
-                          <h6 class="fw-bold text-center my-4 business-input-headings">REQUESTED DOCUMENTATION</h6>
+                          <h6 class="text-center my-4 business-input-headings">REQUESTED DOCUMENTATION</h6>
                           <p>The following documents (certified copies) shall be attached to the Questionnaire:</p>
 
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>1.</span>
+                            <span style={{ minWidth: '50px' }} className=''>1.</span>
                             <div>
                               <p className='mb-auto'>Memorandum and Articles of Association;
                               </p>
                             </div>
                           </div>
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>2.</span>
+                            <span style={{ minWidth: '50px' }} className=''>2.</span>
                             <div>
                               <p className='mb-auto'>Certificate of Incorporation / Registration;
                               </p>
                             </div>
                           </div>
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>3.</span>
+                            <span style={{ minWidth: '50px' }} className=''>3.</span>
                             <div>
                               <p className='mb-auto'>Certificate of Directors/;
                               </p>
                             </div>
                           </div>
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>4.</span>
+                            <span style={{ minWidth: '50px' }} className=''>4.</span>
                             <div>
                               <p className='mb-auto'>Certificate of good standing (in the event that the company is older than one year old);
                               </p>
                             </div>
                           </div>
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>5.</span>
+                            <span style={{ minWidth: '50px' }} className=''>5.</span>
                             <div>
                               <p className='mb-auto'>Certificate of Incumbency;
                               </p>
                             </div>
                           </div>
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>6.</span>
+                            <span style={{ minWidth: '50px' }} className=''>6.</span>
                             <div>
                               <p className='mb-auto'>Certificate of Shareholders, Register of shareholders or other equivalent document;
                               </p>
                             </div>
                           </div>
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>7.</span>
+                            <span style={{ minWidth: '50px' }} className=''>7.</span>
                             <div>
                               <p className='mb-auto'>Legal ownership structure certified by the UBO or the person who effectively controls the company
                               </p>
@@ -768,14 +779,14 @@ function Business() {
                           </div>
 
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>8.</span>
+                            <span style={{ minWidth: '50px' }} className=''>8.</span>
                             <div>
                               <p className='mb-auto'>Operating license and\or authorization;
                               </p>
                             </div>
                           </div>
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>9.</span>
+                            <span style={{ minWidth: '50px' }} className=''>9.</span>
                             <div>
                               <p className='mb-auto'> Declaration of Trust (if applicable)
                               </p>
@@ -783,7 +794,7 @@ function Business() {
                           </div>
 
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>10.</span>
+                            <span style={{ minWidth: '50px' }} className=''>10.</span>
                             <div>
                               <p className='mb-auto'> Trust Deeds/ Trust Settlement Agreement (if applicable)
                               </p>
@@ -791,7 +802,7 @@ function Business() {
                           </div>
 
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>11.</span>
+                            <span style={{ minWidth: '50px' }} className=''>11.</span>
                             <div>
                               <p className='mb-auto'> Onboarding Form followed by you duly completed
                               </p>
@@ -799,7 +810,7 @@ function Business() {
                           </div>
 
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>12.</span>
+                            <span style={{ minWidth: '50px' }} className=''>12.</span>
                             <div>
                               <p className='mb-auto'> Annual financial (accounting) statements;
                               </p>
@@ -807,7 +818,7 @@ function Business() {
                           </div>
 
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>13.</span>
+                            <span style={{ minWidth: '50px' }} className=''>13.</span>
                             <div>
                               <p className='mb-auto'> Audited financial (accounting) statements for the last accounting period;
                               </p>
@@ -815,7 +826,7 @@ function Business() {
                           </div>
 
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>14.</span>
+                            <span style={{ minWidth: '50px' }} className=''>14.</span>
                             <div>
                               <p className='mb-auto'> In the absence of the documents referred to in paragraphs 12-13, an official letter, containing the reasons for the absence of these documents, shall be submitted;
                               </p>
@@ -823,7 +834,7 @@ function Business() {
                           </div>
 
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>15.</span>
+                            <span style={{ minWidth: '50px' }} className=''>15.</span>
                             <div>
                               <p className='mb-auto'> Identity Card or Passport of representative/s (director/s) and Utility Bill of representative/s (director/s);
                               </p>
@@ -831,21 +842,21 @@ function Business() {
                           </div>
 
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>16.</span>
+                            <span style={{ minWidth: '50px' }} className=''>16.</span>
                             <div>
                               <p className='mb-auto'> Details of the Company’s UBO’s including certified copy of passport, and proof of permanent address.
                               </p>
                             </div>
                           </div>
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>17.</span>
+                            <span style={{ minWidth: '50px' }} className=''>17.</span>
                             <div>
                               <p className='mb-auto'> Account opening confirmation
                               </p>
                             </div>
                           </div>
                           <div className="d-flex my-2">
-                            <span style={{ minWidth: '50px' }} className='fw-bold'>18.</span>
+                            <span style={{ minWidth: '50px' }} className=''>18.</span>
                             <div>
                               <p className='mb-auto'> AML/CTF program (if applicable)
                               </p>
@@ -857,7 +868,7 @@ function Business() {
                         </div>
 
                         <div>
-                          <h6 class="fw-bold text-center my-4 business-input-headings">DECLARATIONS AND SIGNATURE</h6>
+                          <h6 class=" text-center my-4 business-input-headings">DECLARATIONS AND SIGNATURE</h6>
                           <ul>
                             <li className='my-2'>we are acting on our own account and not on behalf of any other person;</li>
                             <li className='my-2'>any funds that are received by us in the future will not be used for the financing of terrorism or with any fraudulent activities; and</li>
@@ -871,6 +882,7 @@ function Business() {
                   </div>
 
                   {/* <=========================> */}
+
                   <div className='row'>
                     <p className='my-4'>Date :</p>
                     <div className='col-lg-6 col-12 mt-4'>
@@ -884,7 +896,6 @@ function Business() {
                       </div>
                     </div>
                   </div>
-
 
                 </form>
               </div>
@@ -900,4 +911,7 @@ function Business() {
 }
 
 export default Business;
-{/* <div class="my-4"><label for="formGroupExampleInput" class="form-label fw-bold">History, reputation, segment of the market and competitors of the Company</label><input type="text" class="form-control" id="formGroupExampleInput" placeholder=""></div> */ }
+{/* <div class="my-4"><label for="formGroupExampleInput" class="form-label
+ fw-bold">History, reputation, segment of the market and competitors 
+of the Company</label><input type="text" class="form-control" id="formGroupExampleInput"
+ placeholder=""></div> */ }

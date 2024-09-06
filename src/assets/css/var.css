@@ -2323,8 +2323,9 @@ table {
 .whl-business-form-box{
 background-color: white;
 border-radius:15px;
-height:490px;
+height:530px;
 overflow-y: scroll;
+
 }
 .business-input-box{
   border:1px solid #dddbdb;
@@ -2362,7 +2363,7 @@ overflow-y: scroll;
 .business-list{
   list-style: none;
 }
-.new-01{
+/* .new-01{
   width:40px;
   height:20px;
   background-color: red;
@@ -2370,10 +2371,56 @@ overflow-y: scroll;
 .new-01-01{
   width:40px;
   background-color: red;
-}
+} */
 .business-input-group-box{
   font-size:15px!important;
+  border: 1px solid darkgrey!important;
 }
 .business-input-headings{
   font-size:16px!important;
+}
+.whole-business-form .form-check-input:checked{
+background-color: #978c8c!important;
+border:1px solid #978c8c!important;
+}
+.whole-business-form .form-check-input:checked:focus{
+  box-shadow:none!important;
+}
+.business-input-headings{
+  font-weight: normal!important;
+}
+.whole-business-form .form-check-input[type=checkbox]{
+  border: 1px solid darkgrey!important;
+}
+.whole-business-form .form-check-input[type=radio] {
+  border: 1px solid darkgrey!important;
+}
+@media (max-width: 991px)
+{
+  .whl-business-form-box{
+    background-color: white;
+    border-radius:15px;
+    height:100vh;
+    overflow-y: scroll;
+    }
+    .whole-business-form .form-check-input:checked{
+      background-color: #978c8c!important;
+      border:2px solid #978c8c!important;
+      }
+      .whole-business-form .form-check-input:checked:focus{
+        box-shadow:none!important;
+      }
+      .business-input-headings{
+        font-weight: normal!important;
+      }
+      .whole-business-form .form-check-input[type=checkbox]{
+        border: 2px solid darkgrey!important;
+      }
+      .whole-business-form .form-check-input[type=radio] {
+        border: 2px solid darkgrey!important;
+      }
+      .business-input-group-box{
+        font-size:15px!important;
+        border: 2px solid darkgrey!important;
+      }
 }

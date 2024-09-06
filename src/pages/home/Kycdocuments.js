@@ -195,13 +195,17 @@ function Kycdocuments() {
                                                 for criminal purposes.</p>
                                         </div>
 
-                                        <div className='d-flex align-items-center gap-3 mb-3 justify-content-center'>
+                                        <div className='d-flex align-items-center gap-3 mb-5 justify-content-center'>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="privacy" />
                                             </div>
                                             <div className='dash-trans-txt-2'>
                                                 I confirm the above listed statements
                                             </div>
+                                        </div>
+
+                                        <div className='mb-5'>
+                                            <button class="d-send-btn-1 rounded-pill">Next</button>
                                         </div>
 
 

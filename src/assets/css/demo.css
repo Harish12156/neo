@@ -22,6 +22,9 @@
     .accountsection .video-sec{
         width: 75%;
     }
+    .Useraccountform .text-one{
+        font-size: 14px;
+    }
 }
 
 /* =====Desktop ======== */
@@ -47,6 +50,9 @@
     }
     .accountsection .video-sec{
         width: auto
+    }
+    .Useraccountform .text-one{
+        font-size: 12px;
     }
 }
 
@@ -904,13 +910,19 @@
 .Useraccountform .form-section{
     background-color: white;
     border-radius: 15px;
-    height: 490px;
+    height: 525px;
     overflow-y: scroll;
 }
 .Useraccountform .business-subtitle {
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--color-1);
+}
+.Useraccountform .form-control:focus{
+    box-shadow: none;
+}
+.Useraccountform .form-label{
+    font-weight: 400;
 }
 /* =====Useraccountform ============ */
 

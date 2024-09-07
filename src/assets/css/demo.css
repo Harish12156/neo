@@ -25,6 +25,12 @@
     .Useraccountform .text-one{
         font-size: 14px;
     }
+    .Useraccountform .form-section{
+        background-color: white;
+        border-radius: 15px;
+        height: 100vh;
+        overflow-y: scroll;
+    }
 }
 
 /* =====Desktop ======== */
@@ -53,6 +59,12 @@
     }
     .Useraccountform .text-one{
         font-size: 12px;
+    }
+    .Useraccountform .form-section{
+        background-color: white;
+        border-radius: 15px;
+        height: auto;
+        overflow-y: scroll;
     }
 }
 
@@ -907,12 +919,7 @@
 /* =====Account-section ========== */
 
 /* =====Useraccountform ============ */
-.Useraccountform .form-section{
-    background-color: white;
-    border-radius: 15px;
-    height: 525px;
-    overflow-y: scroll;
-}
+
 .Useraccountform .business-subtitle {
     font-size: 1.1rem;
     font-weight: 600;
@@ -924,6 +931,13 @@
 .Useraccountform .form-label{
     font-weight: 400;
 }
+.Useraccountform .signature-canvas {
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+}
+
 /* =====Useraccountform ============ */
 
 

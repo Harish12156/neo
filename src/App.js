@@ -27,7 +27,8 @@ import Business from './pages/home/Business';
 import Signup from './pages/home/Signup';
 import Kycdocuments from './pages/home/Kycdocuments';
 import Accountsection from './pages/home/Accountsection';
-import Useraccountform from './pages/home/Useraccountform';
+import Useraccountform from './pages/home/Useraccountform/Useraccountform';
+
 
 
 function App() {
